@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    font-family: Lato;
+}
+
+body {
+    background-color: #f1f7f4;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    padding: 0 clamp(1rem, 4.2667vw, 3rem);
+    margin: auto;
+}
+
+.foodplanner__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+}
+
+.foodplanner__fieldset{
+    position: relative;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.foodplanner__fieldset--select{
+    width: 25%;
+}
+
+.foodplanner__input-label {
+    position: absolute;
+    background-color: #f1f7f4;
+    top: -.5rem;
+    left: .5rem;
+    padding: 0 .25rem;
+    font-size: .75rem;
+}
+
+.foodplanner__search{
+    height: 2.5rem;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid #d9d9d9;
+    border-radius: .5rem;
+}
+
+.foodplanner__select{
+    height: 2.5rem;
+    padding: .5rem;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    border-radius: .5rem;
+}
+
+.foodplanner__submit {
+    background-color: #f9f9f9;
+    border: 1px solid #d9d9d9;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+/* Results */
+.foodplanner__top-row {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.foodplanner__results-headline {
+    margin-top: clamp(3rem, 12.8vw, 5rem);
+}
+
+.foodplanner__list {
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
+}
+.foodplanner__list-item {
+    list-style-type: none;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #1d1d1d;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 1rem;
+    border: 1px solid #dcdcdc;
+    position: relative;
+    overflow: hidden;
+}
+
+.foodplanner__recipe--link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1d1d1d;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.foodplanner__recipe-icon {
+    fill: #1d1d1d;
+    display: flex;
+    padding: .5rem;
+    background-image: linear-gradient(45deg, #f3f3f3, #d9d9d9);
+    border-left: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.foodplanner__recipe-name {
+    width: 100%;
+    hyphens: auto;
+    font-weight: 600;
+    /* margin-bottom: 1.5rem; */
+    padding-right: 1rem;
+}
+
+/* .foodplanner__recipe-tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.foodplanner__recipe-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .75rem;
+    color: #3e3e3e;
+    border: 1px solid #3e3e3e;
+    width: fit-content;
+    padding: .125rem .25rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+}
+
+.foodplanner__recipe-tag--vegetable {
+    background-color: rgb(81, 136, 42);
+}
+
+.foodplanner__recipe-tag--rice {
+    background-color: rgb(255, 255, 255);
+}
+
+.foodplanner__recipe-tag--noodle {
+    background-color: rgb(171, 111, 28);
+}
+
+.foodplanner__recipe-tag--meat {
+    background-color: rgb(195, 28, 28);
+}
+
+.foodplanner__recipe-tag--lentils {
+    background-color: rgb(217, 98, 29);
+}
+
+.foodplanner__recipe-tag--salad {
+    background-color: rgb(7, 132, 47);
+}
+
+.foodplanner__recipe-tag--other {
+    background-color: rgb(86, 86, 86);
+} */
+
+.foodplanner__recipe-calories {
+    margin-top: 1rem;
+}
+
+.foodplanner__recipe-description {
+    margin-top: 1rem;
+}
+
+.foodplanner__details-toggle {
+    margin-top: 1rem;
+    
+    &::before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color: #dcdcdc;
+        margin-bottom: 1rem;
+    }
+}
+
+.foodplanner__ingredient-headline {
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 64em) {
+    .container {
+        max-width: 75rem;
+    }
+}

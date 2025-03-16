@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodplan</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <section class="foodplanner__filter">
+            <h2 class="foodplanner__filter-headline">Rezepte filtern</h2>
+
+            <form action="" class="foodplanner__form">
+                <fieldset class="foodplanner__fieldset">
+                    <label for="search" class="foodplanner__input-label">Suche</label>
+                    <input type="search" name="search" id="search" class="foodplanner__search" placeholder="Ich suche...">
+                </fieldset>
+
+                <fieldset class="foodplanner__fieldset foodplanner__fieldset--select">
+                <label for="categories" class="foodplanner__input-label">Kategorien</label>
+                    <select name="category" id="categories" class="foodplanner__select">
+                        <option value="all" id="category_all">Alles</option>
+                        <option value="vegetable" id="category_vegetable">Gemüse</option>
+                        <option value="noodle" id="category_noodle">Nudeln</option>
+                        <option value="rice" id="category_rice">Reis</option>
+                        <option value="salad" id="category_salad">Salat</option>
+                        <option value="other" id="category_other">Sonstiges</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="foodplanner__submit">Suchen</button>
+            </form>
+        </section>
+
+        <section class="foodplanner__results">
+            <h2 class="foodplanner__results-headline">Suchergebnisse</h2>
+
+            <ul id="foodplanner__list" class="foodplanner__list"></ul>
+        </section>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,569 @@
+[
+    {
+        "name": "Buddypfanne",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "2 Dosen Kidney Bohnen",
+            "1": "2 Dosen Baked Beans",
+            "2": "2 Zehen Knoblauch",
+            "3": "2 Zwiebeln",
+            "4": "2 Dose Tomaten stückig",
+            "5": "Chilliflocken"
+        },
+        "url": "https://www.chefkoch.de/rezepte/2913871443644048/Buddypfanne.html?utm_source=whatsapp&utm_campaign=sharing_rds_ck_web&utm_medium=sharinglink"
+    },
+    {
+        "name": "Burger",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    },
+    {
+        "name": "Caesar Salad Wrap",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": true,
+            "other": false
+        },
+        "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/"
+    },
+    {
+        "name": "Erdnussbutter Nudeln",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://veggie-einhorn.de/nudeln-mit-erdnussbutter-sauce/#rezeptbox"
+    },
+    {
+        "name": "Flammkuchen",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    },
+    {
+        "name": "Flammkuchen mit Birne, Gorgonzola und Walnuss",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true
+        },
+        "url": "https://www.rewe.de/rezepte/flammkuchen-birne-gorgonzola-walnuss/"
+    },
+    {
+        "name": "Hähnchen Reis Pfanne",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/"
+    },
+    {
+        "name": "Hähnchen Salat mit Avocado",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": true,
+            "other": false
+        },
+        "url": "https://www.rewe.de/rezepte/haehnchen-salat-avocado/"
+    },
+    {
+        "name": "Indisches rote Linsen dal",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": true,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://biancazapatka.com/de/rotes-linsen-dal/"
+    },
+    {
+        "name": "Kartoffelbrei mit Fischstäbchen und Rahmsoße",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Kartoffelgratin",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.lecker.de/kartoffelgratin-das-klassische-rezept-72512.html"
+    },
+    {
+        "name": "Kartoffelsuppe",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html"
+    },
+    {
+        "name": "Knoblauch Gnocci",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Knödel mit Rahmsoße",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    },
+    {
+        "name": "Kroketten mit Veggie-Schnitzel",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Käsespätzle",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://emmikochteinfach.de/kaesespaetzle-rezept-mit-roestzwiebeln/"
+    },
+    {
+        "name": "Kürbissuppe",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.lecker.de/klassische-kuerbissuppe-mit-hokkaido-79938.html"
+    },
+    {
+        "name": "Maultaschengratin",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.lidl-kochen.de/rezeptwelt/maultaschen-gratin-252542"
+    },
+    {
+        "name": "Mediterrane Zuchini Reis Pfanne mit Feta",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/1147671221053389/Mediterrane-Zucchini-Reis-Pfanne-mit-Feta.html"
+    },
+    {
+        "name": "Mozzarella Hähnchen in Basilikum Sahnesoße mit Reis",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/1844061298739441/Mozzarella-Haehnchen-in-Basilikum-Sahnesauce.html"
+    },
+    {
+        "name": "Nudelauflauf mit Schinken und Erbsen",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.lidl-kochen.de/rezeptwelt/klassischer-nudelauflauf-mit-schinken-und-erbsen-150810?ref=search"
+    },
+    {
+        "name": "Nudeln mit Pesto",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "One Port Orza mit Spinat und Feta",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://eat.de/rezept/one-pot-orzo-mit-spinat-und-feta/"
+    },
+    {
+        "name": "Pilzrisotto",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/139801060346833/Champignon-Risotto.html"
+    },
+    {
+        "name": "Pizza",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    },
+    {
+        "name": "Reispfanne mit Gemüse",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.rewe.de/rezepte/reispfanne-gemuese/"
+    },
+    {
+        "name": "Rote Linsen Curry mit Süßkartoffeln",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": true,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/3023041455110341/Rote-Linsen-Curry-mit-Suesskartoffeln.html"
+    },
+    {
+        "name": "Salat mit Hähnchen",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": true,
+            "other": false
+        },
+        "url": "https://eat.de/rezept/haehnchensalat/"
+    },
+    {
+        "name": "Salatbowl",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": true,
+            "other": false
+        },
+        "url": "https://www.tiktok.com/@schmaleschulter/video/7432323353823677718?_r=1&_t=8r3VoWIW9SK"
+    },
+    {
+        "name": "Schnelle Spätzlepfanne mit Pilzen und lauch",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/616991161758535/Schnelle-Spaetzlepfanne-mit-Pilzen-und-Lauch.html"
+    },
+    {
+        "name": "Sommerlicher Nudelsalat",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/1722041281270634/Sommerlicher-Nudelsalat.html"
+    },
+    {
+        "name": "Spaghetti Bolognese",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Spaghetti Carbonara",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Spaghetti al Assasina",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "none"
+    },
+    {
+        "name": "Spinat Tomaten Lasagne",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html"
+    },
+    {
+        "name": "Süßkartoffel Kichererbsen Eintopf",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://vm.tiktok.com/ZGd1U4qDk/"
+    },
+    {
+        "name": "Tagliatelle mit Spinat und Hähnchen",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.lidl-kochen.de/rezeptwelt/tagliatelle-mit-spinat-und-haehnchen-144482"
+    },
+    {
+        "name": "Tomaten One Port Orzo",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://eat.de/rezept/one-pot-orzo-pasta/"
+    },
+    {
+        "name": "Tomaten-Reis-Pfanne mit Mozzarella",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.rewe.de/rezepte/tomaten-reis-pfanne-mozzarella/"
+    },
+    {
+        "name": "Tortellini Auflauf",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.einfachkochen.de/rezepte/tortellini-auflauf-das-beste-rezept"
+    },
+    {
+        "name": "Vegetarisches Chicken Korma mit Reis",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "url": "https://www.chefkoch.de/rezepte/3274371486501413/Veganes-Soja-Chicken-Korma.html"
+    },
+    {
+        "name": "Winzerwecken",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    },
+    {
+        "name": "Wraps",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": true
+        },
+        "url": "none"
+    }
+]
