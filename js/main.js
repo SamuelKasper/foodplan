@@ -166,9 +166,13 @@ function buildRecipesHtml(data){
     copyBtn.addEventListener("click", (e) => {
       let element = e.target;
       let list = element.previousElementSibling;
-      console.log(list);
-      var textToCopy = Array.from(list).map(item => item.textContent).join('\n');
-      navigator.clipboard.writeText(textToCopy).then(function() {
+      let listItems = list.querySelectorAll('li');
+      let content = "";
+      listItems.forEach(function(item) {
+        content += item.textContent + "\n";
+      });
+
+      navigator.clipboard.writeText(content).then(function() {
         alert('Inhalte erfolgreich kopiert!');
       }).catch(function(error) {
         console.error('Fehler beim Kopieren:', error);
