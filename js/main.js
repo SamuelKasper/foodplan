@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", (event) => {
   .then((data) => {
     buildRecipesHtml(data);
   })
+
+  handlePopup();
 });
 
 // Gets the data from json file
@@ -122,14 +124,20 @@ function buildRecipesHtml(data){
     // Calories
     let kaloriesEl = document.createElement("p");
     kaloriesEl.classList.add("foodplanner__recipe-calories");
-    kaloriesEl.innerText = 'Portion: ' + '634kcal';
-    detailsEl.append(kaloriesEl);
+    let cal = entry.calories;
+    if(cal){
+      kaloriesEl.innerText = 'Portion: ' + cal;
+      detailsEl.append(kaloriesEl);
+    }
     
     // Beschreibung
     let descriptionEl = document.createElement("p");
     descriptionEl.classList.add("foodplanner__recipe-description");
-    descriptionEl.innerText = 'Hier könnte eine Anmerkung stehen..';
-    detailsEl.append(descriptionEl);
+    let description = entry.description;
+    if(description){
+      descriptionEl.innerText = description;
+      detailsEl.append(descriptionEl);
+    }
 
     // Zutaten
     if(entry.ingredients && Object.keys(entry.ingredients).length > 0){
@@ -150,7 +158,61 @@ function buildRecipesHtml(data){
       detailsEl.append(ingredientList);
     }
 
+    // Button wrapper
+    let buttonWrapperEl = document.createElement("div");
+    buttonWrapperEl.classList.add("foodplanner__recipe-buttons");
+
+    // Copy Button
+    let copyBtn = document.createElement("button");
+    copyBtn.classList.add("foodplanner__recipe-button");
+    copyBtn.innerText = "Kopieren";
+    buttonWrapperEl.append(copyBtn);
+
+    // Rezept bearbeiten Button
+    let editBtn = document.createElement("button");
+    editBtn.classList.add("foodplanner__recipe-button");
+    editBtn.innerText = "Bearbeiten";
+    buttonWrapperEl.append(editBtn);
+
+    detailsEl.append(buttonWrapperEl);
+
     // Build html
     resultList.append(listItem);
   });
 }
+
+function handlePopup(){
+  const dialog = document.querySelector("dialog");
+  const openButton = document.getElementById("popup__open");
+  const closeButton = document.getElementById("popup__close");
+
+  openButton.addEventListener("click", () => {
+    dialog.showModal();
+  });
+
+  closeButton.addEventListener("click", () => {
+    dialog.close();
+  });
+}
+
+async function chp() {
+  let p = prompt("");
+  p = await hashString(p);
+  if (p != "5baba4fb94157978d3d26ed9bbf5c8a4754a27377352332a1865f1a98f5c9beb") {
+    chp();
+  }
+}
+
+async function hashString(text) {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(text);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  return Array.from(new Uint8Array(hashBuffer))
+              .map(byte => byte.toString(16).padStart(2, "0"))
+              .join("");
+}
+
+fetch('/etc/secrets/AUTH')
+  .then(response => response.text())
+  .then(text => console.log(text))
+  .catch(error => console.error('Fehler beim Laden der Datei:', error));
