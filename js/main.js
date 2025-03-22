@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     buildRecipesHtml(data);
   })
 
-  handlePopup();
+  // handlePopup();
 });
 
 // Gets the data from json file
