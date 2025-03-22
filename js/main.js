@@ -158,15 +158,22 @@ function buildRecipesHtml(data){
       detailsEl.append(ingredientList);
     }
 
-    // Button wrapper
-    let buttonWrapperEl = document.createElement("div");
-    buttonWrapperEl.classList.add("foodplanner__recipe-buttons");
-
     // Copy Button
     let copyBtn = document.createElement("button");
     copyBtn.classList.add("foodplanner__recipe-button");
     copyBtn.innerText = "Kopieren";
-    buttonWrapperEl.append(copyBtn);
+    detailsEl.append(copyBtn);
+    copyBtn.addEventListener("click", (e) => {
+      let element = e.target;
+      let list = element.previousElementSibling;
+      console.log(list);
+      var textToCopy = Array.from(list).map(item => item.textContent).join('\n');
+      navigator.clipboard.writeText(textToCopy).then(function() {
+        alert('Inhalte erfolgreich kopiert!');
+      }).catch(function(error) {
+        console.error('Fehler beim Kopieren:', error);
+      });
+    });
 
     // Rezept bearbeiten Button
     // let editBtn = document.createElement("button");
@@ -174,12 +181,27 @@ function buildRecipesHtml(data){
     // editBtn.innerText = "Bearbeiten";
     // buttonWrapperEl.append(editBtn);
 
-    detailsEl.append(buttonWrapperEl);
-
     // Build html
     resultList.append(listItem);
   });
 }
+
+function copyToClipboard() {
+  // Hole alle Listenelemente
+  var listItems = document.querySelectorAll('#myList li');
+  
+  // Erstelle einen Text-String aus den Listenelementen
+  var textToCopy = Array.from(listItems).map(item => item.textContent).join('\n');
+  
+  // Versuche den Text in die Zwischenablage zu kopieren
+  navigator.clipboard.writeText(textToCopy).then(function() {
+    alert('Inhalte erfolgreich kopiert!');
+  }).catch(function(error) {
+    console.error('Fehler beim Kopieren:', error);
+  });
+}
+
+
 
 // function handlePopup(){
 //   const dialog = document.querySelector("dialog");
