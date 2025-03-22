@@ -173,7 +173,6 @@ function buildRecipesHtml(data){
       });
 
       navigator.clipboard.writeText(content).then(function() {
-        showNotification();
       }).catch(function(error) {
         console.error('Fehler beim Kopieren:', error);
       });
@@ -189,22 +188,6 @@ function buildRecipesHtml(data){
     resultList.append(listItem);
   });
 }
-
-function showNotification() {
-  let notification = document.getElementById('notification');
-  notification.style.display = 'block';
-  notification.style.opacity = 1;
-
-  // Hide the notification after 3 seconds
-  setTimeout(function() {
-    notification.style.opacity = 0;
-    setTimeout(function() {
-      notification.style.display = 'none';
-    }, 300); // Wait for the fade-out transition to finish
-  }, 3000); // 3 seconds
-}
-
-
 
 // function handlePopup(){
 //   const dialog = document.querySelector("dialog");
