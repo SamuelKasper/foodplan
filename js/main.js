@@ -173,7 +173,7 @@ function buildRecipesHtml(data){
       });
 
       navigator.clipboard.writeText(content).then(function() {
-        alert('Inhalte erfolgreich kopiert!');
+        showNotification();
       }).catch(function(error) {
         console.error('Fehler beim Kopieren:', error);
       });
@@ -190,19 +190,18 @@ function buildRecipesHtml(data){
   });
 }
 
-function copyToClipboard() {
-  // Hole alle Listenelemente
-  var listItems = document.querySelectorAll('#myList li');
-  
-  // Erstelle einen Text-String aus den Listenelementen
-  var textToCopy = Array.from(listItems).map(item => item.textContent).join('\n');
-  
-  // Versuche den Text in die Zwischenablage zu kopieren
-  navigator.clipboard.writeText(textToCopy).then(function() {
-    alert('Inhalte erfolgreich kopiert!');
-  }).catch(function(error) {
-    console.error('Fehler beim Kopieren:', error);
-  });
+function showNotification() {
+  let notification = document.getElementById('notification');
+  notification.style.display = 'block';
+  notification.style.opacity = 1;
+
+  // Hide the notification after 3 seconds
+  setTimeout(function() {
+    notification.style.opacity = 0;
+    setTimeout(function() {
+      notification.style.display = 'none';
+    }, 300); // Wait for the fade-out transition to finish
+  }, 3000); // 3 seconds
 }
 
 
