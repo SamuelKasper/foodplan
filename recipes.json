@@ -1,6 +1,8 @@
 [
     {
         "name": "Buddypfanne",
+        "description": "Für 6 Personen",
+        "calories": "788 kcal",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -22,6 +24,19 @@
     },
     {
         "name": "Burger",
+        "description": "Für 4 Burger",
+        "calories": "",
+        "ingredients": {
+            "0": "4 Brötchen",
+            "1": "4 Patties",
+            "2": "Burger Soße",
+            "3": "1 Gurke",
+            "4": "1 Salat",
+            "5": "1 Tomate",
+            "6": "4 Schmelzkäse",
+            "7": "opt. Avocado",
+            "8": "opt. Zwiebeln"
+        },
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -35,6 +50,8 @@
     },
     {
         "name": "Caesar Salad Wrap",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -43,11 +60,26 @@
             "meat": false,
             "salad": true,
             "other": false
+        },
+        "ingredients": {
+            "0": "2 Knoblauchzehen",
+            "1": "200g Frischkäse",
+            "2": "1 EL Mayonnaise",
+            "3": "2 TL Senf",
+            "4": "2 EL Zitronensaft",
+            "5": "1.5 EL Wasser",
+            "6": "Salz, Pfeffer",
+            "7": "Römersalat-Herz",
+            "8": "40g Parmesan",
+            "9": "Olivenöl",
+            "10": "300g Hähnchenbrustfilet"
         },
         "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/"
     },
     {
         "name": "Erdnussbutter Nudeln",
+        "description": " Für 3 Personen",
+        "calories": "582 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -56,11 +88,27 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "250 g Mie Nudeln ohne Ei oder andere Nudeln (z.B. Spaghetti)",
+            "1": "3 bis 4 Frühlingszwiebeln",
+            "2": "1 bis 2 Zehen Knoblauch",
+            "3": "1 bis 2 cm frischer Ingwer",
+            "4": "3 EL cremige Erdnussbutter",
+            "5": "3 EL Sojasauce",
+            "6": "2 EL geschmacksneutrales Öl",
+            "7": "3 EL Agavendicksaft oder Ahornsirup",
+            "8": "2 EL Reisessig",
+            "9": "Optional: Sriracha Sauce",
+            "10": "Optional: Sesamsamen oder Erdnüsse",
+            "11": "Optional: Chiliflocken oder frische Chili"
         },
         "url": "https://veggie-einhorn.de/nudeln-mit-erdnussbutter-sauce/#rezeptbox"
     },
     {
         "name": "Flammkuchen",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -69,11 +117,21 @@
             "meat": false,
             "salad": false,
             "other": true
+        },
+        "ingredients": {
+            "0": "500g Mehl",
+            "1": "150g Speck",
+            "2": "2 Zwiebeln",
+            "3": "1 Becher Creme Fraiche",
+            "5": "Salz",
+            "6": "Pfeffer"
         },
         "url": "none"
     },
     {
         "name": "Flammkuchen mit Birne, Gorgonzola und Walnuss",
+        "description": "Für 2 Personen",
+        "calories": "914 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -82,11 +140,22 @@
             "meat": false,
             "salad": false,
             "other": true
+        },
+        "ingredients": {
+            "0": "1 Pck. Flammkuchenteig (260 g)",
+            "1": "1 reife Birne",
+            "2": "75 g Gorgonzola",
+            "3": "50 g Walnüsse",
+            "4": "150 g Crème fraîche",
+            "5": "Salz",
+            "6": "Pfeffer"
         },
         "url": "https://www.rewe.de/rezepte/flammkuchen-birne-gorgonzola-walnuss/"
     },
     {
         "name": "Hähnchen Reis Pfanne",
+        "description": "Für 2 Portionen",
+        "calories": "540",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -95,11 +164,24 @@
             "meat": true,
             "salad": false,
             "other": false
+        },
+       "ingredients": {
+            "0": "1 Pck. Uncle Ben's Express Natur-Reis",
+            "1": "1 Kohlrabi",
+            "2": "1 Zwiebel",
+            "3": "250 g Hähnchenbrustfilet",
+            "4": "2 EL Rapsöl",
+            "5": "Salz",
+            "6": "Pfeffer",
+            "7": "200 g TK-Erbsen",
+            "8": "250 ml Gemüsebrühe"
         },
         "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/"
     },
     {
         "name": "Hähnchen Salat mit Avocado",
+        "description": "Für 4 Portionen",
+        "calories": "640 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -108,11 +190,29 @@
             "meat": true,
             "salad": true,
             "other": false
+        },
+        "ingredients": {
+            "0": "600 g Hähnchenbrust",
+            "1": "2 Limetten",
+            "2": "3 EL Olivenöl",
+            "3": "1 TL Chiliflocken",
+            "4": "1 TL gemahlener Kreuzkümmel",
+            "5": "0,5 Eisbergsalat",
+            "6": "200 g Cherry-Tomaten",
+            "7": "1 Dose Mais (285 g)",
+            "8": "1 Dose Kidneybohnen (255 g)",
+            "9": "1 kleine rote Zwiebel",
+            "10": "2 Avocados",
+            "11": "1 grüne Chilischote",
+            "12": "0,5 Bund Koriander",
+            "13": "150 g Feta"
         },
         "url": "https://www.rewe.de/rezepte/haehnchen-salat-avocado/"
     },
     {
         "name": "Indisches rote Linsen dal",
+        "description": "Für 4 Portionen",
+        "calories": "458 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -121,11 +221,30 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "1-2 EL Kokosöl oder Olivenöl zum Braten",
+            "1": "2 Zwiebeln, gewürfelt",
+            "2": "4 Knoblauchzehen, gehackt",
+            "3": "2 TL Ingwer, gerieben (oder mehr nach Geschmack)",
+            "4": "1 TL Kurkuma",
+            "5": "1 TL Koriander",
+            "6": "1 TL Kreuzkümmel",
+            "7": "1 TL rotes Paprikapulver",
+            "8": "1 TL Garam Masala oder anderes Currypulver nach Geschmack",
+            "9": "300 g rote Linsen",
+            "10": "780 ml Gemüsebrühe",
+            "11": "250 ml Kokosnussmilch",
+            "12": "250 ml passierte Tomaten oder gehackte Tomaten (optional)",
+            "13": "Salz und Pfeffer nach Geschmack",
+            "14": "Reis"
         },
         "url": "https://biancazapatka.com/de/rotes-linsen-dal/"
     },
     {
         "name": "Kartoffelbrei mit Fischstäbchen und Rahmsoße",
+        "description": "Für 2 Personen",
+        "calories": "",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -134,11 +253,20 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "1 Packung Fischstäbchen",
+            "1": "600g Mehligkochende Kartoffeln",
+            "2": "Muskat, Salz, Pfeffer",
+            "3": "Rahmsoße",
+            "4": "200ml Sahne"
         },
         "url": "none"
     },
     {
         "name": "Kartoffelgratin",
+        "description": "Für 4 Portionen",
+        "calories": "318 kcal",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -147,11 +275,21 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "1 TL Butter für die Form",
+            "1": "800 g vorwiegend festkochende Kartoffeln",
+            "2": "200 g Schlagsahne",
+            "3": "Salz",
+            "4": "Pfeffer",
+            "5": "frisch geriebene Muskatnuss"
         },
         "url": "https://www.lecker.de/kartoffelgratin-das-klassische-rezept-72512.html"
     },
     {
         "name": "Kartoffelsuppe",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -160,11 +298,20 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "1 kg Kartoffeln",
+            "1": "4 Karotten",
+            "2": "1 Bund Suppengrün",
+            "3": "2 EL Gemüsebrühepulver",
+            "4": "3 Paar Wiener Würstchen"
         },
         "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html"
     },
     {
         "name": "Knoblauch Gnocci",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -174,10 +321,25 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
+        },
         "url": "none"
     },
     {
         "name": "Knödel mit Rahmsoße",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -187,10 +349,25 @@
             "salad": false,
             "other": true
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
+        },
         "url": "none"
     },
     {
         "name": "Kroketten mit Veggie-Schnitzel",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -200,10 +377,25 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
+        },
         "url": "none"
     },
     {
         "name": "Käsespätzle",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -213,10 +405,24 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "1000 g fertige Spätzle aus dem Kühlregal - alternativ selbstgemacht",
+            "1": "300 g Zwiebeln",
+            "2": "250 g würziger Hartkäse am Stück - z.B. Greyerzer, Appenzeller, Emmentaler oder Allgäuer Bergkäse",
+            "3": "3 EL Weizenmehl",
+            "4": "75 g Sahne",
+            "5": "50 g Butterschmalz",
+            "6": "1/2 Bund Schnittlauch - zum Garnieren",
+            "7": "1 Prise Muskatnuss",
+            "8": "Salz",
+            "9": "schwarzer Pfeffer aus der Mühle"
+          },
         "url": "https://emmikochteinfach.de/kaesespaetzle-rezept-mit-roestzwiebeln/"
     },
     {
         "name": "Kürbissuppe",
+        "description": "Für 4 Portionen",
+        "calories": "260 kcal",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -226,10 +432,23 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "1 Hokkaido-Kürbis (ca. 800 g)",
+            "1": "1 Zwiebel",
+            "2": "1 Knoblauchzehe",
+            "3": "2 EL Butter",
+            "4": "1 l Gemüsebrühe",
+            "5": "Salz",
+            "6": "Pfeffer",
+            "7": "100 ml Schlagsahne",
+            "8": "Petersilie und Chiliflocken zum Garnieren"
+        },
         "url": "https://www.lecker.de/klassische-kuerbissuppe-mit-hokkaido-79938.html"
     },
     {
         "name": "Maultaschengratin",
+        "description": "Für 4 Portionen",
+        "calories": "685 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -238,11 +457,24 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "300 g Spinat (am besten über Nacht im Kühlschrank auftauen lassen)",
+            "1": "1 Zwiebel",
+            "2": "250 g Maultaschen",
+            "3": "500 ml Gemüsebrühe",
+            "4": "200 ml Schlagsahne",
+            "5": "2 Eier",
+            "6": "150 g geriebener Käse (z.B. Emmentaler oder Gouda)",
+            "7": "Salz",
+            "8": "Pfeffer"
         },
         "url": "https://www.lidl-kochen.de/rezeptwelt/maultaschen-gratin-252542"
     },
     {
         "name": "Mediterrane Zuchini Reis Pfanne mit Feta",
+        "description": "Für 4 Portionen",
+        "calories": "678 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -251,11 +483,33 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "2 Zucchini",
+            "1": "1 kleine Aubergine",
+            "2": "1 rote Paprikaschote",
+            "3": "1 Knoblauchzehe",
+            "4": "1 große Zwiebel",
+            "5": "1 Chilischote",
+            "6": "250 g Langkornreis",
+            "7": "600 ml Gemüsebrühe",
+            "8": "400 ml Weißwein",
+            "9": "1 EL rosenscharfes Paprikapulver",
+            "10": "2 EL edelsüßes Paprikapulver",
+            "11": "4 EL Tomatenmark",
+            "12": "1 EL Balsamico-Essig",
+            "13": "Salz und Pfeffer nach Bedarf",
+            "14": "300 g Feta-Käse",
+            "15": "Öl zum Anbraten",
+            "16": "Schmand nach Bedarf",
+            "17": "Thymian nach Geschmack"
         },
         "url": "https://www.chefkoch.de/rezepte/1147671221053389/Mediterrane-Zucchini-Reis-Pfanne-mit-Feta.html"
     },
     {
         "name": "Mozzarella Hähnchen in Basilikum Sahnesoße mit Reis",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -264,11 +518,26 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "4 Hühnerbrustfilets",
+            "1": "Salz und Pfeffer",
+            "2": "1 EL Öl",
+            "3": "250 g Cocktailtomaten",
+            "4": "½ Topf Basilikum",
+            "5": "200 ml Sahne",
+            "6": "100 g Sahneschmelzkäse",
+            "7": "Fett für die Form",
+            "8": "125 g Mozzarella",
+            "9": "Parmesan (optional)",
+            "10": "1 EL Kräuterbutter (optional)"
         },
         "url": "https://www.chefkoch.de/rezepte/1844061298739441/Mozzarella-Haehnchen-in-Basilikum-Sahnesauce.html"
     },
     {
         "name": "Nudelauflauf mit Schinken und Erbsen",
+        "description": "Für 4 Portionen",
+        "calories": "929 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -277,11 +546,25 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "500 g Fusilli",
+            "1": "250 g tiefgefrorene Erbsen",
+            "2": "200 g Kochschinken",
+            "3": "1 gelbe Zwiebel",
+            "4": "1 Knoblauchzehe",
+            "5": "2 EL Butter",
+            "6": "2 EL Mehl",
+            "7": "500 ml Milch",
+            "8": "200 g geriebener Käse",
+            "9": "Salz und Pfeffer"
         },
         "url": "https://www.lidl-kochen.de/rezeptwelt/klassischer-nudelauflauf-mit-schinken-und-erbsen-150810?ref=search"
     },
     {
         "name": "Nudeln mit Pesto",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -290,11 +573,17 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "Nudeln nach Wahl",
+            "1": "Pesto nach Wahl"
         },
         "url": "none"
     },
     {
         "name": "One Port Orza mit Spinat und Feta",
+        "description": "Für 4 Portionen",
+        "calories": "620 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -304,10 +593,28 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "2 Zwiebel",
+            "1": "4 Knoblauchzehen",
+            "2": "2 EL Olivenöl",
+            "3": "2 TL Tomatenmark",
+            "4": "300 g Orzo (Reisnudeln)",
+            "5": "200 ml Sahne",
+            "6": "800 ml Gemüsebrühe",
+            "7": "300 g Kirschtomaten",
+            "8": "400 g Babyspinat",
+            "9": "100 g geriebener Emmentaler",
+            "10": "200 g Feta",
+            "11": "Salz",
+            "12": "Pfeffer",
+            "13": "Muskatnuss"
+        },
         "url": "https://eat.de/rezept/one-pot-orzo-mit-spinat-und-feta/"
     },
     {
         "name": "Pilzrisotto",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -317,10 +624,26 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "300 g Risottoreis",
+            "1": "400 g Champignons",
+            "2": "2 Schalotten",
+            "3": "1 Knoblauchzehe",
+            "4": "5 EL Olivenöl",
+            "5": "375 ml trockener Weißwein",
+            "6": "750 ml Gemüsebrühe",
+            "7": "100 g Rucola",
+            "8": "1 EL Butter",
+            "9": "75 g frisch geriebener Parmesan",
+            "10": "Salz",
+            "11": "Pfeffer"
+        },
         "url": "https://www.chefkoch.de/rezepte/139801060346833/Champignon-Risotto.html"
     },
     {
         "name": "Pizza",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -330,23 +653,51 @@
             "salad": false,
             "other": true
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": ""
+        },
         "url": "none"
     },
     {
-        "name": "Reispfanne mit Gemüse",
+        "name": "Rigatoni al Forno",
+        "description": "Für 8 Personen",
+        "calories": "874 kcal",
         "tags": {
             "vegetable": false,
-            "noodle": false,
-            "rice": true,
+            "noodle": true,
+            "rice": false,
             "lentils": false,
             "meat": false,
             "salad": false,
             "other": false
         },
-        "url": "https://www.rewe.de/rezepte/reispfanne-gemuese/"
+        "ingredients": {
+            "0": "2 Zwiebel",
+            "1": "2 Knoblauchzehe",
+            "2": "300g Kochschinken",
+            "3": "400g Hackfleisch",
+            "4": "Rapsöl",
+            "5": "500g Rigatoni",
+            "6": "6EL Tomatenmark",
+            "7": "400ml Gemüsebrühe",
+            "8": "Oregano, Basilikum, Salz, Pfeffer",
+            "9": "400ml Sahne",
+            "10": "100g Parmesan",
+            "11": "200g Erbsen",
+            "12": "200g Mozzarella",
+            "13": "200g Edamer"
+        },
+        "url": "https://www.rewe.de/rezepte/rigatoni-al-forno/"
     },
     {
         "name": "Rote Linsen Curry mit Süßkartoffeln",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -356,10 +707,29 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "2 Süßkartoffeln",
+            "1": "1 Paprikaschote",
+            "2": "1 Zwiebel",
+            "3": "2 Knoblauchzehen",
+            "4": "2 EL Olivenöl",
+            "5": "2 EL Tomatenmark",
+            "6": "1 TL Currypulver",
+            "7": "1 TL Kreuzkümmel",
+            "8": "1 TL Kurkumapulver",
+            "9": "1 Prise Chilipulver",
+            "10": "200 g rote Linsen",
+            "11": "400 ml Kokosmilch",
+            "12": "500 ml Gemüsebrühe",
+            "13": "Salz",
+            "14": "Pfeffer"
+        },
         "url": "https://www.chefkoch.de/rezepte/3023041455110341/Rote-Linsen-Curry-mit-Suesskartoffeln.html"
     },
     {
         "name": "Salat mit Hähnchen",
+        "description": "Für 4 Personen",
+        "calories": "236 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -369,10 +739,27 @@
             "salad": true,
             "other": false
         },
+        "ingredients": {
+            "0": "400 g Hähncheninnenbrustfilets",
+            "1": "½ TL Oregano",
+            "2": "½ TL Paprikapulver, edelsüß",
+            "3": "1 EL Rapsöl",
+            "4": "Salz und Pfeffer",
+            "5": "250 g Blattsalat-Mix",
+            "6": "200 g Kirschtomaten",
+            "7": "100 g Naturjoghurt",
+            "8": "50 g Crème fraîche",
+            "9": "½ Bio-Zitrone",
+            "10": "1 EL Agavendicksaft",
+            "11": "1 TL Kräuter der Provence",
+            "12": "Kresse"
+        },
         "url": "https://eat.de/rezept/haehnchensalat/"
     },
     {
         "name": "Salatbowl",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -382,10 +769,25 @@
             "salad": true,
             "other": false
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
+        },
         "url": "https://www.tiktok.com/@schmaleschulter/video/7432323353823677718?_r=1&_t=8r3VoWIW9SK"
     },
     {
         "name": "Schnelle Spätzlepfanne mit Pilzen und lauch",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -394,11 +796,28 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "500 g Spätzle (aus dem Kühlregal oder selbstgemacht)",
+            "1": "1 Lauchstange",
+            "2": "6 mittelgroße braune Champignons",
+            "3": "1 Schalotte",
+            "4": "1 EL Butter",
+            "5": "1 Schuss Apfelschorle",
+            "6": "½ Becher Sahne (ca. 100 ml)",
+            "7": "1 Handvoll geriebener Bergkäse",
+            "8": "Salz",
+            "9": "Pfeffer",
+            "10": "1 EL edelsüßes Paprikapulver",
+            "11": "1 TL rosenscharfes Paprikapulver",
+            "12": "1 EL Tomatenmark"
         },
         "url": "https://www.chefkoch.de/rezepte/616991161758535/Schnelle-Spaetzlepfanne-mit-Pilzen-und-Lauch.html"
     },
     {
         "name": "Sommerlicher Nudelsalat",
+        "description": "Für 8 Personen",
+        "calories": "651 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -407,11 +826,32 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "250 g Nudeln (z.B. Fusilli)",
+            "1": "250 g Cocktailtomaten",
+            "2": "2 Frühlingszwiebeln",
+            "3": "250 g Feta-Käse",
+            "4": "150 g getrocknete Tomaten in Öl",
+            "5": "100 g schwarze Oliven, in Scheiben",
+            "6": "1 mittelgroße Zucchini",
+            "7": "2 EL Sonnenblumenkerne oder Körnermix",
+            "8": "8 EL heller Balsamessig",
+            "9": "8 EL Olivenöl",
+            "10": "Salz",
+            "11": "Pfeffer",
+            "12": "Oregano",
+            "13": "Knoblauch",
+            "14": "100 ml Wasser",
+            "15": "1 TL Gemüsebrühe",
+            "16": "1 gestrichener TL Senf"
         },
         "url": "https://www.chefkoch.de/rezepte/1722041281270634/Sommerlicher-Nudelsalat.html"
     },
     {
         "name": "Spaghetti Bolognese",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -420,11 +860,26 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
         },
         "url": "none"
     },
     {
         "name": "Spaghetti Carbonara",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -433,11 +888,26 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
         },
         "url": "none"
     },
     {
         "name": "Spaghetti al Assasina",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -446,11 +916,26 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
         },
         "url": "none"
     },
     {
         "name": "Spinat Tomaten Lasagne",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -460,10 +945,31 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "600 g Blattspinat, tiefgekühlt mit Rahm",
+            "1": "2 große Karotten",
+            "2": "7 mittelgroße Champignons",
+            "3": "1 große Zwiebel",
+            "4": "5 EL Milch",
+            "5": "100 g Kräuterfrischkäse",
+            "6": "1 gestrichener EL Gemüsebrühepulver",
+            "7": "2 Knoblauchzehen",
+            "8": "Salz",
+            "9": "Pfeffer",
+            "10": "Chilipulver",
+            "11": "3 EL Butter",
+            "12": "2 EL Mehl",
+            "13": "500 ml passierte Tomaten",
+            "14": "150 ml süße Sahne",
+            "15": "Lasagneplatten",
+            "16": "200 g geriebener Käse"
+        },
         "url": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html"
     },
     {
         "name": "Süßkartoffel Kichererbsen Eintopf",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -473,10 +979,25 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": "",
+            "10": ""
+        },
         "url": "https://vm.tiktok.com/ZGd1U4qDk/"
     },
     {
         "name": "Tagliatelle mit Spinat und Hähnchen",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -485,11 +1006,23 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "600 g Hähnchenbrustfilets",
+            "1": "300 g frischer Blattspinat",
+            "2": "500 g Tagliatelle",
+            "3": "1 Zwiebel",
+            "4": "150 ml Sahne",
+            "5": "1 EL Öl",
+            "6": "Salz",
+            "7": "Pfeffer"
         },
         "url": "https://www.lidl-kochen.de/rezeptwelt/tagliatelle-mit-spinat-und-haehnchen-144482"
     },
     {
         "name": "Tomaten One Port Orzo",
+        "description": "Für 4 Portionen",
+        "calories": "376 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -498,11 +1031,28 @@
             "meat": false,
             "salad": false,
             "other": false
+        },
+        "ingredients": {
+            "0": "2 Zwiebel",
+            "1": "8 Knoblauchzehen",
+            "2": "800 g Kirschtomaten",
+            "3": "2 EL Olivenöl",
+            "4": "2 EL Tomatenmark",
+            "5": "500 g Kritharaki (Orzo Pasta)",
+            "6": "1 Bio-Zitrone",
+            "7": "1000 ml Gemüsebrühe",
+            "8": "50 g Gratinkäse (optional)",
+            "9": "frischer Basilikum",
+            "10": "Salz",
+            "11": "Pfeffer",
+            "12": "Zucker"
         },
         "url": "https://eat.de/rezept/one-pot-orzo-pasta/"
     },
     {
         "name": "Tomaten-Reis-Pfanne mit Mozzarella",
+        "description": "Für 4 Portionen",
+        "calories": "585 kcal",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -512,10 +1062,28 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "50 g getrocknete Tomaten (in Öl)",
+            "1": "2 Knoblauchzehen",
+            "2": "1 Zwiebel",
+            "3": "4 reife Tomaten",
+            "4": "1 EL Olivenöl",
+            "5": "350 g Langkornreis",
+            "6": "500 ml Gemüsebrühe",
+            "7": "500 ml Tomatensaft",
+            "8": "2 TL Oregano",
+            "9": "2 Mozzarella-Kugeln",
+            "10": "20 g Basilikum",
+            "11": "20 g Pinienkerne",
+            "12": "Salz",
+            "13": "Pfeffer"
+        },
         "url": "https://www.rewe.de/rezepte/tomaten-reis-pfanne-mozzarella/"
     },
     {
         "name": "Tortellini Auflauf",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -525,10 +1093,28 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "400 g Tortellini (nach Wahl)",
+            "1": "2 Zwiebel",
+            "2": "2 Knoblauchzehen",
+            "3": "300 g Champignons",
+            "4": "3 Tomaten",
+            "5": "200 g Kochschinken",
+            "6": "4 EL Olivenöl",
+            "7": "50 ml Weißwein oder Gemüsebrühe",
+            "8": "200 ml Sahne",
+            "9": "1 Dose gehackte Tomaten (400 g)",
+            "10": "Salz",
+            "11": "Pfeffer",
+            "12": "getrocknete Kräuter (z. B. Oregano, Basilikum)",
+            "13": "250 g geriebener Käse"
+        },
         "url": "https://www.einfachkochen.de/rezepte/tortellini-auflauf-das-beste-rezept"
     },
     {
         "name": "Vegetarisches Chicken Korma mit Reis",
+        "description": "Für 4 Portionen",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -538,10 +1124,33 @@
             "salad": false,
             "other": false
         },
+        "ingredients": {
+            "0": "300 g Sojaschnetzel",
+            "1": "1 l Gemüsebrühe",
+            "2": "2 Dosen Kokosmilch",
+            "3": "3 TL rote Currypaste",
+            "4": "½ Tube Tomatenmark",
+            "5": "2 Zwiebeln",
+            "6": "4 Knoblauchzehen",
+            "7": "1 Stück Ingwer (ca. daumenlang)",
+            "8": "4 Nelken",
+            "9": "2 TL Salz",
+            "10": "1 TL Pfeffer",
+            "11": "2 TL Kurkuma",
+            "12": "2 TL Currypulver",
+            "13": "2 TL Kreuzkümmel",
+            "14": "Öl (am besten Kokosöl)",
+            "15": "n. B. Reis",
+            "16": "n. B. Naanbrote",
+            "17": "einige Mandelblättchen (geröstet)",
+            "18": "10 Stiele Koriander und/oder Basilikum"
+        },
         "url": "https://www.chefkoch.de/rezepte/3274371486501413/Veganes-Soja-Chicken-Korma.html"
     },
     {
         "name": "Winzerwecken",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -551,10 +1160,19 @@
             "salad": false,
             "other": true
         },
+        "ingredients": {
+            "0": "12 Aufbackbrötchen",
+            "1": "2 Becher Creme Fraiche",
+            "2": "Kochschinken oder Speck",
+            "3": "250g geriebener Käse",
+            "4": "Salz, Pfeffer"
+        },
         "url": "none"
     },
     {
         "name": "Wraps",
+        "description": "",
+        "calories": "",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -563,6 +1181,16 @@
             "meat": true,
             "salad": false,
             "other": true
+        },
+        "ingredients": {
+            "0": "Wraps",
+            "1": "250 g Cocktailtomaten",
+            "2": "1 Gurke",
+            "3": "Soße für Wrap",
+            "4": "500g Hähnchen oder 400g Hack",
+            "5": "1 Kopfsalat",
+            "6": "opt. kleine Dose Mais",
+            "7": "opt. Avocado"
         },
         "url": "none"
     }
