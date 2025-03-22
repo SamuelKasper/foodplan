@@ -169,10 +169,10 @@ function buildRecipesHtml(data){
     buttonWrapperEl.append(copyBtn);
 
     // Rezept bearbeiten Button
-    let editBtn = document.createElement("button");
-    editBtn.classList.add("foodplanner__recipe-button");
-    editBtn.innerText = "Bearbeiten";
-    buttonWrapperEl.append(editBtn);
+    // let editBtn = document.createElement("button");
+    // editBtn.classList.add("foodplanner__recipe-button");
+    // editBtn.innerText = "Bearbeiten";
+    // buttonWrapperEl.append(editBtn);
 
     detailsEl.append(buttonWrapperEl);
 
@@ -181,38 +181,16 @@ function buildRecipesHtml(data){
   });
 }
 
-function handlePopup(){
-  const dialog = document.querySelector("dialog");
-  const openButton = document.getElementById("popup__open");
-  const closeButton = document.getElementById("popup__close");
+// function handlePopup(){
+//   const dialog = document.querySelector("dialog");
+//   const openButton = document.getElementById("popup__open");
+//   const closeButton = document.getElementById("popup__close");
 
-  openButton.addEventListener("click", () => {
-    dialog.showModal();
-  });
+//   openButton.addEventListener("click", () => {
+//     dialog.showModal();
+//   });
 
-  closeButton.addEventListener("click", () => {
-    dialog.close();
-  });
-}
-
-async function chp() {
-  let p = prompt("");
-  p = await hashString(p);
-  if (p != "5baba4fb94157978d3d26ed9bbf5c8a4754a27377352332a1865f1a98f5c9beb") {
-    chp();
-  }
-}
-
-async function hashString(text) {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(text);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-  return Array.from(new Uint8Array(hashBuffer))
-              .map(byte => byte.toString(16).padStart(2, "0"))
-              .join("");
-}
-
-fetch('/etc/secrets/AUTH')
-  .then(response => response.text())
-  .then(text => console.log(text))
-  .catch(error => console.error('Fehler beim Laden der Datei:', error));
+//   closeButton.addEventListener("click", () => {
+//     dialog.close();
+//   });
+// }
