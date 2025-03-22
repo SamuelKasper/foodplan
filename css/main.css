@@ -8,7 +8,6 @@
     --color-gray-darkest: #1d1d1d;
     --color-green-light: #f1f7f4;
     --color-green: #2a9740;
-    --color-green-dark: #43a126;
     --color-blue: #fff;
 }
 
@@ -143,12 +142,12 @@ button, .button {
 }
 
 .button--green {
-    background-color: var(--color-green-dark);
+    background-color: var(--color-green);
     color: #fff;
     transition: background-color .3s;
 
     &:hover {
-        background-color: var(--color-green-dark);
+        background-color: var(--color-green);
     }
 }
 
@@ -249,16 +248,10 @@ button, .button {
     margin-top: 1rem;
 }
 
-.foodplanner__recipe-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 1.5rem;
-}
-
 .foodplanner__recipe-button{
     padding: .25rem .75rem;
     border-radius: .5rem;
+    margin-top: 1.5rem;
 }
 
 /* Popup */
