@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let params = new URLSearchParams(window.location.search);
   let search = params.get("search");
   let category = params.get("category");
+  let recipesAmount = 0;
 
   if(search && search != ""){
     let searchEl = document.getElementById('search');
@@ -33,12 +34,16 @@ async function fetchRecipes(search = null, filter = null) {
     console.log(data[0].tags);
     data = data.filter((entry) => entry.tags[filter] == true);
   }
+
+  recipesAmount = data.length;
   return data;
 }
 
 // Builds the html by data
 function buildRecipesHtml(data){
   let resultList = document.getElementById("foodplanner__list");
+
+  document.querySelector('.foodplanner__results-count').innerText = recipesAmount;
 
   // Create elements
   data.forEach((entry) => {

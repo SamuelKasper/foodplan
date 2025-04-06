@@ -148,6 +148,11 @@ button, .button {
 
 .foodplanner__results-headline {
     margin-top: clamp(3rem, 12.8vw, 5rem);
+    margin-bottom: .5rem;
+}
+
+.foodplanner__results-count {
+    margin-bottom: 1.5rem;
 }
 
 .foodplanner__list {
