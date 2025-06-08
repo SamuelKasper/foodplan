@@ -922,8 +922,8 @@
     },
     {
         "name": "Spaghetti Bolognese",
-        "description": "",
-        "calories": "",
+        "description": "Für 2 Personen\n\nNudeln kochen. Sojagranulat in Gemüßebrühe einlegen. Zwiebel und Knoblauch klein schneiden und im Öl anbraten. Sojagranulat dazu geben und anbraten. Passierte Tomaten dazu geben und köcheln lassen. Nach 20 min die Sahne dazu geben, nochmal aufkochen lassen und mit den Gewürzen abschmecken.",
+        "calories": "880 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -934,52 +934,23 @@
             "other": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "150g Sojagranulat",
+            "1": "Gemüßebrühe",
+            "2": "1 Zwiebel",
+            "3": "1 Knoblauch",
+            "4": "Oregano, Basilikum, Salz, Pfeffer",
+            "5": "1 El Tomatenmark",
+            "6": "250 ml passierte Tomaten",
+            "7": "250g Nudeln",
+            "8": "1 El Öl",
+            "9": "75ml Sahne / Sahne Alternative"
         },
-        "url": "none"
-    },
-    {
-        "name": "Spaghetti Carbonara",
-        "description": "",
-        "calories": "",
-        "tags": {
-            "vegetable": false,
-            "noodle": true,
-            "rice": false,
-            "lentils": false,
-            "meat": false,
-            "salad": false,
-            "other": false
-        },
-        "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
-        },
-        "url": "none"
+        "url": "https://www.einfachkochen.de/rezepte/vegetarische-spaghetti-bolognese-das-beste-klassiker-rezept?portions=2"
     },
     {
         "name": "Spaghetti al Assasina",
-        "description": "",
-        "calories": "",
+        "description": "Für 2 Personen\n\nWasser mit Tomatenmark, Salz und Pfeffer mischen. Knoblauch klein schneiden und im Öl mit dem Chilli anbraten. Passierte Tomaten dazu geben und alles 2 min köcheln lassen. Spaghetti dazu geben und diese Braten bis die Soße karamellisiert und dunkel wird. Nach und Nach die Tomatenbrühe hinzugeben und köcheln lassen. Das wiederholen, bis die Nudeln durch sind. Mit Petersilie garnieren.",
+        "calories": "550 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -990,19 +961,16 @@
             "other": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "200g Spaghetti",
+            "1": "300g Passierte Tomaten",
+            "2": "4 EL Tomatenmark",
+            "3": "800ml Wasser",
+            "4": "Chilliflocken nB.",
+            "5": "2 EL Olivenöl",
+            "6": "2 Zehen Knoblauch",
+            "7": "Petersilie nB."
         },
-        "url": "none"
+        "url": "https://www.kitchenstories.com/de/rezepte/spaghetti-all-assassina-karamellisierte-one-pan-tomaten-pasta"
     },
     {
         "name": "Spinat Tomaten Lasagne",
@@ -1265,5 +1233,103 @@
             "7": "opt. Avocado"
         },
         "url": "none"
+    },
+    {
+        "name": "Japanischer Krautsalat",
+        "img": "images/recipes/jp_krautsalat.png", 
+        "description": "Für 2 Portionen\n\nKohl in Streifen schneiden und in eine Schüssel füllen. Den Kohl ca. 2 Minuten massieren, damit er geschmeidig wird. Den Sesam anrösten. Die restlichen Zutaten zusammenmischen und dann den Sesam dazu geben. Dressing mit dem Kohl mischen - Fertig.",
+        "calories": "58 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": true,
+            "other": false
+        },
+        "ingredients": {
+            "0": "150g Chinakohl oder Weißkohl",
+            "1": "1TL Sojasauce",
+            "2": "1TL Mirin",
+            "3": "1 TL Reisessig",
+            "4": "1 TL Sesamöl",
+            "5": "1 TL Sesam"
+        },
+        "url": "https://1mal1japan.de/rezepte/japanischer-krautsalat/#rezept"
+    },
+    {
+        "name": "Katsudon",
+        "description": "Für 2 Portionen\n\nSchnitzel in der Heißluftfriteuse machen. Reis kochen. Eier verquirlen, Zwiebeln klein schneiden, Gemüßebrühe mit Sojasauce und Mirin mischen.\nZwiebeln anbraten bis sie braun sind. Mit der Soße ablöschen und etwas köcheln lassen. Die Eier dazugeben und auf mittlerer Hitze rühren, bis sich eine festere Masse gebildet hat.\nDen Reis in eine Schüssel füllen, Das Schnitzel darauf legen und die Eiermasse darüber geben.",
+        "calories": "730 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "2 Valess Veggi Schnitzel",
+            "1": "2 Eier",
+            "2": "1 Zwiebel",
+            "3": "150 ml Gemüßebrühe",
+            "4": "5 EL Sojasauce",
+            "5": "3 EL Mirin",
+            "6": "1 TL Öl zum Braten",
+            "7": "200g Reis"   
+        },
+        "url": "https://1mal1japan.de/rezepte/katsudon/#rezept"
+    },
+    {
+        "name": "Katsu Curry",
+        "description": "Für 2 Portionen\n\nSchnitzel in der Heißluftfriteuse machen. Reis kochen. Kartoffeln und Karotten schälen und zusammen mit den Zwiebeln klein schneiden. In einem Topf das Gemüße 5 min anbraten. Wasser in den Topf machen und aufkochen lassen. Alles 15min köcheln lassen bis das Gemüße durch ist. In der Zwischenzeit die Veggi Schnitzel in der Heisluftfriteuse zubereiten. Den Curry Würfel zum Gemüße hinzugeben und weitere 5 min köcheln und rühren, bis der Würfel sich aufgelöst hat.",
+        "calories": "670 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": true,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "2 Valess Veggi Schnitzel",
+            "1": "2 Curry Würfel",
+            "2": "100g Kartoffeln festkochend",
+            "3": "50g Karotten",
+            "4": "1 Zwiebel",
+            "5": "280ml Wasser",
+            "6": "200g Reis" 
+        },
+        "url": "https://rikueats.de/japanisches-curry-mit-katsu/"
+    },
+    {
+        "name": "Yakisoba",
+        "description": "Für 2 Portionen\n\nKohl, Karotte und Zwiebel schneiden. Erst Zwiebeln und Karotten anbraten, dann den Kohl dazu. Nudeln und Wasser dazu geben und köcheln lassen, bis die Nudeln gut sind. Yakisoba-sauce dazu und rühren. Sobald sich die Sauce gut verteilt hat mit Pfeffer abschmecken.",
+        "calories": "435 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": true,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "200g Soba Nudeln",
+            "1": "50g Weiskohl",
+            "2": "1 kleine Karotte",
+            "3": "1 kleine Zwiebel",
+            "4": "90 ml Wasser",
+            "5": "Pfeffer",
+            "6": "1 EL Öl",
+            "7": "4-5 EL Yakisoba-Sauce"
+        },
+        "url": "https://wanderweib-kocht.de/yakisoba/"
     }
 ]
