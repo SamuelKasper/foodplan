@@ -225,6 +225,10 @@ button, .button {
 .foodplanner__recipe-img{
     height: 2rem;
     border-radius: .5rem;
+
+    &.active{
+        height: 5rem;
+    }
 }
 
 .foodplanner__recipe-calories {

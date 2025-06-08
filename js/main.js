@@ -61,6 +61,12 @@ function buildRecipesHtml(data){
       img.classList.add("foodplanner__recipe-img");
       img.alt = entry.name;
       img.src = entry.img;
+
+      // open Modal
+      img.addEventListener('click', function(){
+        img.classList.toggle('active');
+      });
+
       imgNameWrapper.append(img);
     }
 
