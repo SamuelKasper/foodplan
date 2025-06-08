@@ -161,6 +161,13 @@ button, .button {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
 }
+
+.foodplanner__recipe-img-name-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .625rem;
+}
+
 .foodplanner__list-item {
     list-style-type: none;
     padding: 1rem;
@@ -213,6 +220,11 @@ button, .button {
     font-weight: 600;
     /* margin-bottom: 1.5rem; */
     padding-right: 1rem;
+}
+
+.foodplanner__recipe-img{
+    height: 2rem;
+    border-radius: .5rem;
 }
 
 .foodplanner__recipe-calories {

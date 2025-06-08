@@ -51,11 +51,26 @@ function buildRecipesHtml(data){
     let listItem = document.createElement("li");
     listItem.classList.add("foodplanner__list-item");
 
+    // Img - Name - Wrapper
+    let imgNameWrapper = document.createElement("div");
+    imgNameWrapper.classList.add('foodplanner__recipe-img-name-wrapper');
+
+    // Recipe Image
+    if(entry.img != null && entry.img != ""){
+      let img = document.createElement("img");
+      img.classList.add("foodplanner__recipe-img");
+      img.alt = entry.name;
+      img.src = entry.img;
+      imgNameWrapper.append(img);
+    }
+
     // Recipe name
     let recipeName = document.createElement("p");
     recipeName.classList.add("foodplanner__recipe-name");
     recipeName.innerText = entry.name;
-    listItem.append(recipeName);
+    imgNameWrapper.append(recipeName);
+
+    listItem.append(imgNameWrapper);
 
     // Link
     if (entry.url.includes("https")) {
