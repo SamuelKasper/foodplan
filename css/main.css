@@ -224,6 +224,7 @@ button, .button {
 
 .foodplanner__recipe-img{
     height: 2rem;
+    transition: height .5s;
     border-radius: .5rem;
 
     &.active{
