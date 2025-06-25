@@ -1134,6 +1134,7 @@
     },
     {
         "name": "Vegetarisches Chicken Korma mit Reis",
+         "img": "images/recipes/chicken_korma.jpg", 
         "description": "Für 4 Portionen",
         "calories": "",
         "tags": {
@@ -1147,7 +1148,7 @@
         },
         "ingredients": {
             "0": "300 g Sojaschnetzel",
-            "1": "1 l Gemüsebrühe",
+            "1": "500 ml Gemüsebrühe",
             "2": "2 Dosen Kokosmilch",
             "3": "3 TL rote Currypaste",
             "4": "½ Tube Tomatenmark",
@@ -1315,6 +1316,7 @@
     },
     {
         "name": "Spicy Udon Nudeln",
+        "img": "images/recipes/spicy_udon.jpg", 
         "description": "Für 2 Portionen\n\nNudeln kochen. Butter und Sesamöl erhitzen. Knoblauch goldbraun anbraten. Sojasauce, Dattelsirup Koriander und Chilli hinzufügen. Nudeln hinzugeben und etwas anbraten. Beliebig mit Frühlingszwiebeln und Sesam dekoriern.",
         "calories": "475 kcal (bei unten stehendem Rezept)",
         "tags": {
