@@ -422,17 +422,8 @@
             "other": true
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "8 Knödel",
+            "1": "Rahmsoße"
         },
         "url": "none"
     },
@@ -450,17 +441,10 @@
             "other": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "500g Kroketten",
+            "1": "2 Veggie Schnitzel",
+            "2": "Rahmsoße",
+            "3": "Rahmgemüße"
         },
         "url": "none"
     },
@@ -726,12 +710,12 @@
             "other": true
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": ""
+            "0": "500g Mehl",
+            "1": "325ml Wasser",
+            "2": "max. 7g Hefe",
+            "3": "10g Salz",
+            "4": "Schinken",
+            "5": "150g Streukäße"
         },
         "url": "none"
     },
@@ -1020,17 +1004,14 @@
             "other": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "1 große Süßkartoffel",
+            "1": "1 Zwiebel",
+            "2": "1 Zehe Knoblauch",
+            "3": "1 Dose Kichererbsen",
+            "4": "1 Dose Kokosmilch",
+            "5": "200ml Gemüßebrüher",
+            "6": "200g Spinat",
+            "7": "Je 1 TL: Kurkuma, Koriander, Paprika, Garam Masala, Kreuzkümmel, Salz"
         },
         "url": "https://vm.tiktok.com/ZGd1U4qDk/"
     },
@@ -1331,5 +1312,56 @@
             "7": "4-5 EL Yakisoba-Sauce"
         },
         "url": "https://wanderweib-kocht.de/yakisoba/"
+    },
+    {
+        "name": "Spicy Udon Nudeln",
+        "description": "Für 2 Portionen\n\nNudeln kochen. Butter und Sesamöl erhitzen. Knoblauch goldbraun anbraten. Sojasauce, Dattelsirup Koriander und Chilli hinzufügen. Nudeln hinzugeben und etwas anbraten. Beliebig mit Frühlingszwiebeln und Sesam dekoriern.",
+        "calories": "475 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "460g Udon Nudeln (2 Portionen)",
+            "1": "3 Knoblauchzehen",
+            "2": "1 El Butter",
+            "3": "1 El Sesamöl",
+            "4": "4 EL Sojasauce",
+            "5": "1 TL Dattelsirup",
+            "6": "n.b. Chilliflocken & Koriander",
+            "7": "opt. 1 Frühlingszwiebel",
+            "8": "opt. Sesam"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Gyros Nudelpfanne",
+        "description": "Für 2 große Portionen\n\nNudeln kochen. Hähnchen, Paprika und Zwiebeln anbraten. Tomatenmark, Passierte Tomaten, Sahne und Creme Fraiche hinzugeben und mit Pfeffer, Salz, Oregano, Knoblauch und Paprika würzen. Nudeln hinzugeben.",
+        "calories": " kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "250g Nudeln",
+            "1": "200g Hähnchen",
+            "2": "1 rote Paprika",
+            "3": "1 El Tomatenmark",
+            "4": "300g Passierte Tomaten",
+            "5": "1 Zwiebel",
+            "6": "200ml Sahne",
+            "7": "1 EL Creme Fraiche"
+        },
+        "url": "none"
     }
 ]
