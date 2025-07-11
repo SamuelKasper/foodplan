@@ -356,7 +356,7 @@
     {
         "name": "Kichererbseneintopf",
         "description": "Für 4 Portionen; Reis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
-        "calories": "",
+        "calories": "529 kcal",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -372,13 +372,13 @@
             "2": "1 Knoblauch",
             "3": "1 Dose Kichererbsen",
             "4": "1 Dose Kokosmilch",
-            "5": "500ml Gemüsebrühe",
+            "5": "100ml Gemüsebrühe",
             "6": "300g Rahm Blattspinat",
             "7": "Limettensaft",
             "8": "Je 1 TL: Kurkuma, Koriander, Paprika, Zimt, Kreuzkümmel, Salz",
             "9": "Naan Brot oder Reis"
         },
-        "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html"
+        "url": "none"
     },
     {
         "name": "Knoblauch Gnocci",
@@ -989,31 +989,6 @@
             "16": "200 g geriebener Käse"
         },
         "url": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html"
-    },
-    {
-        "name": "Süßkartoffel Kichererbsen Eintopf",
-        "description": "",
-        "calories": "",
-        "tags": {
-            "vegetable": true,
-            "noodle": false,
-            "rice": false,
-            "lentils": false,
-            "meat": false,
-            "salad": false,
-            "other": false
-        },
-        "ingredients": {
-            "0": "1 große Süßkartoffel",
-            "1": "1 Zwiebel",
-            "2": "1 Zehe Knoblauch",
-            "3": "1 Dose Kichererbsen",
-            "4": "1 Dose Kokosmilch",
-            "5": "200ml Gemüßebrüher",
-            "6": "200g Spinat",
-            "7": "Je 1 TL: Kurkuma, Koriander, Paprika, Garam Masala, Kreuzkümmel, Salz"
-        },
-        "url": "https://vm.tiktok.com/ZGd1U4qDk/"
     },
     {
         "name": "Tagliatelle mit Spinat und Hähnchen",
