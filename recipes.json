@@ -50,8 +50,8 @@
     },
     {
         "name": "Spaghetti Carbonara",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 2 Portionen",
+        "calories": "812 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -62,19 +62,19 @@
             "other": false
         },
         "ingredients": {
-            "0": "500g Spaghetti",
-            "1": "200g Speck",
-            "2": "4 Eier",
-            "3": "160g Parmesan",
-            "4": "Olivenöl",
+            "0": "250g Spaghetti",
+            "1": "100g Speck",
+            "2": "2 Eier",
+            "3": "80g Parmesan",
+            "4": "1 El Olivenöl",
             "5": "Salz und Pfeffer"
         },
         "url": "https://www.chefkoch.de/rezepte/1298241234947062/Carbonara-wie-bei-der-Mamma-in-Rom.html?portionen=4"
     },
     {
         "name": "Caesar Salad Wrap",
-        "description": "",
-        "calories": "",
+        "description": "Für 4 Portionen",
+        "calories": "511 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -86,23 +86,24 @@
         },
         "ingredients": {
             "0": "2 Knoblauchzehen",
-            "1": "200g Frischkäse",
-            "2": "1 EL Mayonnaise",
-            "3": "2 TL Senf",
-            "4": "2 EL Zitronensaft",
+            "1": "200g Frischkäse Light",
+            "2": "1 EL Mayonnaise Light",
+            "3": "1 TL Senf",
+            "4": "1 EL Zitronensaft",
             "5": "1.5 EL Wasser",
             "6": "Salz, Pfeffer",
-            "7": "Römersalat-Herz",
+            "7": "2 Römersalat-Herzen",
             "8": "40g Parmesan",
-            "9": "Olivenöl",
-            "10": "300g Hähnchenbrustfilet"
+            "9": "1 El Olivenöl",
+            "10": "160g Garden Gourmet Hähnchen Stücke",
+            "11": "4x Wrap"
         },
         "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/"
     },
     {
         "name": "Erdnussbutter Nudeln",
-        "description": " Für 3 Personen",
-        "calories": "582 kcal",
+        "description": " Für 2 Personen",
+        "calories": "911 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -114,24 +115,21 @@
         },
         "ingredients": {
             "0": "250 g Mie Nudeln ohne Ei oder andere Nudeln (z.B. Spaghetti)",
-            "1": "3 bis 4 Frühlingszwiebeln",
-            "2": "1 bis 2 Zehen Knoblauch",
-            "3": "1 bis 2 cm frischer Ingwer",
-            "4": "3 EL cremige Erdnussbutter",
-            "5": "3 EL Sojasauce",
-            "6": "2 EL geschmacksneutrales Öl",
-            "7": "3 EL Agavendicksaft oder Ahornsirup",
-            "8": "2 EL Reisessig",
-            "9": "Optional: Sriracha Sauce",
-            "10": "Optional: Sesamsamen oder Erdnüsse",
-            "11": "Optional: Chiliflocken oder frische Chili"
+            "1": "2 Frühlingszwiebeln",
+            "2": "2 Zehen Knoblauch",
+            "3": "4 EL cremige Erdnussbutter",
+            "4": "3 EL Sojasauce",
+            "5": "2 EL Sesam Öl",
+            "6": "2 EL Dattelsirup",
+            "7": "2 EL Reisessig",
+            "8": "2 EL Sesam"
         },
         "url": "https://veggie-einhorn.de/nudeln-mit-erdnussbutter-sauce/#rezeptbox"
     },
     {
         "name": "Flammkuchen",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 2 Portionen",
+        "calories": "975kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -142,43 +140,19 @@
             "other": true
         },
         "ingredients": {
-            "0": "500g Mehl",
-            "1": "150g Speck",
+            "0": "400g Mehl",
+            "1": "150g Speckwürfel Light",
             "2": "2 Zwiebeln",
-            "3": "1 Becher Creme Fraiche",
+            "3": "1 Becher Creme Fraiche Light",
             "5": "Salz",
             "6": "Pfeffer"
         },
         "url": "none"
     },
     {
-        "name": "Flammkuchen mit Birne, Gorgonzola und Walnuss",
-        "description": "Für 2 Personen",
-        "calories": "914 kcal",
-        "tags": {
-            "vegetable": false,
-            "noodle": false,
-            "rice": false,
-            "lentils": false,
-            "meat": false,
-            "salad": false,
-            "other": true
-        },
-        "ingredients": {
-            "0": "1 Pck. Flammkuchenteig (260 g)",
-            "1": "1 reife Birne",
-            "2": "75 g Gorgonzola",
-            "3": "50 g Walnüsse",
-            "4": "150 g Crème fraîche",
-            "5": "Salz",
-            "6": "Pfeffer"
-        },
-        "url": "https://www.rewe.de/rezepte/flammkuchen-birne-gorgonzola-walnuss/"
-    },
-    {
         "name": "Hähnchen Reis Pfanne",
         "description": "Für 2 Portionen",
-        "calories": "540",
+        "calories": "685 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -189,14 +163,13 @@
             "other": false
         },
        "ingredients": {
-            "0": "1 Pck. Uncle Ben's Express Natur-Reis",
-            "1": "1 Kohlrabi",
+            "0": "175g Reis",
             "2": "1 Zwiebel",
-            "3": "250 g Hähnchenbrustfilet",
-            "4": "2 EL Rapsöl",
+            "3": "1 Pck Garden Gourmet Hähnchenbrustfilet",
+            "4": "1 EL Olivenöl",
             "5": "Salz",
             "6": "Pfeffer",
-            "7": "200 g TK-Erbsen",
+            "7": "250 g TK-Erbsen",
             "8": "250 ml Gemüsebrühe"
         },
         "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/"
@@ -639,7 +612,8 @@
     {
         "name": "One Port Orza mit Spinat und Feta",
         "description": "Für 4 Portionen",
-        "calories": "620 kcal",
+        "img": "images/recipes/spinat_feta_orzo.jpg",
+        "calories": "515 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -652,18 +626,17 @@
         "ingredients": {
             "0": "2 Zwiebel",
             "1": "4 Knoblauchzehen",
-            "2": "2 EL Olivenöl",
+            "2": "1 EL Olivenöl",
             "3": "2 TL Tomatenmark",
-            "4": "300 g Orzo (Reisnudeln)",
+            "4": "250 g Orzo",
             "5": "200 ml Sahne",
-            "6": "800 ml Gemüsebrühe",
+            "6": "700 ml Gemüsebrühe",
             "7": "300 g Kirschtomaten",
             "8": "400 g Babyspinat",
-            "9": "100 g geriebener Emmentaler",
-            "10": "200 g Feta",
-            "11": "Salz",
-            "12": "Pfeffer",
-            "13": "Muskatnuss"
+            "9": "200 g Feta Light",
+            "10": "Salz",
+            "11": "Pfeffer",
+            "12": "Muskatnuss"
         },
         "url": "https://eat.de/rezept/one-pot-orzo-mit-spinat-und-feta/"
     },
