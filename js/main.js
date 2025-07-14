@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let params = new URLSearchParams(window.location.search);
   let search = params.get("search");
   let category = params.get("category");
+  let random = params.get("random");
   let recipesAmount = 0;
 
   if(search && search != ""){
@@ -15,7 +16,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     categoryEl.selected = true;
   }
 
-  fetchRecipes(search, category)
+  fetchRecipes(search, category, random)
   .then((data) => {
     buildRecipesHtml(data);
   })
@@ -24,7 +25,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 });
 
 // Gets the data from json file
-async function fetchRecipes(search = null, filter = null) {
+async function fetchRecipes(search = null, filter = null, random = null) {
   let response = await fetch("./recipes.json");
   let data = await response.json();
   if (search) {
@@ -36,7 +37,22 @@ async function fetchRecipes(search = null, filter = null) {
   }
 
   recipesAmount = data.length;
+
+  if(random){
+    data = [data[random]];
+  }
+
   return data;
+}
+
+function getRandom() {
+  let random = Math.floor(Math.random() * recipesAmount) + 1;
+  let base = window.location.origin + window.location.pathname;
+  window.location.href = base + "?random=" + random;
+}
+
+function resetSearch() {
+  window.location.href = window.location.origin + window.location.pathname;
 }
 
 // Builds the html by data

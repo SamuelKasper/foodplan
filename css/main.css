@@ -9,6 +9,7 @@
     --color-green-light: #f1f7f4;
     --color-green: #2a9740;
     --color-blue: #fff;
+    --color-gray: #736f76;
 }
 
 * {
@@ -135,6 +136,16 @@ button, .button {
 
     &:hover {
         background-color: var(--color-green);
+    }
+}
+
+.button--gray {
+    background-color: var(--color-gray);
+    color: #fff;
+    transition: background-color .3s;
+
+    &:hover {
+        background-color: var(--color-gray);
     }
 }
 
