@@ -151,7 +151,7 @@
     },
     {
         "name": "Hähnchen Reis Pfanne",
-        "description": "Für 2 Portionen",
+        "description": "Für 2 Portionen\n\nReis kochen. Hähnchen in Öl mit Paprika, Salz und Pfeffer anbraten. Hähnchen aus der Pfanne nehmen und Zwiebeln anbraten. Erbsen hinzugeben und mit Gemüßebrühe ablöschen. 10 min  köcheln lassen. Hähnchen und Reis hinzugeben und abschmecken.",
         "calories": "685 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -207,8 +207,8 @@
     },
     {
         "name": "Indisches rote Linsen dal",
-        "description": "Für 4 Portionen",
-        "calories": "458 kcal",
+        "description": "Für 4 Portionen\n\nZwiebel, Knoblauch und Ingwer klein schneiden und in 3 Minuten in Öl anbraten. Gewürze und Linsen hinzugeben und kurz mit braten. Mit Gemüßebrühe auffüllen und 10 min köcheln lassen. Kokosmilch und passierte Tomaten dazugeben und nochmal 5 min köcheln lassen.",
+        "calories": "430 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -219,7 +219,7 @@
             "other": false
         },
         "ingredients": {
-            "0": "1-2 EL Kokosöl oder Olivenöl zum Braten",
+            "0": "1 EL Olivenöl zum Braten",
             "1": "2 Zwiebeln, gewürfelt",
             "2": "4 Knoblauchzehen, gehackt",
             "3": "2 TL Ingwer, gerieben (oder mehr nach Geschmack)",
@@ -229,11 +229,10 @@
             "7": "1 TL rotes Paprikapulver",
             "8": "1 TL Garam Masala oder anderes Currypulver nach Geschmack",
             "9": "300 g rote Linsen",
-            "10": "780 ml Gemüsebrühe",
-            "11": "250 ml Kokosnussmilch",
-            "12": "250 ml passierte Tomaten oder gehackte Tomaten (optional)",
-            "13": "Salz und Pfeffer nach Geschmack",
-            "14": "Reis"
+            "10": "800 ml Gemüsebrühe",
+            "11": "200 ml Kokosnussmilch",
+            "12": "300 ml passierte Tomaten oder gehackte Tomaten (optional)",
+            "13": "Salz und Pfeffer nach Geschmack"
         },
         "url": "https://biancazapatka.com/de/rotes-linsen-dal/"
     },
@@ -261,8 +260,8 @@
     },
     {
         "name": "Kartoffelgratin",
-        "description": "Für 4 Portionen",
-        "calories": "318 kcal",
+        "description": "Für 4 Portionen\n\nAuflaufform fetten. Kartoffeln schälen, in dünne Scheiben schneiden und in die Auflaufform schichten. Sahne mit Salz, Pfeffer und Muskat mischen und die Kartoffeln übergießen. Mit Käse bestreuen und bei 200°C 45min backen.",
+        "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -278,14 +277,15 @@
             "2": "200 g Schlagsahne",
             "3": "Salz",
             "4": "Pfeffer",
-            "5": "frisch geriebene Muskatnuss"
+            "5": "frisch geriebene Muskatnuss",
+            "6": "100g geriebener Light Käse"
         },
         "url": "https://www.lecker.de/kartoffelgratin-das-klassische-rezept-72512.html"
     },
     {
         "name": "Kartoffelsuppe",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 4 Portionen\n\nKartoffel und Karotten schälen. Suppengrün kleinschneiden. Gemüße anbraten und nach ein paar Minuten mit Gemüßebrühe bedecken. Gemüße weich kochen und anschließend pürieren.",
+        "calories": "275 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -300,14 +300,14 @@
             "1": "4 Karotten",
             "2": "1 Bund Suppengrün",
             "3": "2 EL Gemüsebrühepulver",
-            "4": "3 Paar Wiener Würstchen"
+            "4": "1 EL Öl"
         },
         "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html"
     },
     {
         "name": "Kartoffelecken mit Quark",
         "description": "Für 4 Portionen",
-        "calories": "",
+        "calories": "225 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -319,16 +319,16 @@
         },
         "ingredients": {
             "0": "600g Kartoffeln",
-            "1": "Öl",
+            "1": "2 El Oliven Öl",
             "2": "Salz, Pfeffer, Paprika",
-            "3": "Kräuterquark",
+            "3": "200g Kräuterquark light",
             "4": "Schnittlauch, Knoblauch, Salz, Pfeffer"
         },
         "url": ""
     },
     {
         "name": "Kichererbseneintopf",
-        "description": "Für 4 Portionen; Reis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
+        "description": "Für 4 Portionen\n\nReis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
         "calories": "529 kcal",
         "tags": {
             "vegetable": true,
