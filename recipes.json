@@ -1,7 +1,7 @@
 [
     {
         "name": "Buddypfanne",
-        "description": "Für 6 Personen",
+        "description": "Für 6 Personen\n\nZwiebeln, Knoblauch und Chilli anbraten. Bohnen hinzufügen und Tomaten hinzufügen und alles 20-30min köcheln lassen.",
         "calories": "788 kcal",
         "tags": {
             "vegetable": true,
@@ -25,7 +25,7 @@
     {
         "name": "Burger",
         "description": "Für 4 Burger",
-        "calories": "",
+        "calories": "??? kcal",
         "ingredients": {
             "0": "4 Brötchen",
             "1": "4 Patties",
@@ -50,7 +50,7 @@
     },
     {
         "name": "Spaghetti Carbonara",
-        "description": "Für 2 Portionen",
+        "description": "Für 2 Portionen\n\nSpeckwürfel in Olivenöl anbraten. Nudeln kochen, kurz vor Ende 1-2 Espressotassen Nudelwasser aufheben. Eier mit Käse verrühren, Salz und Pfeffer hinzufügen. Speck erneut erhitzen, Nudelwasser hinzufügen und aufkochen lassen. Pasta, und Käse mischung hinzufügen und kochen bis das Ei fest wird.",
         "calories": "812 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -102,7 +102,7 @@
     },
     {
         "name": "Erdnussbutter Nudeln",
-        "description": " Für 2 Personen",
+        "description": " Für 2 Personen\n\nNudeln kochen (etwas Nudelwasser aufheben), Frühlingszwiebeln schneiden, Knoblauch fein hacken. Knoblauch, Erdnussbutter, Sojasauce, Öl, Dattelsirup, Reisessig mischen bis eine cremige Sauce entsteht. Sauce mit etwas Nudelwasser zu den Nudeln geben und gut verrühren.",
         "calories": "911 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
@@ -173,37 +173,6 @@
             "8": "250 ml Gemüsebrühe"
         },
         "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/"
-    },
-    {
-        "name": "Hähnchen Salat mit Avocado",
-        "description": "Für 4 Portionen",
-        "calories": "640 kcal",
-        "tags": {
-            "vegetable": false,
-            "noodle": false,
-            "rice": false,
-            "lentils": false,
-            "meat": true,
-            "salad": true,
-            "other": false
-        },
-        "ingredients": {
-            "0": "600 g Hähnchenbrust",
-            "1": "2 Limetten",
-            "2": "3 EL Olivenöl",
-            "3": "1 TL Chiliflocken",
-            "4": "1 TL gemahlener Kreuzkümmel",
-            "5": "0,5 Eisbergsalat",
-            "6": "200 g Cherry-Tomaten",
-            "7": "1 Dose Mais (285 g)",
-            "8": "1 Dose Kidneybohnen (255 g)",
-            "9": "1 kleine rote Zwiebel",
-            "10": "2 Avocados",
-            "11": "1 grüne Chilischote",
-            "12": "0,5 Bund Koriander",
-            "13": "150 g Feta"
-        },
-        "url": "https://www.rewe.de/rezepte/haehnchen-salat-avocado/"
     },
     {
         "name": "Indisches rote Linsen dal",
@@ -423,8 +392,8 @@
     },
     {
         "name": "Käsespätzle",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 4 Portionen\n\nSpätze nach Packungsanleitung kochen. Zwiebeln schneiden und mit Butter bestäuben. Zusammen mit der Butter anbraten und anschließend auf einem Papiertuch abtropfen lassen. Käse reiben. Sahne in einen Topf füllen und mit Salz, Pfeffer, Muskat würzen. Aufkochen und Spätzle, anschließend den Käse hinzufügen. Am Ende Röstzwiebeln und Schnittlauch darüberstreuen.",
+        "calories": "830 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -450,8 +419,8 @@
     },
     {
         "name": "Kürbissuppe",
-        "description": "Für 4 Portionen",
-        "calories": "260 kcal",
+        "description": "Für 4 Portionen\n\nKürbis klein schneiden. Zwiebel und Knoblauch schneiden. Butter in einem Topf schmelzen, Zwiebeln und Knoblauch andünsten, Kürbis dazugeben und kurz mitbraten. Mit Brühe ablöschen und mit Salz und Pfeffer würzen. 15 min köcheln lassen. Sahne hinzugeben, pürieren und abschmecken.",
+        "calories": "260 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -476,8 +445,8 @@
     },
     {
         "name": "Maultaschengratin",
-        "description": "Für 4 Portionen",
-        "calories": "685 kcal",
+        "description": "Für 2 Portionen\n\nBackofen auf 200°C vorheizen. Zwiebel schneiden und anbraten. Spinat dazugeben und fertig kochen. Anschließend Spinat mit Brühe, Sahne, Eiern verrühren und mit Salz und Pfeffer würzen. In einer Auflaufform die kleingeschnittenen Maultaschen auslegen, die Spinatsauce drübergeben und mit Käsebestreuen. Für 35 min in den Ofen.",
+        "calories": "725 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -537,8 +506,8 @@
     },
     {
         "name": "Mozzarella Hähnchen in Basilikum Sahnesoße mit Reis",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 2 Portionen\n\nFleisch mit Salz, Paprika und Pfeffer würzen und anbraten. Tomaten halbieren. Sahne in einem Topf aufkochen. Schmelzkäse hinzugeben, mit Salz, Pfeffer und Basilikum würzen. Fleisch in die Auflaufform geben, Tomaten und Sauce dazugeben. Im vorgeheizten Ofen bei 200°C für 30 min backen. Dazu Reis.",
+        "calories": "1290 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -549,7 +518,7 @@
             "other": false
         },
         "ingredients": {
-            "0": "4 Hühnerbrustfilets",
+            "0": "4 Garden Gourmet Filet",
             "1": "Salz und Pfeffer",
             "2": "1 EL Öl",
             "3": "250 g Cocktailtomaten",
@@ -557,15 +526,14 @@
             "5": "200 ml Sahne",
             "6": "100 g Sahneschmelzkäse",
             "7": "Fett für die Form",
-            "8": "125 g Mozzarella",
-            "9": "Parmesan (optional)",
-            "10": "1 EL Kräuterbutter (optional)"
+            "8": "125 g Mozzarella light",
+            "9": "150g Reis"
         },
         "url": "https://www.chefkoch.de/rezepte/1844061298739441/Mozzarella-Haehnchen-in-Basilikum-Sahnesauce.html"
     },
     {
         "name": "Nudelauflauf mit Schinken und Erbsen",
-        "description": "Für 4 Portionen",
+        "description": "Für 4 Portionen\n\nOfen auf 200°C vorheizen. Nudeln kochen, kurz vor Ende die Erbsen dazu geben. Kochschinken und Zwiebel schneiden. Butter erhitzen, Zwiebeln anschwitzen, mit Mehl bestäuben, mit Sahne und Milch ablöschen. Mit Salz, Pfeffer und Muskat und Petersilie würzen. Alles zusammen verrühren und in eine Auflaufform geben und mit Käse bestreuen. 20 min backen.",
         "calories": "929 kcal",
         "tags": {
             "vegetable": false,
