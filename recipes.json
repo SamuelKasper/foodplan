@@ -352,7 +352,7 @@
     },
     {
         "name": "Knödel mit Rahmsoße",
-        "description": "",
+        "description": "Für 2 Portinen\n\nKnödel nach Packungsanleitung machen. Rahmsoße und Rahmgemüße dazu.",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -365,7 +365,8 @@
         },
         "ingredients": {
             "0": "8 Knödel",
-            "1": "Rahmsoße"
+            "1": "250ml Rahmsoße",
+            "2": "250g Rahmgemüße"
         },
         "url": "none"
     },
@@ -560,8 +561,8 @@
     },
     {
         "name": "Nudeln mit Pesto",
-        "description": "",
-        "calories": "",
+        "description": "Für 2 Portionen\n\nNudeln kochen, etwas Nudelwasser aufheben. Nudeln, Pesto und Nudelwasser zusammenmischen",
+        "calories": "750 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -572,14 +573,14 @@
             "other": false
         },
         "ingredients": {
-            "0": "Nudeln nach Wahl",
-            "1": "Pesto nach Wahl"
+            "0": "250g Spaghetti",
+            "1": "1 Glas Pesto"
         },
         "url": "none"
     },
     {
         "name": "One Port Orza mit Spinat und Feta",
-        "description": "Für 4 Portionen",
+        "description": "Für 4 Portionen\n\nZwiebeln und Knoblauch klein schneiden. Mit Olivenöl anbraten, dann Tomatenmark und Orzo dazugeben und anschwitzen. Sahne und Gemüße dazugeben. Mit Salz, Pfeffer und Muskat abschmecken. 10 min köcheln lassen. Spinat dazugeben. Tomaten kleinschneiden und dazugeben. Feta dazugeben.",
         "img": "images/recipes/spinat_feta_orzo.jpg",
         "calories": "515 kcal (bei unten stehendem Rezept)",
         "tags": {
@@ -610,8 +611,8 @@
     },
     {
         "name": "Pilzrisotto",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 4 Portionen\n\nReis waschen. Champignons klein schneiden. Scharlotten und Knoblauch kleinschneiden. Öl erhitzen, Scharlotten glasig dünsten, Reis und Knoblauch hinzugeben und dünsten. Champignons dazugeben, mit Wein ablöschen und würzen. Nach und Nach Gemüßebrühe dazugießen und unter Rühren 20-25min ausquellen lassen. Rucola, Butter und Parmesan dazugeben.",
+        "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -639,8 +640,8 @@
     },
     {
         "name": "Pizza",
-        "description": "",
-        "calories": "",
+        "description": "Für 2 Bleche",
+        "calories": "1050 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -651,19 +652,19 @@
             "other": true
         },
         "ingredients": {
-            "0": "500g Mehl",
-            "1": "325ml Wasser",
+            "0": "400g Mehl",
+            "1": "250ml Wasser",
             "2": "max. 7g Hefe",
             "3": "10g Salz",
-            "4": "Schinken",
-            "5": "150g Streukäße"
+            "4": "250g Kochschinken",
+            "5": "150g Gouda light"
         },
         "url": "none"
     },
     {
         "name": "Rigatoni al Forno",
-        "description": "Für 8 Personen",
-        "calories": "874 kcal",
+        "description": "Für 4 Portionen\n\nZwiebeln, Schinken und Knoblauch kleinschneiden. Nudeln kochen, kurz vor Ende die Erbsen dazugeben. Hackfleisch anbraten. Zwiebeln, und Knoblauch kurz mitdünsten. Tomtatenmark hinzugeben, und anschließend mit Gemüßebrühe ablöschen. Oregano und Basilikum zugeben und 40 min köcheln lassen. Sahne hinzugeben, dann abschmecken. Schinken hinzugeben und alles gut vermischen.",
+        "calories": "1115 kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -678,23 +679,21 @@
             "1": "2 Knoblauchzehe",
             "2": "300g Kochschinken",
             "3": "400g Hackfleisch",
-            "4": "Rapsöl",
+            "4": "1 EL Olivenöl",
             "5": "500g Rigatoni",
             "6": "6EL Tomatenmark",
             "7": "400ml Gemüsebrühe",
             "8": "Oregano, Basilikum, Salz, Pfeffer",
             "9": "400ml Sahne",
-            "10": "100g Parmesan",
-            "11": "200g Erbsen",
-            "12": "200g Mozzarella",
-            "13": "200g Edamer"
+            "10": "50g Parmesan",
+            "11": "200g Erbsen"
         },
         "url": "https://www.rewe.de/rezepte/rigatoni-al-forno/"
     },
     {
         "name": "Rote Linsen Curry mit Süßkartoffeln",
-        "description": "Für 4 Portionen",
-        "calories": "",
+        "description": "Für 3 Portionen\n\nSüßkartoffel, Paprika, Zwiebel und Knoblauch klein schneiden. Zwiebeln und Knoblauch anschwitzen. Süßkartoffel und Paprika dazugeben. Tomatenmark und Gewürze dazugeben und kurz mitbraten. Linsen hinzugeben und dann mit Kokosmilch und Gemüßebrühe aufgießen und 20 min köcheln lassen.",
+        "calories": "687 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -705,53 +704,23 @@
             "other": false
         },
         "ingredients": {
-            "0": "2 Süßkartoffeln",
+            "0": "450g Süßkartoffeln",
             "1": "1 Paprikaschote",
             "2": "1 Zwiebel",
             "3": "2 Knoblauchzehen",
-            "4": "2 EL Olivenöl",
+            "4": "1 EL Olivenöl",
             "5": "2 EL Tomatenmark",
             "6": "1 TL Currypulver",
             "7": "1 TL Kreuzkümmel",
             "8": "1 TL Kurkumapulver",
             "9": "1 Prise Chilipulver",
             "10": "200 g rote Linsen",
-            "11": "400 ml Kokosmilch",
+            "11": "400 ml Kokosmilch light",
             "12": "500 ml Gemüsebrühe",
             "13": "Salz",
             "14": "Pfeffer"
         },
         "url": "https://www.chefkoch.de/rezepte/3023041455110341/Rote-Linsen-Curry-mit-Suesskartoffeln.html"
-    },
-    {
-        "name": "Salat mit Hähnchen",
-        "description": "Für 4 Personen",
-        "calories": "236 kcal",
-        "tags": {
-            "vegetable": false,
-            "noodle": false,
-            "rice": false,
-            "lentils": false,
-            "meat": true,
-            "salad": true,
-            "other": false
-        },
-        "ingredients": {
-            "0": "400 g Hähncheninnenbrustfilets",
-            "1": "½ TL Oregano",
-            "2": "½ TL Paprikapulver, edelsüß",
-            "3": "1 EL Rapsöl",
-            "4": "Salz und Pfeffer",
-            "5": "250 g Blattsalat-Mix",
-            "6": "200 g Kirschtomaten",
-            "7": "100 g Naturjoghurt",
-            "8": "50 g Crème fraîche",
-            "9": "½ Bio-Zitrone",
-            "10": "1 EL Agavendicksaft",
-            "11": "1 TL Kräuter der Provence",
-            "12": "Kresse"
-        },
-        "url": "https://eat.de/rezept/haehnchensalat/"
     },
     {
         "name": "Salatbowl",
