@@ -15,6 +15,10 @@
 * {
     box-sizing: border-box;
     font-family: Lato;
+
+    &:focus-visible {
+        outline: #1d1d1d dotted 2px;
+    }
 }
 
 body {
@@ -80,7 +84,7 @@ button, .button {
     height: 3rem;
     width: 100%;
     padding: .5rem .75rem;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #ededed;
     border-radius: .5rem;
     font-size: 1.125rem;
 }
@@ -89,7 +93,7 @@ button, .button {
     height: 3rem;
     padding: .5rem;
     width: 100%;
-    border: 1px solid #d9d9d9;
+    border: 1px solid #ededed;
     border-radius: .5rem;
     font-size: 1.125rem;
 }
@@ -190,7 +194,7 @@ button, .button {
     flex-direction: column;
     height: fit-content;
     border-radius: 1rem;
-    border: 1px solid #dcdcdc;
+    border: 1px solid #ededed;
     position: relative;
     overflow: hidden;
 }
@@ -335,6 +339,24 @@ button, .button {
     flex-direction: column;
     gap: .5rem;
 } */
+
+.visually-hidden {
+    position: absolute;
+    left: 50%;
+    height: 50%;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    outline: 0;
+    outline-offset: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 @media screen and (min-width: 64em) {
     .container {

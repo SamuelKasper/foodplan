@@ -100,6 +100,10 @@ function buildRecipesHtml(data){
       recipeLink.href = entry.url;
       // recipeLink.innerText = "Zum Rezept"
       recipeLink.classList.add("foodplanner__recipe--link");
+      let linkText = document.createElement("p");
+      linkText.innerHTML = entry.name;
+      linkText.classList.add("visually-hidden");
+      recipeLink.append(linkText);
 
       let linkIcon = document.createElement("div");
       linkIcon.classList.add("foodplanner__recipe-icon");
