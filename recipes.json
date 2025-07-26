@@ -2,6 +2,7 @@
     {
         "name": "Buddypfanne",
         "description": "Für 6 Personen\n\nZwiebeln, Knoblauch und Chilli anbraten. Bohnen hinzufügen und Tomaten hinzufügen und alles 20-30min köcheln lassen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "788 kcal",
         "tags": {
             "vegetable": true,
@@ -25,6 +26,7 @@
     {
         "name": "Burger",
         "description": "Für 4 Burger",
+        "img": "images/recipes/placeholder.png",
         "calories": "??? kcal",
         "ingredients": {
             "0": "4 Brötchen",
@@ -51,6 +53,7 @@
     {
         "name": "Spaghetti Carbonara",
         "description": "Für 2 Portionen\n\nSpeckwürfel in Olivenöl anbraten. Nudeln kochen, kurz vor Ende 1-2 Espressotassen Nudelwasser aufheben. Eier mit Käse verrühren, Salz und Pfeffer hinzufügen. Speck erneut erhitzen, Nudelwasser hinzufügen und aufkochen lassen. Pasta, und Käse mischung hinzufügen und kochen bis das Ei fest wird.",
+        "img": "images/recipes/placeholder.png",
         "calories": "812 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -74,6 +77,7 @@
     {
         "name": "Caesar Salad Wrap",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "511 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
@@ -103,6 +107,7 @@
     {
         "name": "Erdnussbutter Nudeln",
         "description": " Für 2 Personen\n\nNudeln kochen (etwas Nudelwasser aufheben), Frühlingszwiebeln schneiden, Knoblauch fein hacken. Knoblauch, Erdnussbutter, Sojasauce, Öl, Dattelsirup, Reisessig mischen bis eine cremige Sauce entsteht. Sauce mit etwas Nudelwasser zu den Nudeln geben und gut verrühren.",
+        "img": "images/recipes/placeholder.png",
         "calories": "911 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
@@ -129,6 +134,7 @@
     {
         "name": "Flammkuchen",
         "description": "Für 2 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "975kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -152,6 +158,7 @@
     {
         "name": "Hähnchen Reis Pfanne",
         "description": "Für 2 Portionen\n\nReis kochen. Hähnchen in Öl mit Paprika, Salz und Pfeffer anbraten. Hähnchen aus der Pfanne nehmen und Zwiebeln anbraten. Erbsen hinzugeben und mit Gemüßebrühe ablöschen. 10 min  köcheln lassen. Hähnchen und Reis hinzugeben und abschmecken.",
+        "img": "images/recipes/placeholder.png",
         "calories": "685 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -177,6 +184,7 @@
     {
         "name": "Indisches rote Linsen dal",
         "description": "Für 4 Portionen\n\nZwiebel, Knoblauch und Ingwer klein schneiden und in 3 Minuten in Öl anbraten. Gewürze und Linsen hinzugeben und kurz mit braten. Mit Gemüßebrühe auffüllen und 10 min köcheln lassen. Kokosmilch und passierte Tomaten dazugeben und nochmal 5 min köcheln lassen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "430 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -208,6 +216,7 @@
     {
         "name": "Kartoffelbrei mit Fischstäbchen und Rahmsoße",
         "description": "Für 2 Personen",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": true,
@@ -230,6 +239,7 @@
     {
         "name": "Kartoffelgratin",
         "description": "Für 4 Portionen\n\nAuflaufform fetten. Kartoffeln schälen, in dünne Scheiben schneiden und in die Auflaufform schichten. Sahne mit Salz, Pfeffer und Muskat mischen und die Kartoffeln übergießen. Mit Käse bestreuen und bei 200°C 45min backen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -254,6 +264,7 @@
     {
         "name": "Kartoffelsuppe",
         "description": "Für 4 Portionen\n\nKartoffel und Karotten schälen. Suppengrün kleinschneiden. Gemüße anbraten und nach ein paar Minuten mit Gemüßebrühe bedecken. Gemüße weich kochen und anschließend pürieren.",
+        "img": "images/recipes/placeholder.png",
         "calories": "275 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -276,6 +287,7 @@
     {
         "name": "Kartoffelecken mit Quark",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "225 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -298,6 +310,7 @@
     {
         "name": "Kichererbseneintopf",
         "description": "Für 4 Portionen\n\nReis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
+        "img": "images/recipes/placeholder.png",
         "calories": "529 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -325,6 +338,7 @@
     {
         "name": "Knoblauch Gnocci",
         "description": "",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": true,
@@ -353,6 +367,7 @@
     {
         "name": "Knödel mit Rahmsoße",
         "description": "Für 2 Portinen\n\nKnödel nach Packungsanleitung machen. Rahmsoße und Rahmgemüße dazu.",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -373,6 +388,7 @@
     {
         "name": "Kroketten mit Veggie-Schnitzel",
         "description": "",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": true,
@@ -394,6 +410,7 @@
     {
         "name": "Käsespätzle",
         "description": "Für 4 Portionen\n\nSpätze nach Packungsanleitung kochen. Zwiebeln schneiden und mit Butter bestäuben. Zusammen mit der Butter anbraten und anschließend auf einem Papiertuch abtropfen lassen. Käse reiben. Sahne in einen Topf füllen und mit Salz, Pfeffer, Muskat würzen. Aufkochen und Spätzle, anschließend den Käse hinzufügen. Am Ende Röstzwiebeln und Schnittlauch darüberstreuen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "830 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -421,6 +438,7 @@
     {
         "name": "Kürbissuppe",
         "description": "Für 4 Portionen\n\nKürbis klein schneiden. Zwiebel und Knoblauch schneiden. Butter in einem Topf schmelzen, Zwiebeln und Knoblauch andünsten, Kürbis dazugeben und kurz mitbraten. Mit Brühe ablöschen und mit Salz und Pfeffer würzen. 15 min köcheln lassen. Sahne hinzugeben, pürieren und abschmecken.",
+        "img": "images/recipes/placeholder.png",
         "calories": "260 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -447,6 +465,7 @@
     {
         "name": "Maultaschengratin",
         "description": "Für 2 Portionen\n\nBackofen auf 200°C vorheizen. Zwiebel schneiden und anbraten. Spinat dazugeben und fertig kochen. Anschließend Spinat mit Brühe, Sahne, Eiern verrühren und mit Salz und Pfeffer würzen. In einer Auflaufform die kleingeschnittenen Maultaschen auslegen, die Spinatsauce drübergeben und mit Käsebestreuen. Für 35 min in den Ofen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "725 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -473,6 +492,7 @@
     {
         "name": "Mediterrane Zuchini Reis Pfanne mit Feta",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "678 kcal",
         "tags": {
             "vegetable": false,
@@ -508,6 +528,7 @@
     {
         "name": "Mozzarella Hähnchen in Basilikum Sahnesoße mit Reis",
         "description": "Für 2 Portionen\n\nFleisch mit Salz, Paprika und Pfeffer würzen und anbraten. Tomaten halbieren. Sahne in einem Topf aufkochen. Schmelzkäse hinzugeben, mit Salz, Pfeffer und Basilikum würzen. Fleisch in die Auflaufform geben, Tomaten und Sauce dazugeben. Im vorgeheizten Ofen bei 200°C für 30 min backen. Dazu Reis.",
+        "img": "images/recipes/placeholder.png",
         "calories": "1290 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -535,6 +556,7 @@
     {
         "name": "Nudelauflauf mit Schinken und Erbsen",
         "description": "Für 4 Portionen\n\nOfen auf 200°C vorheizen. Nudeln kochen, kurz vor Ende die Erbsen dazu geben. Kochschinken und Zwiebel schneiden. Butter erhitzen, Zwiebeln anschwitzen, mit Mehl bestäuben, mit Sahne und Milch ablöschen. Mit Salz, Pfeffer und Muskat und Petersilie würzen. Alles zusammen verrühren und in eine Auflaufform geben und mit Käse bestreuen. 20 min backen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "929 kcal",
         "tags": {
             "vegetable": false,
@@ -562,6 +584,7 @@
     {
         "name": "Nudeln mit Pesto",
         "description": "Für 2 Portionen\n\nNudeln kochen, etwas Nudelwasser aufheben. Nudeln, Pesto und Nudelwasser zusammenmischen",
+        "img": "images/recipes/placeholder.png",
         "calories": "750 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -612,6 +635,7 @@
     {
         "name": "Pilzrisotto",
         "description": "Für 4 Portionen\n\nReis waschen. Champignons klein schneiden. Scharlotten und Knoblauch kleinschneiden. Öl erhitzen, Scharlotten glasig dünsten, Reis und Knoblauch hinzugeben und dünsten. Champignons dazugeben, mit Wein ablöschen und würzen. Nach und Nach Gemüßebrühe dazugießen und unter Rühren 20-25min ausquellen lassen. Rucola, Butter und Parmesan dazugeben.",
+        "img": "images/recipes/placeholder.png",
         "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -641,6 +665,7 @@
     {
         "name": "Pizza",
         "description": "Für 2 Bleche",
+        "img": "images/recipes/placeholder.png",
         "calories": "1050 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -664,6 +689,7 @@
     {
         "name": "Rigatoni al Forno",
         "description": "Für 4 Portionen\n\nZwiebeln, Schinken und Knoblauch kleinschneiden. Nudeln kochen, kurz vor Ende die Erbsen dazugeben. Hackfleisch anbraten. Zwiebeln, und Knoblauch kurz mitdünsten. Tomtatenmark hinzugeben, und anschließend mit Gemüßebrühe ablöschen. Oregano und Basilikum zugeben und 40 min köcheln lassen. Sahne hinzugeben, dann abschmecken. Schinken hinzugeben und alles gut vermischen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "1115 kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -693,6 +719,7 @@
     {
         "name": "Rote Linsen Curry mit Süßkartoffeln",
         "description": "Für 3 Portionen\n\nSüßkartoffel, Paprika, Zwiebel und Knoblauch klein schneiden. Zwiebeln und Knoblauch anschwitzen. Süßkartoffel und Paprika dazugeben. Tomatenmark und Gewürze dazugeben und kurz mitbraten. Linsen hinzugeben und dann mit Kokosmilch und Gemüßebrühe aufgießen und 20 min köcheln lassen.",
+        "img": "images/recipes/placeholder.png",
         "calories": "687 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -725,6 +752,7 @@
     {
         "name": "Salatbowl",
         "description": "",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -753,6 +781,7 @@
     {
         "name": "Schnelle Spätzlepfanne mit Pilzen und lauch",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -783,6 +812,7 @@
     {
         "name": "Sommerlicher Nudelsalat",
         "description": "Für 8 Personen",
+        "img": "images/recipes/placeholder.png",
         "calories": "651 kcal",
         "tags": {
             "vegetable": false,
@@ -817,6 +847,7 @@
     {
         "name": "Spaghetti Bolognese",
         "description": "Für 2 Personen\n\nNudeln kochen. Sojagranulat in Gemüßebrühe einlegen. Zwiebel und Knoblauch klein schneiden und im Öl anbraten. Sojagranulat dazu geben und anbraten. Passierte Tomaten dazu geben und köcheln lassen. Nach 20 min die Sahne dazu geben, nochmal aufkochen lassen und mit den Gewürzen abschmecken.",
+        "img": "images/recipes/placeholder.png",
         "calories": "880 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -844,6 +875,7 @@
     {
         "name": "Spaghetti al Assasina",
         "description": "Für 2 Personen\n\nWasser mit Tomatenmark, Salz und Pfeffer mischen. Knoblauch klein schneiden und im Öl mit dem Chilli anbraten. Passierte Tomaten dazu geben und alles 2 min köcheln lassen. Spaghetti dazu geben und diese Braten bis die Soße karamellisiert und dunkel wird. Nach und Nach die Tomatenbrühe hinzugeben und köcheln lassen. Das wiederholen, bis die Nudeln durch sind. Mit Petersilie garnieren.",
+        "img": "images/recipes/placeholder.png",
         "calories": "550 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -869,6 +901,7 @@
     {
         "name": "Spinat Tomaten Lasagne",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -903,6 +936,7 @@
     {
         "name": "Tagliatelle mit Spinat und Hähnchen",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -928,6 +962,7 @@
     {
         "name": "Tomaten One Port Orzo",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "376 kcal",
         "tags": {
             "vegetable": false,
@@ -958,6 +993,7 @@
     {
         "name": "Tomaten-Reis-Pfanne mit Mozzarella",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "585 kcal",
         "tags": {
             "vegetable": false,
@@ -989,6 +1025,7 @@
     {
         "name": "Tortellini Auflauf",
         "description": "Für 4 Portionen",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -1057,6 +1094,7 @@
     {
         "name": "Winzerwecken",
         "description": "",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -1079,6 +1117,7 @@
     {
         "name": "Wraps",
         "description": "",
+        "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -1128,6 +1167,7 @@
     {
         "name": "Katsudon",
         "description": "Für 2 Portionen\n\nSchnitzel in der Heißluftfriteuse machen. Reis kochen. Eier verquirlen, Zwiebeln klein schneiden, Gemüßebrühe mit Sojasauce und Mirin mischen.\nZwiebeln anbraten bis sie braun sind. Mit der Soße ablöschen und etwas köcheln lassen. Die Eier dazugeben und auf mittlerer Hitze rühren, bis sich eine festere Masse gebildet hat.\nDen Reis in eine Schüssel füllen, Das Schnitzel darauf legen und die Eiermasse darüber geben.",
+        "img": "images/recipes/placeholder.png",
         "calories": "730 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1152,8 +1192,9 @@
     },
     {
         "name": "Katsu Curry",
-        "description": "Für 2 Portionen\n\nSchnitzel in der Heißluftfriteuse machen. Reis kochen. Kartoffeln und Karotten schälen und zusammen mit den Zwiebeln klein schneiden. In einem Topf das Gemüße 5 min anbraten. Wasser in den Topf machen und aufkochen lassen. Alles 15min köcheln lassen bis das Gemüße durch ist. In der Zwischenzeit die Veggi Schnitzel in der Heisluftfriteuse zubereiten. Den Curry Würfel zum Gemüße hinzugeben und weitere 5 min köcheln und rühren, bis der Würfel sich aufgelöst hat.",
-        "calories": "670 kcal (bei unten stehendem Rezept)",
+        "description": "Für 2 Portionen\n\nSchnitzel in der Heißluftfriteuse machen. Reis kochen. Kartoffeln und Karotten schälen und zusammen mit den Zwiebeln klein schneiden. In einem Topf das Gemüße 5 min anbraten. Wasser in den Topf machen und aufkochen lassen. Alles 15min köcheln lassen bis das Gemüße durch ist. Den Curry Würfel zum Gemüße hinzugeben und weitere 5 min köcheln und rühren, bis der Würfel sich aufgelöst hat.",
+        "img": "images/recipes/katsu_curry.jpg",
+        "calories": "850 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -1165,18 +1206,19 @@
         },
         "ingredients": {
             "0": "2 Valess Veggi Schnitzel",
-            "1": "2 Curry Würfel",
-            "2": "100g Kartoffeln festkochend",
-            "3": "50g Karotten",
-            "4": "1 Zwiebel",
-            "5": "280ml Wasser",
-            "6": "200g Reis" 
+            "1": "1 Curry Würfel",
+            "2": "2 große Kartoffeln festkochend",
+            "3": "2 große Karotten",
+            "4": "1 große Zwiebel",
+            "5": "250ml Wasser",
+            "6": "175g Reis" 
         },
         "url": "https://rikueats.de/japanisches-curry-mit-katsu/"
     },
     {
         "name": "Yakisoba",
         "description": "Für 2 Portionen\n\nKohl, Karotte und Zwiebel schneiden. Erst Zwiebeln und Karotten anbraten, dann den Kohl dazu. Nudeln und Wasser dazu geben und köcheln lassen, bis die Nudeln gut sind. Yakisoba-sauce dazu und rühren. Sobald sich die Sauce gut verteilt hat mit Pfeffer abschmecken.",
+        "img": "images/recipes/placeholder.png",
         "calories": "435 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1229,7 +1271,8 @@
     {
         "name": "Gyros Nudelpfanne",
         "description": "Für 2 große Portionen\n\nNudeln kochen. Hähnchen, Paprika und Zwiebeln anbraten. Tomatenmark, Passierte Tomaten, Sahne und Creme Fraiche hinzugeben und mit Pfeffer, Salz, Oregano, Knoblauch und Paprika würzen. Nudeln hinzugeben.",
-        "calories": " kcal (bei unten stehendem Rezept)",
+        "img": "images/recipes/placeholder.png",
+        "calories": "885 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -1244,10 +1287,11 @@
             "1": "200g Hähnchen",
             "2": "1 rote Paprika",
             "3": "1 El Tomatenmark",
-            "4": "300g Passierte Tomaten",
+            "4": "200g Passierte Tomaten",
             "5": "1 Zwiebel",
             "6": "200ml Sahne",
-            "7": "1 EL Creme Fraiche"
+            "7": "1 EL Creme Fraiche",
+            "8": "125g Feta Light"
         },
         "url": "none"
     }
