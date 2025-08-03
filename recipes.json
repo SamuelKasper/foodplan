@@ -311,7 +311,7 @@
         "name": "Kichererbseneintopf",
         "description": "Für 4 Portionen\n\nReis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
         "img": "images/recipes/placeholder.png",
-        "calories": "529 kcal (bei unten stehendem Rezept)",
+        "calories": "840 kcal + 320 kcal pro großen Wrap (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -331,7 +331,7 @@
             "6": "300g Rahm Blattspinat",
             "7": "Limettensaft",
             "8": "Je 1 TL: Kurkuma, Koriander, Paprika, Zimt, Kreuzkümmel, Salz",
-            "9": "Naan Brot oder Reis"
+            "9": "175g Reis"
         },
         "url": "none"
     },
@@ -1347,6 +1347,31 @@
             "8": "0,5 TL Paprikapulver",
             "9": "250g passierte Tomaten",
             "10": "100g Alpro Sahne"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Veganer Schokokuchen",
+        "description": "Ofen auf 180°C vorheizen. Mehl, Backkakao und Backpulver zusammenmischen und in die Rührschüssel sieben. Den Zucker dazugeben. Unter rühren das Vanilleextrakt, Öl und Wasser hinzugeben. Alles gut verrühren bis keine Klümpchen mehr zu sehen sind. Den Teig in eine 20cm Springform gießen und im vorgeheizten Ofen 35-40 Minuten backen.",
+        "img": "images/recipes/placeholder.png",
+        "calories": "2440 kcal pro Kuchen (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "200g Mehl",
+            "1": "35g Backkakao",
+            "2": "180g Zucker",
+            "3": "1 TL Vanilleextrakt",
+            "4": "0.5 Pck Backpulver",
+            "5": "240ml Wasser",
+            "6": "100ml Rapsöl"
         },
         "url": "none"
     }
