@@ -1294,5 +1294,60 @@
             "8": "125g Feta Light"
         },
         "url": "none"
+    },
+    {
+        "name": "Hackfleisch Nudelpfanne",
+        "description": "Für 2 große Portionen\n\nZwiebel und Paprika in Öl anbraten. Hackfleisch und Gewürze hinzugeben und Knusprig braten. Passierte Tomaten hinzugeben. Frischkäse hinzugeben und verrühren. Nudeln hinzugeben und fertigkochen.",
+        "img": "images/recipes/hacknudelpfanne.jpg",
+        "calories": "950 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "150g Vollkornnudeln",
+            "1": "1 El Olivenöl",
+            "2": "150g körniger Frischkäse light",
+            "3": "500g Tomaten passiert",
+            "4": "400g Hackfleisch",
+            "5": "1 Rote Paprika",
+            "6": "2 Zwiebeln",
+            "7": "Fleischgewürz und Italienisches Gewürz"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Butter Chicken",
+        "description": "Für 2 große Portionen\n\nReis kochen. Fleisch mit Knoblauch, Paprika und Salz würzen und anbraten und anschließend aus der Pfanne nehmen. Zwiebeln in der Hälfte der butter anbraten, dann Knoblauch, Ceshewkerne und Ingwer dazugeben. Passierte Tomaten, Garam Masala und Paprika dazugeben. 5 min köcheln lassen, dann die Sahne dazugeben und nochmal aufkochen. Die Zutaten in einen Mixer füllen und feinpürieren. Soße zusammen mit Fleisch und der Restlichen Butter wieder in die Pfanne oder einen Topf und alles nochmal 5 min köcheln lassen.",
+        "img": "images/recipes/placeholder.png",
+        "calories": "850 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": true,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false
+        },
+        "ingredients": {
+            "0": "1 Packung Like Chicken",
+            "1": "175g Reis",
+            "2": "0,5 EL Olivenöl",
+            "3": "2 EL Butter",
+            "4": "1 Zwiebel",
+            "5": "0.5 TL Ingwer",
+            "6": "30g Ceshewkerne",
+            "7": "1 TL Garam Masala",
+            "8": "0,5 TL Paprikapulver",
+            "9": "250g passierte Tomaten",
+            "10": "100g Alpro Sahne"
+        },
+        "url": "none"
     }
 ]
