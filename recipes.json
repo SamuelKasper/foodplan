@@ -11,7 +11,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Dosen Kidney Bohnen",
@@ -46,7 +47,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "url": "none"
     },
@@ -62,7 +64,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "250g Spaghetti",
@@ -86,7 +89,8 @@
             "lentils": false,
             "meat": false,
             "salad": true,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Knoblauchzehen",
@@ -116,7 +120,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "250 g Mie Nudeln ohne Ei oder andere Nudeln (z.B. Spaghetti)",
@@ -143,7 +148,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "ingredients": {
             "0": "400g Mehl",
@@ -167,7 +173,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
        "ingredients": {
             "0": "175g Reis",
@@ -193,7 +200,8 @@
             "lentils": true,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 EL Olivenöl zum Braten",
@@ -225,7 +233,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 Packung Fischstäbchen",
@@ -248,7 +257,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 TL Butter für die Form",
@@ -273,7 +283,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 kg Kartoffeln",
@@ -296,7 +307,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "600g Kartoffeln",
@@ -319,7 +331,8 @@
             "lentils": true,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 Süßkartoffel",
@@ -347,7 +360,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "",
@@ -376,7 +390,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "ingredients": {
             "0": "8 Knödel",
@@ -397,7 +412,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "500g Kroketten",
@@ -419,7 +435,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1000 g fertige Spätzle aus dem Kühlregal - alternativ selbstgemacht",
@@ -447,7 +464,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 Hokkaido-Kürbis (ca. 800 g)",
@@ -466,7 +484,7 @@
         "name": "Maultaschengratin",
         "description": "Für 2 Portionen\n\nBackofen auf 200°C vorheizen. Zwiebel schneiden und anbraten. Spinat dazugeben und fertig kochen. Anschließend Spinat mit Brühe, Sahne, Eiern verrühren und mit Salz und Pfeffer würzen. In einer Auflaufform die kleingeschnittenen Maultaschen auslegen, die Spinatsauce drübergeben und mit Käsebestreuen. Für 35 min in den Ofen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "725 kcal (bei unten stehendem Rezept)",
+        "calories": "1275 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -474,13 +492,14 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "300 g Spinat (am besten über Nacht im Kühlschrank auftauen lassen)",
             "1": "1 Zwiebel",
-            "2": "250 g Maultaschen",
-            "3": "500 ml Gemüsebrühe",
+            "2": "2 Packungen Maultaschen",
+            "3": "100 ml Gemüsebrühe",
             "4": "200 ml Schlagsahne",
             "5": "2 Eier",
             "6": "150 g geriebener Käse (z.B. Emmentaler oder Gouda)",
@@ -501,7 +520,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Zucchini",
@@ -537,7 +557,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "4 Garden Gourmet Filet",
@@ -565,7 +586,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "500 g Fusilli",
@@ -593,7 +615,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "250g Spaghetti",
@@ -613,7 +636,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Zwiebel",
@@ -644,7 +668,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "300 g Risottoreis",
@@ -674,7 +699,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "ingredients": {
             "0": "400g Mehl",
@@ -698,7 +724,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Zwiebel",
@@ -728,7 +755,8 @@
             "lentils": true,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "450g Süßkartoffeln",
@@ -761,7 +789,8 @@
             "lentils": false,
             "meat": false,
             "salad": true,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "",
@@ -790,7 +819,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "500 g Spätzle (aus dem Kühlregal oder selbstgemacht)",
@@ -821,7 +851,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "250 g Nudeln (z.B. Fusilli)",
@@ -856,7 +887,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "150g Sojagranulat",
@@ -884,7 +916,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "200g Spaghetti",
@@ -910,7 +943,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "600 g Blattspinat, tiefgekühlt mit Rahm",
@@ -945,7 +979,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "600 g Hähnchenbrustfilets",
@@ -971,7 +1006,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Zwiebel",
@@ -1002,7 +1038,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "50 g getrocknete Tomaten (in Öl)",
@@ -1034,7 +1071,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "400 g Tortellini (nach Wahl)",
@@ -1066,7 +1104,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "300 g Sojaschnetzel",
@@ -1103,7 +1142,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "ingredients": {
             "0": "12 Aufbackbrötchen",
@@ -1126,7 +1166,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": true
+            "other": true,
+            "sweets": false
         },
         "ingredients": {
             "0": "Wraps",
@@ -1152,7 +1193,8 @@
             "lentils": false,
             "meat": false,
             "salad": true,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "150g Chinakohl oder Weißkohl",
@@ -1176,7 +1218,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Valess Veggi Schnitzel",
@@ -1202,7 +1245,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "2 Valess Veggi Schnitzel",
@@ -1227,7 +1271,8 @@
             "lentils": false,
             "meat": true,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "200g Soba Nudeln",
@@ -1253,7 +1298,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "460g Udon Nudeln (2 Portionen)",
@@ -1280,7 +1326,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "250g Nudeln",
@@ -1307,7 +1354,8 @@
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "150g Vollkornnudeln",
@@ -1328,12 +1376,13 @@
         "calories": "850 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
-            "noodle": true,
-            "rice": false,
+            "noodle": false,
+            "rice": true,
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": false
         },
         "ingredients": {
             "0": "1 Packung Like Chicken",
@@ -1353,16 +1402,17 @@
     {
         "name": "Veganer Schokokuchen",
         "description": "Ofen auf 180°C vorheizen. Mehl, Backkakao und Backpulver zusammenmischen und in die Rührschüssel sieben. Den Zucker dazugeben. Unter rühren das Vanilleextrakt, Öl und Wasser hinzugeben. Alles gut verrühren bis keine Klümpchen mehr zu sehen sind. Den Teig in eine 20cm Springform gießen und im vorgeheizten Ofen 35-40 Minuten backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/schokokuchen.jpg",
         "calories": "2440 kcal pro Kuchen (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
-            "noodle": true,
+            "noodle": false,
             "rice": false,
             "lentils": false,
             "meat": false,
             "salad": false,
-            "other": false
+            "other": false,
+            "sweets": true
         },
         "ingredients": {
             "0": "200g Mehl",
@@ -1372,6 +1422,87 @@
             "4": "0.5 Pck Backpulver",
             "5": "240ml Wasser",
             "6": "100ml Rapsöl"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Couscous Salat mit Paprika und Gurke",
+        "description": "Für 3 Portionen\n\nCouscous abwiegen und mit etwas Gemüßebrühe vermischen. Couscous mit kochendem Wasser übergießen und 10 min ziehen lassen. Zwei Esslöffel Olivelöl hinzugeben und etwas mit der Gabel auflockern. Gurke und Paprika in kleine Würfel schneiden und mit dem Couscous vermischen. Mit Salz, Pfeffer und Paprikapulver abschmecken.",
+        "img": "images/recipes/placeholder.png",
+        "calories": "360 kcal pro Portion (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": true,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "200g Couscous",
+            "1": "450ml Gemüsebrühe",
+            "2": "1 rote Paprika",
+            "3": "1 halbe Gurke",
+            "4": "2 EL Olivenöl",
+            "5": "Paprikapulver, Salz, Pfeffer"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Bruschetta",
+        "description": "Für 2 Portionen\n\nTomaten in kleine Würfel schneiden, knoblauch dazu pressen, Öl und Gewürze dazu geben und über nach luftdicht verschlossen in den Kühlschrank stellen. Brot in scheiben schneiden und ohne Öl braun anbraten.",
+        "img": "images/recipes/bruschetta.jpg",
+        "calories": "850 kcal pro Portion (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "1 Ciabatta (300g)",
+            "1": "5 Tomaten",
+            "2": "2 Knoblauchzehen",
+            "3": "4 EL Olivenöl (60g)",
+            "4": "12 Basilikumblätter",
+            "5": "Salz, Pfeffer"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Bananenbrot",
+        "description": "Für 1 Banenenbrot\n\n Chiasamen mit Wasser verrühren und ca. 10 Minuten quellen lassen.  Ofen auf 175 °C Ober-/Unterhitze vorheizen. Kastenform einfetten oder mit Backpapier auslegen.  Bananen zerdrücken. 'Chia-Eier', Honig und Öl einrühren.  Mehl, Haferflocken, Backpulver, Zimt, Salz und Mandeln mischen.  Alles mit der Pflanzenmilch zu einem glatten Teig verrühren. In die Form füllen, mit Mandeln bestreuen. 50-60 Minuten backen, Stäbchenprobe machen.  Abkühlen lassen, dann aus der Form nehmen.",
+        "img": "images/recipes/placeholder.png",
+        "calories": "??? kcal pro Portion (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": false,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": true
+        },
+        "ingredients": {
+            "0": "3 reife Bananen (240-300g)",
+            "1": "120g Honig / Agavendicksaft / Ahornsirup",
+            "2": "3 EL Chiasamen + 9 EL Wasser",
+            "3": "90ml Rapsöl",
+            "4": "180g Dinkelmehl 630",
+            "5": "120g zarte Haferflocken",
+            "6": "1,5 TL Backpulver",
+            "7": "1 Prise Salz",
+            "8": "60ml Hafer- / Mandelmilch",
+            "9": "80g gehackte Mandeln",
+            "10": "1 TL Zimt"
+
         },
         "url": "none"
     }
