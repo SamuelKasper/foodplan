@@ -1505,5 +1505,32 @@
 
         },
         "url": "none"
+    },
+    {
+        "name": "Kartoffelsalat",
+        "description": "Für 4 Portionen\n\nKartoffel in ungeschält Salzwasser kochen (ca. 20 min). Abgießen und ausdampfen lassen. Noch warm pellen und in dünne scheiben schneiden. Zwiebeln klein schneiden und in Öl andünsten. Senf, Gemüßebrühe, Essig dazugeben und aufkochen. Vom Herd nehmen und die Kartoffeln damit übergießen. Mit Salz, Pfeffer, Essig, Muskat und Senf abschmecken. Zugedeckt über Nacht ziehen lassen. Nochmal abschmecken und mit gehacktem Schnittlauch garnieren.",
+        "img": "images/recipes/kartoffelsalat.jpg",
+        "calories": "440 kcal pro Portion (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "1 kg Kartoffeln",
+            "1": "2 Zwiebeln",
+            "2": "300ml Gemüßebrühe (1 gehäufter EL Gemüßebrühe, 1 gehäufter EL Rinderbrühe)",
+            "3": "5 EL Apfelessig",
+            "4": "1 gehäufter EL mittelscharfer Senf",
+            "5": "6 EL neutrales Speiseöl",
+            "6": "Salz, Pfeffer, Muskatnuss",
+            "7": "Frischer Schnittlauch"
+        },
+        "url": "none"
     }
 ]
