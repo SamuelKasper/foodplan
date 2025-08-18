@@ -59,6 +59,23 @@ button, .button {
     width: 100%;
 }
 
+.foodplanner__search-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.foodplanner__filter-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+
+    button {
+        height: 3rem;
+        width: max-content;
+    }
+}
+
 .foodplanner__fieldset{
     position: relative;
     border: none;
@@ -67,14 +84,11 @@ button, .button {
     width: 100%;
 }
 
-.foodplanner__fieldset--select{
-    width: clamp(10rem, 8.786rem + 5.178vw, 15rem);
-}
-
 .foodplanner__input-label {
     display: block;
     visibility: hidden;
     height: 0;
+    width: 0;
     clip: rect(0, 0, 0, 0);
     padding: 0;
     margin: 0;
@@ -85,14 +99,27 @@ button, .button {
     width: 100%;
     padding: .5rem .75rem;
     border: 1px solid #ededed;
-    border-radius: .5rem;
+    border-radius: .5rem 0 0 .5rem;
     font-size: 1.125rem;
+}
+
+.foodplanner__submit-icon{
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+}
+
+.foodplanner__random-icon,
+.foodplanner__trash-icon {
+    width: 2rem;
+    height: 2rem;
+    fill: #fff;
 }
 
 .foodplanner__select{
     height: 3rem;
     padding: .5rem;
-    width: 100%;
+    width: fit-content;
     border: 1px solid #ededed;
     border-radius: .5rem;
     font-size: 1.125rem;
@@ -103,7 +130,7 @@ button, .button {
     background-color: var(--color-green);
     color: #fff;
     border: none;
-    border-radius: .5rem;
+    border-radius: 0 .5rem .5rem 0;
     padding: .5rem 1rem;
     font-size: 1.125rem;
 }
@@ -141,6 +168,11 @@ button, .button {
     &:hover {
         background-color: var(--color-green);
     }
+}
+
+.button--square {
+    aspect-ratio: 1;
+    padding: .5rem;
 }
 
 .button--gray {
@@ -248,12 +280,15 @@ button, .button {
     }
 }
 
-.foodplanner__recipe-calories {
+.foodplanner__recipe-servings {
     margin-top: 1rem;
+    font-weight: 600;
 }
 
-.foodplanner__recipe-description {
+.foodplanner__recipe-description-headline {
     margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-weight: 600;
 }
 
 .foodplanner__details-toggle {
@@ -271,6 +306,12 @@ button, .button {
 
 .foodplanner__ingredient-headline {
     margin-top: 1rem;
+    margin-bottom: .25rem;
+    font-weight: 600;
+}
+
+.foodplanner__ingredient-list{
+    padding-left: 1.25rem;
 }
 
 .foodplanner__recipe-button{

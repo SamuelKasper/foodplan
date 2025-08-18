@@ -163,20 +163,34 @@ function buildRecipesHtml(data){
     let detailsEl = document.createElement("details");
     detailsEl.classList.add("foodplanner__details-toggle");
     let detailsSummary = document.createElement("summary");
-    detailsSummary.innerText = "Details";
+    detailsSummary.innerText = "Rezept anzeigen";
     detailsEl.appendChild(detailsSummary);
     listItem.append(detailsEl);
+
+    //Portionen
+    let servingEl = document.createElement("p");
+    servingEl.classList.add("foodplanner__recipe-servings");
+    let serving = entry.serving;
+    let serving_unit = entry.serving_unit;
+    if(serving && serving_unit){
+      servingEl.innerText = 'Für ' + serving + ' ' + serving_unit;
+      detailsEl.append(servingEl);
+    }
 
     // Calories
     let kaloriesEl = document.createElement("p");
     kaloriesEl.classList.add("foodplanner__recipe-calories");
     let cal = entry.calories;
     if(cal){
-      kaloriesEl.innerText = 'Portion: ' + cal;
+      kaloriesEl.innerText = 'Pro Portion: ' + cal;
       detailsEl.append(kaloriesEl);
     }
-    
+
     // Beschreibung
+    let descriptionHeadline = document.createElement('p');
+    descriptionHeadline.classList.add('foodplanner__recipe-description-headline');
+    descriptionHeadline.innerText = 'Anleitung';
+    detailsEl.append(descriptionHeadline);
     let descriptionEl = document.createElement("p");
     descriptionEl.classList.add("foodplanner__recipe-description");
     let description = entry.description;
