@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
   .then((data) => {
     buildRecipesHtml(data);
   })
-
-  // handlePopup();
 });
 
 // Gets the data from json file
@@ -32,7 +30,6 @@ async function fetchRecipes(search = null, filter = null, random = null) {
     data = data.filter((entry) => entry.name.toLowerCase().includes(search.toLowerCase()));
   }
   if (filter && filter != 'all') {
-    console.log(data[0].tags);
     data = data.filter((entry) => entry.tags[filter] == true);
   }
 
@@ -238,27 +235,7 @@ function buildRecipesHtml(data){
       });
     });
 
-    // Rezept bearbeiten Button
-    // let editBtn = document.createElement("button");
-    // editBtn.classList.add("foodplanner__recipe-button");
-    // editBtn.innerText = "Bearbeiten";
-    // buttonWrapperEl.append(editBtn);
-
     // Build html
     resultList.append(listItem);
   });
 }
-
-// function handlePopup(){
-//   const dialog = document.querySelector("dialog");
-//   const openButton = document.getElementById("popup__open");
-//   const closeButton = document.getElementById("popup__close");
-
-//   openButton.addEventListener("click", () => {
-//     dialog.showModal();
-//   });
-
-//   closeButton.addEventListener("click", () => {
-//     dialog.close();
-//   });
-// }
