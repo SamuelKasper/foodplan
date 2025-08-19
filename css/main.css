@@ -294,6 +294,7 @@ button, .button {
 
 .foodplanner__details-toggle {
     margin-top: 1rem;
+    cursor: pointer;
     
     &::before {
         content: '';
