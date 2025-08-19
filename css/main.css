@@ -14,7 +14,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Lato;
+    font-family: Lato, Calibri, Arial;
 
     &:focus-visible {
         outline: #1d1d1d dotted 2px;
