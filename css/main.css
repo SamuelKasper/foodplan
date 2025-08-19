@@ -121,6 +121,7 @@ button, .button {
     padding: .5rem;
     width: fit-content;
     border: 1px solid #ededed;
+    background-color: #fff;
     border-radius: .5rem;
     font-size: 1.125rem;
 }
