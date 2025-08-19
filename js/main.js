@@ -46,7 +46,7 @@ async function fetchRecipes(search = null, filter = null, random = null) {
 }
 
 function getRandom() {
-  let random = Math.floor(Math.random() * recipesAmount) + 1;
+  let random = Math.floor(Math.random() * recipesAmount);
   let base = window.location.origin + window.location.pathname;
   window.location.href = base + "?random=" + random;
 }
