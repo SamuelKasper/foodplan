@@ -1031,11 +1031,11 @@
     },
     {
         "name": "Tagliatelle mit Spinat und Hähnchen",
-        "serving": 4,
+        "serving": 2,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Zwiebel klein schneiden. In einer Pfanne Öl das Hähnchen anbraten, anschließend auf einem Teller beiseitelegen.\n\nPfanne nicht säubern und Zwiebeln darin auf mittlerer Stufe ca. 3 Min. anschwitzen. Mit Sahne ablöschen, aufkochen und auf mittlerer Stufe ca. 3–4 Min. einköcheln, sodass eine sämige Soße entsteht. Nudeln kochen. Spinat zur Zwiebel-Sahne-Mischung geben und unter Rühren ca. 1–2 Min. auftauen lassen. Hähnchen ebenfalls wieder zugeben und ca. 1–2 Min. warm ziehen lassen. Alles würzig mit Salz und Pfeffer abschmecken. In der Pfanne Tagliatelle, Spinat-Sahnesoße und das Hähnchen vermengen und ggf. nachwürzen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "790 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -1047,11 +1047,11 @@
             "sweets": false
         },
         "ingredients": {
-            "0": "600 g Hähnchenbrustfilets",
-            "1": "300 g frischer Blattspinat",
-            "2": "500 g Tagliatelle",
+            "0": "1 pck Garden Gourmet Filet",
+            "1": "150 g frischer Blattspinat",
+            "2": "250 g Tagliatelle",
             "3": "1 Zwiebel",
-            "4": "150 ml Sahne",
+            "4": "100 ml Sahne",
             "5": "1 EL Öl",
             "6": "Salz",
             "7": "Pfeffer"
@@ -1062,9 +1062,9 @@
         "name": "Tomaten One Port Orzo",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Zwiebeln und Knoblauch schälen. Zwiebeln in feine Würfel schneiden und den Knoblauch fein pressen. Kirschtomaten waschen und halbieren. Öl in einem Topf oder in einem gusseisernen Bräter erhitzen. Zwiebeln, Knoblauch und Tomaten anschwitzen. Die Hitze reduzieren, Tomatenmark und Orzo Pasta dazugeben und diese mit anschwitzen. Mit Salz, Pfeffer sowie Zucker würzen. Alles mit Zitronensaft ablöschen und mit Gemüsebrühe auffüllen. Dabei so lange rühren, bis die Flüssigkeit verkocht und die Pasta weich ist. Abschmecken und mit geriebenem Käse und Basilikumblätter genießen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "376 kcal",
+        "calories": "600 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
