@@ -378,9 +378,9 @@
         "name": "Knoblauch Gnocci",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Knoblauch schälen und die einzelnen Zehen in eine kleine Auflaufform legen. Mit Öl übergießen bis alle Zehen bedeckt sind. Form bei 180°C Ober/Unterhitze für 30min backen bis der Knoblauch braun ist.\n\n10 Minuten bevor der Knoblauch fertig ist die Gnocci kochen. Etwas Gnocciwasser aufbewahren. Pinienkerne anrösten. Knoblauch mit 2 EL des Knoblauchöls, Parmesan, 75% der gerösteten Pinienkerne, Salz, Pfeffer, Chili und etwas Gnocciwasser cremig pürieren.\nGnocci mit der Soße mischen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "975 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -392,17 +392,12 @@
             "sweets": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "1 Packung Gnocci (600g)",
+            "1": "1 Knolle Knoblauch",
+            "2": "Öl (soviel bis der Knoblauch bedeckt ist)",
+            "3": "50g Pinienkerne",
+            "4": "50g Parmesan",
+            "5": "Salz, Pfeffer, Chilipulver"
         },
         "url": "none"
     },
@@ -412,7 +407,7 @@
         "serving_unit": "Portionen",
         "description": "Knödel nach Packungsanleitung machen. Rahmsoße und Rahmgemüße dazu.",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "800 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -434,9 +429,9 @@
         "name": "Kroketten mit Veggie-Schnitzel",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Kroketten und Schnitzel nach Packungsanleitung zubereiten. Rahmsoße dazu machen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "900 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -450,8 +445,8 @@
         "ingredients": {
             "0": "500g Kroketten",
             "1": "2 Veggie Schnitzel",
-            "2": "Rahmsoße",
-            "3": "Rahmgemüße"
+            "2": "230ml Rahmsoße",
+            "3": "250g Rahmgemüße"
         },
         "url": "none"
     },
@@ -741,7 +736,7 @@
         "name": "Pizza",
         "serving": 2,
         "serving_unit": "Bleche",
-        "description": "",
+        "description": "Mehl, Wasser, Hefe und Salz vermischen und mit der Rührmaschine 5 min von Hand 10 min kneten. Teig mindestens so lange ruhen lassen, bis er einmal aufgeganen ist (~1-2h). Bei weniger Hefe oder kühler Temperatur länger. Anschließend Teig ausbreiten und dann mit passierten Tomaten und Zutaten belegen.",
         "img": "images/recipes/placeholder.png",
         "calories": "1050 kcal (bei unten stehendem Rezept)",
         "tags": {
@@ -837,9 +832,9 @@
         "name": "Salatbowl",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Kartoffeln kleinschneiden und Backen. Fleisch in Öl anbraten und würzen. Paprika und Tomaten in kleine Würfel schneiden. Salat waschen und klein schneiden. Für das Dressing: Joghurt, Ketchup, Mayo, Knoblauch und nochmals Gewürz mischen. Alles zusammenmischen und mit Parmesan bestreuen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "750 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -851,17 +846,18 @@
             "sweets": false
         },
         "ingredients": {
-            "0": "",
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": ""
+            "0": "200g Cocktailtomaten",
+            "1": "400g Eisbergsalat",
+            "2": "160g Garden Gourmet Hähnchen",
+            "3": "400g Kartoffeln",
+            "4": "1 rote Paprika",
+            "5": "100g Joghurt",
+            "6": "6 EL Ketchup light",
+            "7": "4 EL Mayo Light",
+            "8": "2 EL Öl",
+            "9": "10g Parmesan",
+            "10": "2 Zehe Knoblauch",
+            "11": "Salz, Pfeffer, Fleischgewürz"
         },
         "url": "https://www.tiktok.com/@schmaleschulter/video/7432323353823677718?_r=1&_t=8r3VoWIW9SK"
     },
@@ -869,9 +865,9 @@
         "name": "Schnelle Spätzlepfanne mit Pilzen und lauch",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Den Lauch und die Pilze putzen und in Scheiben schneiden. Die Schalotte würfeln.\nDas Gemüse in der zerlassenen Butter anbraten, etwas braten lassen, es soll noch Biss haben. Die Spätzle dazugeben, erwärmen und durchmischen. Alles mit Apfelschorle ablöschen und mit Salz, Pfeffer, Paprikapulver und Tomatenmark würzen und gut durchrühren. Die Sahne hinzugeben. Ganz zum Schluss den Bergkäse untermischen und alles nochmals abschmecken.\nDazu unbedingt einen gemischten Salat mit Radicchio und einer süßen Senf-Vinaigrette reichen!",
         "img": "images/recipes/placeholder.png",
-        "calories": "",
+        "calories": "1010 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -901,11 +897,11 @@
     },
     {
         "name": "Sommerlicher Nudelsalat",
-        "serving": 8,
+        "serving": 6,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Die Nudeln in Salzwasser bissfest kochen, abgießen und abkühlen lassen. In der Zwischenzeit die getrocknete Tomaten klein schneiden. Die frischen Tomaten vierteln. Frühlingszwiebeln waschen und in feine Ringe schneiden, dabei auch einen Teil von den grünen Stängeln mit verwenden. Fetakäse würfeln. Die Zucchini waschen und in kleine Würfel schneiden. Etwa 3 EL Öl aus dem Glas der getrockneten Tomaten in eine Pfanne geben und erhitzen. Die Zucchiniwürfel bei mäßiger Hitze in etwa 5 Min. weich dünsten. Die Nudeln in eine Schüssel geben und die geviertelten frischen Tomaten, getrocknete Tomaten, Frühlingszwiebelringe und die Fetawürfel dazugeben. Die Zucchiniwürfel mit dem Öl aus der Pfanne noch warm über den Salat geben. Für das Dressing Wasser, Essig, Öl, Gemüsebrühe, Senf, Süßstoff und die Gewürze miteinander mischen und über den Nudelsalat geben. Alles gut vermengen und mindestens 1 - 2 Std. ziehen lassen. Je nach Geschmack kann man auch etwas mehr Essig oder Öl verwenden. Man kann den Salat gleich servieren, aber es schmeckt viel besser, wenn er durchgezogen ist.",
         "img": "images/recipes/placeholder.png",
-        "calories": "651 kcal",
+        "calories": "400 kcal",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -920,20 +916,18 @@
             "0": "250 g Nudeln (z.B. Fusilli)",
             "1": "250 g Cocktailtomaten",
             "2": "2 Frühlingszwiebeln",
-            "3": "250 g Feta-Käse",
+            "3": "250 g Feta Light",
             "4": "150 g getrocknete Tomaten in Öl",
-            "5": "100 g schwarze Oliven, in Scheiben",
-            "6": "1 mittelgroße Zucchini",
-            "7": "2 EL Sonnenblumenkerne oder Körnermix",
-            "8": "8 EL heller Balsamessig",
-            "9": "8 EL Olivenöl",
-            "10": "Salz",
-            "11": "Pfeffer",
-            "12": "Oregano",
-            "13": "Knoblauch",
-            "14": "100 ml Wasser",
-            "15": "1 TL Gemüsebrühe",
-            "16": "1 gestrichener TL Senf"
+            "5": "1 mittelgroße Zucchini",
+            "6": "8 EL dunkler Balsamessig",
+            "7": "8 EL Olivenöl",
+            "8": "Salz",
+            "9": "Pfeffer",
+            "10": "Oregano",
+            "11": "Knoblauch",
+            "12": "100 ml Wasser",
+            "13": "1 TL Gemüsebrühe",
+            "14": "1 gestrichener TL Senf"
         },
         "url": "https://www.chefkoch.de/rezepte/1722041281270634/Sommerlicher-Nudelsalat.html"
     },
@@ -1001,7 +995,7 @@
         "name": "Spinat Tomaten Lasagne",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Gemüse kleinschneiden und anbraten. Milch und Rahmspinat hinzufügen. Wenn der Rahmspinat nicht mehr gefroren ist den Frischkäse, Gemüßebrühenpulver, Chilli, Salz und Pfeffer und Knoblauch hinzugeben.\nButter in einem Topf erhitzen. Mehl hinzugeben und glatt rühren. Passierte Tomaten und Sahne hinzugeben. Knoblauch dazu und mit Salz und Pfeffer abschmecken. Auflaufform einfetten, mit einer Schicht Tomatensoße und Spinat anfangen, dann Lasagneplatten etc. Nach der Letzten Schicht Käse darüberstreuen. Lasagne bei 200°C Umfluft für 30min backen.",
         "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
