@@ -30,9 +30,9 @@
         "name": "Burger",
         "serving": 4,
         "serving_unit": "Burger",
-        "description": "",
+        "description": "Patties anbraten, Gemüße in scheiben schneiden. Brötchen antoasten und dann mit Soße bestreichen. Mit Pattie, Schmelzkäse und Gemüße belegen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "??? kcal",
+        "calories": "ca. 750 kcal",
         "ingredients": {
             "0": "4 Brötchen",
             "1": "4 Patties",
@@ -84,12 +84,12 @@
         "url": "https://www.chefkoch.de/rezepte/1298241234947062/Carbonara-wie-bei-der-Mamma-in-Rom.html?portionen=4"
     },
     {
-        "name": "Caesar Salad Wrap",
+        "name": "Caesar Salad (+Wrap)",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "Für 4 Portionen",
+        "description": "Hähnchen in 1 EL Öl anbraten. Kartoffeln klein schneiden, für 5-10 min in Wasser einlegen und anschließend mit 1 EL Öl und Salz, Pfeffer, Paprikapulver anmachen. In der Heißluftfriteuse oder dem Backofen backen bis braun sind. Salat klein schneiden und waschen, Parmesan raspeln. In einer Schüssel, Frischkäse, Mayonnaise, Senf, Zitronensaft, Wasser, Salz, Pfeffer und Knoblauch miteinander verrühren. Alles zusammengeben und gut durchmischen.",
         "img": "images/recipes/placeholder.png",
-        "calories": "511 kcal (bei untem stehenden Rezept)",
+        "calories": "525 kcal (bei untem stehenden Rezept) + 317 pro Wrap",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -110,9 +110,9 @@
             "6": "Salz, Pfeffer",
             "7": "2 Römersalat-Herzen",
             "8": "40g Parmesan",
-            "9": "1 El Olivenöl",
+            "9": "2 El Olivenöl",
             "10": "160g Garden Gourmet Hähnchen Stücke",
-            "11": "4x Wrap"
+            "11": "200g Kartoffeln"
         },
         "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/"
     },
@@ -241,7 +241,7 @@
         "name": "Kartoffelbrei mit Fischstäbchen und Rahmsoße",
         "serving": 2,
         "serving_unit": "Portionen",
-        "description": "",
+        "description": "Kartoffeln ca. 20 min weichkochen. Anschließend mit dem Pürierstab unter hinzugeben von Sahne pürieren. Mit Salz, Pfeffer und Muskat abschmecken. Fischstäbchen nach Packungsanleitung backen.",
         "img": "images/recipes/placeholder.png",
         "calories": "",
         "tags": {
