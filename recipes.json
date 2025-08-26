@@ -666,7 +666,7 @@
         "url": "none"
     },
     {
-        "name": "One Port Orza mit Spinat und Feta",
+        "name": "One Port Orzo mit Spinat und Feta",
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Zwiebeln und Knoblauch klein schneiden. Mit Olivenöl anbraten, dann Tomatenmark und Orzo dazugeben und anschwitzen. Sahne und Gemüße dazugeben. Mit Salz, Pfeffer und Muskat abschmecken. 10 min köcheln lassen. Spinat dazugeben. Tomaten kleinschneiden und dazugeben. Feta dazugeben.",
@@ -687,7 +687,7 @@
             "1": "4 Knoblauchzehen",
             "2": "1 EL Olivenöl",
             "3": "2 TL Tomatenmark",
-            "4": "250 g Orzo",
+            "4": "300 g Orzo",
             "5": "200 ml Sahne",
             "6": "700 ml Gemüsebrühe",
             "7": "300 g Kirschtomaten",
@@ -1167,7 +1167,7 @@
          "img": "images/recipes/chicken_korma.jpg", 
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "Sojaschnetz in Gemüßebrühe einweichen lassen. Mandel anrösten. Gewürze vorbereiten. Zwiebeln und Knoblauch klein schneiden. Öl, Currypaste, Tomatenmark, Knoblauch, Zwiebeln und Ingwer anbraten. Sojaschnetz hinzugeben. Reis kochen. Nach 5 min Kokosmilch hinzugeben und köcheln lassen. Wenn nötig Gemüßebrühe hinzugeben. Mit Koriander, Mandeln und Basilikum dekorieren und mit Reis servieren.",
+        "description": "Sojaschnetz in Gemüßebrühe einweichen lassen. Mandel anrösten. Gewürze vorbereiten. Zwiebeln und Knoblauch klein schneiden. Öl, Currypaste, Tomatenmark, Knoblauch, Zwiebeln und Ingwer anbraten. Sojaschnetz hinzugeben. Reis kochen. Nach 5 min Kokosmilch hinzugeben und 20min köcheln lassen. Wenn nötig Gemüßebrühe hinzugeben. Mit Koriander, Mandeln und Basilikum dekorieren und mit Reis servieren.",
         "calories": "700 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
