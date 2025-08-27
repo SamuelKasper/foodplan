@@ -31,7 +31,7 @@
         "serving": 4,
         "serving_unit": "Burger",
         "description": "Patties anbraten, Gemüße in scheiben schneiden. Brötchen antoasten und dann mit Soße bestreichen. Mit Pattie, Schmelzkäse und Gemüße belegen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/burger.jpg",
         "calories": "ca. 750 kcal",
         "ingredients": {
             "0": "4 Brötchen",
@@ -1631,6 +1631,44 @@
             "5": "6 EL neutrales Speiseöl",
             "6": "Salz, Pfeffer, Muskatnuss",
             "7": "Frischer Schnittlauch"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Falafel mit Tahini Soße",
+        "serving": 2,
+        "serving_unit": "Portionen",
+        "description": "Backofen vorheizen auf 200°C. Süßkartoffel schälen, kleinschneiden und weichkochen. Süßkartoffel mit allem anderen Zutaten (Kichererbsen, Petersilie, gepresster Knoblauch, Kichererbsenmehl und Gewürzen) in einer zu einer gleichmäßigen Masse kneten. Aus der Masse 20 Kugeln formen und auf dem Backblech verteilen. Für insg. 30 Minuten backen, Nach 15 Minuten drehen.\n\n Für die Soße einfach alle Zutaten zusammenmischen.",
+        "img": "images/recipes/Falafel.jpg",
+        "calories": "600 kcal\n475 kcal (Falafel) / 125 kcal (Soße) (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "300g Süßkartoffen",
+            "1": "250g Kichererbsen",
+            "2": "20g Petersilie",
+            "3": "3 Knoblauchzehen",
+            "4": "30g Kichererbsenmehl",
+            "5": "1 EL Olivenöl",
+            "6": "Je 1 TL: Kreuzkümmel, Paprikapulver, Koriander, Salz",
+            "7": "0,5 TL Pfeffer",
+            "8": "",
+            "9": "Für die Soße:",
+            "10": "100g Skyier",
+            "11": "40ml Hafer- / Mandelmilch",
+            "12": "25g Tahini",
+            "13": "2 Knoblauchzehen",
+            "14": "1/4 TL Salz",
+            "15": "Etwas Pfeffer",
+            "16": "1 EL Zitronensaft"
         },
         "url": "none"
     }
