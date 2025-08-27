@@ -936,7 +936,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Nudeln kochen. Sojagranulat in Gemüßebrühe einlegen. Zwiebel und Knoblauch klein schneiden und im Öl anbraten. Sojagranulat dazu geben und anbraten. Passierte Tomaten dazu geben und köcheln lassen. Nach 20 min die Sahne dazu geben, nochmal aufkochen lassen und mit den Gewürzen abschmecken.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/SpaghettiBolo.jpg",
         "calories": "880 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1523,7 +1523,7 @@
         "serving": 3,
         "serving_unit": "Portionen",
         "description": "Couscous abwiegen und mit etwas Gemüßebrühe vermischen. Couscous mit kochendem Wasser übergießen und 10 min ziehen lassen. Zwei Esslöffel Olivelöl hinzugeben und etwas mit der Gabel auflockern. Gurke und Paprika in kleine Würfel schneiden und mit dem Couscous vermischen. Mit Salz, Pfeffer und Paprikapulver abschmecken.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/Couscous.jpg",
         "calories": "360 kcal pro Portion (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
