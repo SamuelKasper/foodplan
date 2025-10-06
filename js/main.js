@@ -159,10 +159,17 @@ function buildRecipesHtml(data) {
     // Details toggle
     let detailsEl = document.createElement("details");
     detailsEl.classList.add("foodplanner__details-toggle");
+
     let detailsSummary = document.createElement("summary");
     detailsSummary.classList.add("foodplanner__details-summary");
     detailsSummary.innerText = entry.name;
     detailsSummary.appendChild(tagsContainer);
+
+    let svg = document.createElement('div');
+    svg.classList.add('foodplanner__summary-icon');
+    svg.innerHTML = `<svg viewBox="0 0 512 512"><path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/></svg>`
+
+    detailsSummary.appendChild(svg);
     detailsEl.appendChild(detailsSummary);
     listItem.append(detailsEl);
 

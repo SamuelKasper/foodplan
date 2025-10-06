@@ -1,20 +1,20 @@
 :root {
     --color-gray-lightest: #f3f3f3;
-    --color-gray-lighter: #fff;
-    --color-gray-light: #fff;
-    --color-gray: #fff;
-    --color-gray-dark: #d9d9d9;
-    --color-gray-darker: #3e3e3e;
+    --color-gray-lighter: #fafafa;
+    --color-gray-light: red;
+    --color-gray: red;
+    --color-gray-dark: red;
+    --color-gray-darker: #333;
     --color-gray-darkest: #1d1d1d;
     --color-green-light: #f1f7f4;
     --color-green: #2a9740;
-    --color-blue: #fff;
+    --color-blue: red;
     --color-gray: #736f76;
 }
 
 * {
     box-sizing: border-box;
-    font-family: Lato, Calibri, Arial;
+    font-family: Calibri, Arial;
 
     &:focus-visible {
         outline: #1d1d1d dotted 2px;
@@ -22,13 +22,15 @@
 }
 
 body {
-    background-image: url('/images/bg.png');
+    /* background-image: url('/images/bg.png');
     background-repeat: repeat;
-    background-size: 500px 500px;
+    background-size: 500px 500px; */
+    background-color: #181818;
 }
 
 h2 {
     letter-spacing: .05ch;
+    color: var(--color-gray-lighter);
 }
 
 p {
@@ -71,7 +73,7 @@ button, .button {
     width: 100%;
 
     button {
-        height: 3rem;
+        height: 2.5rem;
         width: max-content;
     }
 }
@@ -95,10 +97,12 @@ button, .button {
 }
 
 .foodplanner__search{
-    height: 3rem;
+    height: 2.5rem;
     width: 100%;
     padding: .5rem .75rem;
-    border: 1px solid #ededed;
+    border: 1px solid var(--color-gray-darker);
+    background-color: var(--color-gray-darker);
+    color: var(--color-gray-lighter);
     border-radius: .5rem 0 0 .5rem;
     font-size: 1.125rem;
 }
@@ -116,18 +120,37 @@ button, .button {
     fill: #fff;
 }
 
+.foodplan__select-wrapper{
+    position: relative;
+    &:after {
+        content: "";
+        display: inline-block;
+        width: .7rem;
+        height: .7rem;
+        background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='%23fafafa' d='M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z'/></svg>") no-repeat center;
+        background-size: contain; 
+        position: absolute;
+        right: .75rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 .foodplanner__select{
-    height: 3rem;
-    padding: .5rem;
+    height: 2.5rem;
+    padding: .5rem 1.5rem .5rem 1rem;
     width: fit-content;
-    border: 1px solid #ededed;
-    background-color: #fff;
+    border: 1px solid var(--color-gray-darker);
+    background-color: var(--color-gray-darker);
+    color: var(--color-gray-lighter);
     border-radius: .5rem;
     font-size: 1.125rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 .foodplanner__submit {
-    height: 3rem;
+    height: 2.5rem;
     background-color: var(--color-green);
     color: #fff;
     border: none;
@@ -177,7 +200,7 @@ button, .button {
 }
 
 .button--gray {
-    background-color: var(--color-gray);
+    background-color: var(--color-gray-darker);
     color: #fff;
     transition: background-color .3s;
 
@@ -221,13 +244,13 @@ button, .button {
     /* padding: 1rem; */
     text-decoration: none;
     font-size: 1rem;
-    color: #1d1d1d;
-    background-color: #a3a3a3;
+    color: var(--color-gray-lighter);
+    background-color: #333333;
+    background-image: linear-gradient(#333, #252525);
     display: flex;
     flex-direction: column;
     height: fit-content;
     border-radius: 1rem;
-    border: 1px solid #ededed;
     position: relative;
     overflow: hidden;
 }
@@ -241,9 +264,11 @@ button, .button {
 }
 
 .foodplanner__recipe-tag {
-    background-color: #fff;
-    padding: .1rem .375rem;
+    background-color: #181818;
+    padding: .2rem .4rem;
     border-radius: 1rem;
+    color: var(--color-gray-lighter);
+    line-height: 1;
 }
 
 .foodplanner__recipe--link {
@@ -258,7 +283,7 @@ button, .button {
 }
 
 .foodplanner__recipe-icon {
-    fill: #1d1d1d;
+    fill: #ececec;
     display: flex;
     padding: .75rem;
 
@@ -305,20 +330,41 @@ button, .button {
 
 .foodplanner__details-toggle {
     cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 1rem;
+    transition: border .3s;
+
+    &:open {
+        border: 2px solid var(--color-green);
+
+        .foodplanner__summary-icon {
+            transform: rotate(180deg) translateY(4px);
+        }
+    }
 }
 
 .foodplanner__details-summary {
-    padding: 1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
     font-size: 1rem;
     list-style: none;
 
     &::-webkit-details-marker{
         display: none;
     }
+
+    .foodplanner__summary-icon{
+        fill:  var(--color-gray-lighter);
+        transition: transform .3s;
+        transform-origin: center;
+        width: 1rem;
+        position: absolute;
+        top: 1.25rem;
+        right: 1rem;
+    }
 }
 
 .foodplanner__recipe-content{
-    padding: 1rem;
+    padding: 0 1rem 1rem;
 }
 
 .foodplanner__ingredient-headline {
