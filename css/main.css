@@ -17,7 +17,7 @@
     font-family: Calibri, Arial;
 
     &:focus-visible {
-        outline: #1d1d1d dotted 2px;
+        outline: var(--color-green) dotted 2px;
     }
 }
 
@@ -382,6 +382,14 @@ button, .button {
     padding: .25rem .75rem;
     border-radius: .5rem;
     margin-top: 1.5rem;
+    background-color: #181818;
+    color: var(--color-gray-lighter);
+    font-size: .9rem;
+    transition: background .3s;
+
+    &:hover {
+        background-color: var(--color-gray-darkest);
+    }
 }
 
 /* Popup */
