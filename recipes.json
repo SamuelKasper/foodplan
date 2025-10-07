@@ -485,7 +485,7 @@
         "name": "Kürbissuppe",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "Kürbis klein schneiden. Zwiebel und Knoblauch schneiden. Butter in einem Topf schmelzen, Zwiebeln und Knoblauch andünsten, Kürbis dazugeben und kurz mitbraten. Mit Brühe ablöschen und mit Salz und Pfeffer würzen. 15 min köcheln lassen. Sahne hinzugeben, pürieren und abschmecken.",
+        "description": "Kürbis, Kartoffeln, Zwiebeln und Knoblauch klein schneiden.\n\n Butter in einem Topf schmelzen. Zwiebeln und Knoblauch andünsten. Kürbis dazugeben und kurz mitbraten.\n\nMit Brühe ablöschen und mit Salz und Pfeffer würzen. 15 min köcheln lassen dann Sahne hinzugeben und nochmal aufkochen. Pürieren und abschmecken.",
         "img": "images/recipes/placeholder.png",
         "calories": "260 kcal (bei unten stehendem Rezept)",
         "tags": {
@@ -500,14 +500,16 @@
         },
         "ingredients": {
             "0": "1 Hokkaido-Kürbis (ca. 800 g)",
-            "1": "1 Zwiebel",
-            "2": "1 Knoblauchzehe",
-            "3": "2 EL Butter",
-            "4": "1 l Gemüsebrühe",
-            "5": "Salz",
-            "6": "Pfeffer",
-            "7": "100 ml Schlagsahne",
-            "8": "Petersilie und Chiliflocken zum Garnieren"
+            "1": "2 mittelgroße Kartoffeln",
+            "2": "1 Zwiebel",
+            "3": "1 Knoblauchzehe",
+            "4": "2 EL Butter",
+            "5": "1 l Gemüsebrühe",
+            "6": "Salz",
+            "7": "Pfeffer",
+            "8": "Muskatnuss",
+            "9": "100 ml Schlagsahne",
+            "10": "Petersilie und Chiliflocken zum Garnieren"
         },
         "url": "https://www.lecker.de/klassische-kuerbissuppe-mit-hokkaido-79938.html"
     },
