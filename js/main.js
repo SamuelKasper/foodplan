@@ -156,6 +156,16 @@ function buildRecipesHtml(data) {
       }
     }
 
+    // Image
+    if(entry.img != null && entry.img != ""){
+      let img = document.createElement("img");
+      img.classList.add("foodplanner__recipe-img");
+      img.alt = entry.name;
+      img.src = entry.img;
+
+      listItem.append(img);
+    }
+
     // Details toggle
     let detailsEl = document.createElement("details");
     detailsEl.classList.add("foodplanner__details-toggle");

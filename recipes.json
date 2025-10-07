@@ -4,7 +4,7 @@
         "serving": 6,
         "serving_unit": "Portionen",
         "description": "Zwiebeln, Knoblauch und Chilli anbraten. Bohnen hinzufügen und Tomaten hinzufügen und alles 20-30min köcheln lassen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/buddypfanne.jpg",
         "calories": "788 kcal",
         "tags": {
             "vegetable": true,
@@ -61,7 +61,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Speckwürfel in Olivenöl anbraten. Nudeln kochen, kurz vor Ende 1-2 Espressotassen Nudelwasser aufheben. Eier mit Käse verrühren, Salz und Pfeffer hinzufügen. Speck erneut erhitzen, Nudelwasser hinzufügen und aufkochen lassen. Pasta, und Käse mischung hinzufügen und kochen bis das Ei fest wird.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/carbonara.jpg",
         "calories": "812 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -88,7 +88,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Hähnchen in 1 EL Öl anbraten. Kartoffeln klein schneiden, für 5-10 min in Wasser einlegen und anschließend mit 1 EL Öl und Salz, Pfeffer, Paprikapulver anmachen. In der Heißluftfriteuse oder dem Backofen backen bis braun sind. Salat klein schneiden und waschen, Parmesan raspeln. In einer Schüssel, Frischkäse, Mayonnaise, Senf, Zitronensaft, Wasser, Salz, Pfeffer und Knoblauch miteinander verrühren. Alles zusammengeben und gut durchmischen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/ceasar_salad.jpg",
         "calories": "525 kcal (bei untem stehenden Rezept) + 317 pro Wrap",
         "tags": {
             "vegetable": false,
@@ -178,7 +178,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Reis kochen. Hähnchen in Öl mit Paprika, Salz und Pfeffer anbraten. Hähnchen aus der Pfanne nehmen und Zwiebeln anbraten. Erbsen hinzugeben und mit Gemüßebrühe ablöschen. 10 min  köcheln lassen. Hähnchen und Reis hinzugeben und abschmecken.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/haehnchen_reis_pfanne.jpg",
         "calories": "685 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -207,7 +207,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Zwiebel, Knoblauch und Ingwer klein schneiden und in 3 Minuten in Öl anbraten. Gewürze und Linsen hinzugeben und kurz mit braten. Mit Gemüßebrühe auffüllen und 10 min köcheln lassen. Kokosmilch und passierte Tomaten dazugeben und nochmal 5 min köcheln lassen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/linsen_dahl.jpg",
         "calories": "430 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
