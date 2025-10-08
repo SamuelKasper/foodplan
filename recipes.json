@@ -121,7 +121,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Nudeln kochen (etwas Nudelwasser aufheben), Frühlingszwiebeln schneiden, Knoblauch fein hacken. Knoblauch, Erdnussbutter, Sojasauce, Öl, Dattelsirup, Reisessig mischen bis eine cremige Sauce entsteht. Sauce mit etwas Nudelwasser zu den Nudeln geben und gut verrühren.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/erdnussbutternudeln.jpg",
         "calories": "911 kcal (bei untem stehenden Rezept)",
         "tags": {
             "vegetable": false,
@@ -151,7 +151,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Für 2 Portionen",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/flammkuchen.jpg",
         "calories": "975kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -242,7 +242,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Kartoffeln ca. 20 min weichkochen. Anschließend mit dem Pürierstab unter hinzugeben von Sahne pürieren. Mit Salz, Pfeffer und Muskat abschmecken. Fischstäbchen nach Packungsanleitung backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kartoffelbrei.jpg",
         "calories": "",
         "tags": {
             "vegetable": true,
@@ -268,7 +268,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Auflaufform fetten. Kartoffeln schälen, in dünne Scheiben schneiden und in die Auflaufform schichten. Sahne mit Salz, Pfeffer und Muskat mischen und die Kartoffeln übergießen. Mit Käse bestreuen und bei 200°C 45min backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kartoffelgratin.jpg",
         "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -296,7 +296,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Kartoffel und Karotten schälen. Suppengrün kleinschneiden. Gemüße anbraten und nach ein paar Minuten mit Gemüßebrühe bedecken. Gemüße weich kochen und anschließend pürieren.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kartoffelsuppe.jpg",
         "calories": "275 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -322,7 +322,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Kartoffel in Schnitze schneiden und in Wasser 5-10 min liegen lassen. Kartoffeln trocken tupfen und mit Öl, Salz, Pfeffer, Paprika würzen. Bei 200°C für 30 min Backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kartoffelecken.jpg",
         "calories": "225 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -348,7 +348,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Reis kochen. Süßkartoffel klein schneiden und 20 min kochen. Zwiebeln und Knoblauch kleinschneiden und anbraten. Gewürzmischung dazugeben. Kichererbsen abtropfen und kurz mit braten. Süßkartoffel mit Kokosmilch pürieren. Soße zu den Kichererbsen dazugeben. Gemüsebrühe bis gewünschte Konsistenz hinzugeben. Spinat dazugeben.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kichererbseneintopf.jpg",
         "calories": "840 kcal + 320 kcal pro großen Wrap (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -379,7 +379,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Knoblauch schälen und die einzelnen Zehen in eine kleine Auflaufform legen. Mit Öl übergießen bis alle Zehen bedeckt sind. Form bei 180°C Ober/Unterhitze für 30min backen bis der Knoblauch braun ist.\n\n10 Minuten bevor der Knoblauch fertig ist die Gnocci kochen. Etwas Gnocciwasser aufbewahren. Pinienkerne anrösten. Knoblauch mit 2 EL des Knoblauchöls, Parmesan, 75% der gerösteten Pinienkerne, Salz, Pfeffer, Chili und etwas Gnocciwasser cremig pürieren.\nGnocci mit der Soße mischen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/knoblauchgnocci.jpg",
         "calories": "975 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -406,7 +406,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Knödel nach Packungsanleitung machen. Rahmsoße und Rahmgemüße dazu.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/Knödel.jpg",
         "calories": "800 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -430,7 +430,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Kroketten und Schnitzel nach Packungsanleitung zubereiten. Rahmsoße dazu machen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kroketten.jpg",
         "calories": "900 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -455,7 +455,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Spätze nach Packungsanleitung kochen. Zwiebeln schneiden und mit Butter bestäuben. Zusammen mit der Butter anbraten und anschließend auf einem Papiertuch abtropfen lassen. Käse reiben. Sahne in einen Topf füllen und mit Salz, Pfeffer, Muskat würzen. Aufkochen und Spätzle, anschließend den Käse hinzufügen. Am Ende Röstzwiebeln und Schnittlauch darüberstreuen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/käsesplätzle.jpg",
         "calories": "830 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -486,7 +486,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Kürbis klein schneiden. Zwiebel und Knoblauch schneiden. Butter in einem Topf schmelzen, Zwiebeln und Knoblauch andünsten, Kürbis dazugeben und kurz mitbraten. Mit Brühe ablöschen und mit Salz und Pfeffer würzen. 15 min köcheln lassen. Sahne hinzugeben, pürieren und abschmecken.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/kürbissuppe.jpg",
         "calories": "260 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
@@ -516,7 +516,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Backofen auf 200°C vorheizen. Zwiebel schneiden und anbraten. Spinat dazugeben und fertig kochen. Anschließend Spinat mit Brühe, Sahne, Eiern verrühren und mit Salz und Pfeffer würzen. In einer Auflaufform die kleingeschnittenen Maultaschen auslegen, die Spinatsauce drübergeben und mit Käsebestreuen. Für 35 min in den Ofen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/maultaschengratin.jpg",
         "calories": "1275 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -546,7 +546,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/zuchinireispfanne.jpg",
         "calories": "678 kcal",
         "tags": {
             "vegetable": false,
@@ -585,7 +585,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Fleisch mit Salz, Paprika und Pfeffer würzen und anbraten. Tomaten halbieren. Sahne in einem Topf aufkochen. Schmelzkäse hinzugeben, mit Salz, Pfeffer und Basilikum würzen. Fleisch in die Auflaufform geben, Tomaten und Sauce dazugeben. Im vorgeheizten Ofen bei 200°C für 30 min backen. Dazu Reis.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/mozarellahähnchen.jpg",
         "calories": "1290 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -616,7 +616,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Ofen auf 200°C vorheizen. Nudeln kochen, kurz vor Ende die Erbsen dazu geben. Kochschinken und Zwiebel schneiden. Butter erhitzen, Zwiebeln anschwitzen, mit Mehl bestäuben, mit Sahne und Milch ablöschen. Mit Salz, Pfeffer und Muskat und Petersilie würzen. Alles zusammen verrühren und in eine Auflaufform geben und mit Käse bestreuen. 20 min backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/nudelauflauf.jpg",
         "calories": "929 kcal",
         "tags": {
             "vegetable": false,
@@ -647,7 +647,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Nudeln kochen, etwas Nudelwasser aufheben. Nudeln, Pesto und Nudelwasser zusammenmischen",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/pestonudeln.jpg",
         "calories": "750 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -704,7 +704,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Reis waschen. Champignons klein schneiden. Scharlotten und Knoblauch kleinschneiden. Öl erhitzen, Scharlotten glasig dünsten, Reis und Knoblauch hinzugeben und dünsten. Champignons dazugeben, mit Wein ablöschen und würzen. Nach und Nach Gemüßebrühe dazugießen und unter Rühren 20-25min ausquellen lassen. Rucola, Butter und Parmesan dazugeben.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/pilzrisotto.jpg",
         "calories": "625 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -737,7 +737,7 @@
         "serving": 2,
         "serving_unit": "Bleche",
         "description": "Mehl, Wasser, Hefe und Salz vermischen und mit der Rührmaschine 5 min von Hand 10 min kneten. Teig mindestens so lange ruhen lassen, bis er einmal aufgeganen ist (~1-2h). Bei weniger Hefe oder kühler Temperatur länger. Anschließend Teig ausbreiten und dann mit passierten Tomaten und Zutaten belegen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/pizza.jpg",
         "calories": "1050 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -764,7 +764,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Zwiebeln, Schinken und Knoblauch kleinschneiden. Nudeln kochen, kurz vor Ende die Erbsen dazugeben. Hackfleisch anbraten. Zwiebeln, und Knoblauch kurz mitdünsten. Tomtatenmark hinzugeben, und anschließend mit Gemüßebrühe ablöschen. Oregano und Basilikum zugeben und 40 min köcheln lassen. Sahne hinzugeben, dann abschmecken. Schinken hinzugeben und alles gut vermischen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/rigatonialforno.jpg",
         "calories": "1115 kcal (bei untem stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -797,7 +797,7 @@
         "serving": 3,
         "serving_unit": "Portionen",
         "description": "Süßkartoffel, Paprika, Zwiebel und Knoblauch klein schneiden. Zwiebeln und Knoblauch anschwitzen. Süßkartoffel und Paprika dazugeben. Tomatenmark und Gewürze dazugeben und kurz mitbraten. Linsen hinzugeben und dann mit Kokosmilch und Gemüßebrühe aufgießen und 20 min köcheln lassen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/süßkartoffelcurry.jpg",
         "calories": "687 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -833,7 +833,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Kartoffeln kleinschneiden und Backen. Fleisch in Öl anbraten und würzen. Paprika und Tomaten in kleine Würfel schneiden. Salat waschen und klein schneiden. Für das Dressing: Joghurt, Ketchup, Mayo, Knoblauch und nochmals Gewürz mischen. Alles zusammenmischen und mit Parmesan bestreuen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/saladbowl.jpg",
         "calories": "750 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -866,7 +866,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Den Lauch und die Pilze putzen und in Scheiben schneiden. Die Schalotte würfeln.\nDas Gemüse in der zerlassenen Butter anbraten, etwas braten lassen, es soll noch Biss haben. Die Spätzle dazugeben, erwärmen und durchmischen. Alles mit Apfelschorle ablöschen und mit Salz, Pfeffer, Paprikapulver und Tomatenmark würzen und gut durchrühren. Die Sahne hinzugeben. Ganz zum Schluss den Bergkäse untermischen und alles nochmals abschmecken.\nDazu unbedingt einen gemischten Salat mit Radicchio und einer süßen Senf-Vinaigrette reichen!",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/spätzlepfanne.jpg",
         "calories": "1010 kcal (Bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -900,7 +900,7 @@
         "serving": 6,
         "serving_unit": "Portionen",
         "description": "Die Nudeln in Salzwasser bissfest kochen, abgießen und abkühlen lassen. In der Zwischenzeit die getrocknete Tomaten klein schneiden. Die frischen Tomaten vierteln. Frühlingszwiebeln waschen und in feine Ringe schneiden, dabei auch einen Teil von den grünen Stängeln mit verwenden. Fetakäse würfeln. Die Zucchini waschen und in kleine Würfel schneiden. Etwa 3 EL Öl aus dem Glas der getrockneten Tomaten in eine Pfanne geben und erhitzen. Die Zucchiniwürfel bei mäßiger Hitze in etwa 5 Min. weich dünsten. Die Nudeln in eine Schüssel geben und die geviertelten frischen Tomaten, getrocknete Tomaten, Frühlingszwiebelringe und die Fetawürfel dazugeben. Die Zucchiniwürfel mit dem Öl aus der Pfanne noch warm über den Salat geben. Für das Dressing Wasser, Essig, Öl, Gemüsebrühe, Senf, Süßstoff und die Gewürze miteinander mischen und über den Nudelsalat geben. Alles gut vermengen und mindestens 1 - 2 Std. ziehen lassen. Je nach Geschmack kann man auch etwas mehr Essig oder Öl verwenden. Man kann den Salat gleich servieren, aber es schmeckt viel besser, wenn er durchgezogen ist.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/nudelsalat.jpg",
         "calories": "400 kcal",
         "tags": {
             "vegetable": false,
@@ -967,7 +967,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Wasser mit Tomatenmark, Salz und Pfeffer mischen. Knoblauch klein schneiden und im Öl mit dem Chilli anbraten. Passierte Tomaten dazu geben und alles 2 min köcheln lassen. Spaghetti dazu geben und diese Braten bis die Soße karamellisiert und dunkel wird. Nach und Nach die Tomatenbrühe hinzugeben und köcheln lassen. Das wiederholen, bis die Nudeln durch sind. Mit Petersilie garnieren.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/spaghettialassasina.jpg",
         "calories": "550 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -996,7 +996,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Gemüse kleinschneiden und anbraten. Milch und Rahmspinat hinzufügen. Wenn der Rahmspinat nicht mehr gefroren ist den Frischkäse, Gemüßebrühenpulver, Chilli, Salz und Pfeffer und Knoblauch hinzugeben.\nButter in einem Topf erhitzen. Mehl hinzugeben und glatt rühren. Passierte Tomaten und Sahne hinzugeben. Knoblauch dazu und mit Salz und Pfeffer abschmecken. Auflaufform einfetten, mit einer Schicht Tomatensoße und Spinat anfangen, dann Lasagneplatten etc. Nach der Letzten Schicht Käse darüberstreuen. Lasagne bei 200°C Umfluft für 30min backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/spinatlasagne.jpg",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -1034,7 +1034,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Zwiebel klein schneiden. In einer Pfanne Öl das Hähnchen anbraten, anschließend auf einem Teller beiseitelegen.\n\nPfanne nicht säubern und Zwiebeln darin auf mittlerer Stufe ca. 3 Min. anschwitzen. Mit Sahne ablöschen, aufkochen und auf mittlerer Stufe ca. 3–4 Min. einköcheln, sodass eine sämige Soße entsteht. Nudeln kochen. Spinat zur Zwiebel-Sahne-Mischung geben und unter Rühren ca. 1–2 Min. auftauen lassen. Hähnchen ebenfalls wieder zugeben und ca. 1–2 Min. warm ziehen lassen. Alles würzig mit Salz und Pfeffer abschmecken. In der Pfanne Tagliatelle, Spinat-Sahnesoße und das Hähnchen vermengen und ggf. nachwürzen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/tagliatellemitspinat.jpg",
         "calories": "790 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1063,7 +1063,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Zwiebeln und Knoblauch schälen. Zwiebeln in feine Würfel schneiden und den Knoblauch fein pressen. Kirschtomaten waschen und halbieren. Öl in einem Topf oder in einem gusseisernen Bräter erhitzen. Zwiebeln, Knoblauch und Tomaten anschwitzen. Die Hitze reduzieren, Tomatenmark und Orzo Pasta dazugeben und diese mit anschwitzen. Mit Salz, Pfeffer sowie Zucker würzen. Alles mit Zitronensaft ablöschen und mit Gemüsebrühe auffüllen. Dabei so lange rühren, bis die Flüssigkeit verkocht und die Pasta weich ist. Abschmecken und mit geriebenem Käse und Basilikumblätter genießen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/tomatoonepotrozo.jpg",
         "calories": "600 kcal",
         "tags": {
             "vegetable": false,
@@ -1097,7 +1097,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Tomaten abtropfen lassen (dabei das Öl auffangen!) und in Streifen schneiden. Knoblauch und Zwiebel schälen, fein würfeln. Tomaten waschen und in Würfel schneiden. Zwiebel und Knoblauch im Tomatenöl anschwitzen. Reis hinzugeben und andünsten. Mit brühe und Tomatensaft ablöschen und aufkochen. Tomatenwürfel, -Tomatenstreifen und Oregano zugeben und alles 20 min köcheln lassen. Pinienkerne anrösten. Mozzarella, Basilikum und Pinienkerne zum Essen hinzugeben.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/tomatorice.jpg",
         "calories": "585 kcal",
         "tags": {
             "vegetable": false,
@@ -1132,7 +1132,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Tortellini kochen. Zwiebeln, Champignons, Tomaten, Schinken und Koblauch schneiden. Zwiebeln und Knoblauch in Öl andünsten. Gemüße und Schinken hinzugeben. Nach 3 min mit Wein ablöschen. Backofen vorheizen. Sahne und gehackte Tomaten dazugeben und mit Salz, Pfeffer und Kräutern würzen. Alles zusammen vermischen und in eine Auflaufform füllen. Mit Käse bestreuen und für 25 min backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/tortelliniauflauf.jpg",
         "calories": "700 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1206,7 +1206,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Brötchen aufschneiden. Alle andern Zutaten vermischen und auf den Brötchenhälften verteilen. Für ca. 13 min bei 200°C Umluft backen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/winzerwecken.jpg",
         "calories": "1050 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1232,7 +1232,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Gemüße schneiden. Wrap kurz aufwärmen. Mit Soße bestreichen und füllen. ",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/wraps.jpg",
         "calories": "",
         "tags": {
             "vegetable": false,
@@ -1288,7 +1288,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Schnitzel in der Heißluftfriteuse machen. Reis kochen. Eier verquirlen, Zwiebeln klein schneiden, Gemüßebrühe mit Sojasauce und Mirin mischen.\nZwiebeln anbraten bis sie braun sind. Mit der Soße ablöschen und etwas köcheln lassen. Die Eier dazugeben und auf mittlerer Hitze rühren, bis sich eine festere Masse gebildet hat.\nDen Reis in eine Schüssel füllen, Das Schnitzel darauf legen und die Eiermasse darüber geben.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/katsudon.jpg",
         "calories": "730 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1345,7 +1345,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Kohl, Karotte und Zwiebel schneiden. Erst Zwiebeln und Karotten anbraten, dann den Kohl dazu. Nudeln und Wasser dazu geben und köcheln lassen, bis die Nudeln gut sind. Yakisoba-sauce dazu und rühren. Sobald sich die Sauce gut verteilt hat mit Pfeffer abschmecken.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/yakisoba.jpg",
         "calories": "435 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1404,7 +1404,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Nudeln kochen. Hähnchen, Paprika und Zwiebeln anbraten. Tomatenmark, Passierte Tomaten, Sahne und Creme Fraiche hinzugeben und mit Pfeffer, Salz, Oregano, Knoblauch und Paprika würzen. Nudeln hinzugeben.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/gyrosnudelpfanne.jpg",
         "calories": "885 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1463,7 +1463,7 @@
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Reis kochen. Fleisch mit Knoblauch, Paprika und Salz würzen und anbraten und anschließend aus der Pfanne nehmen. Zwiebeln in der Hälfte der butter anbraten, dann Knoblauch, Ceshewkerne und Ingwer dazugeben. Passierte Tomaten, Garam Masala und Paprika dazugeben. 5 min köcheln lassen, dann die Sahne dazugeben und nochmal aufkochen. Die Zutaten in einen Mixer füllen und feinpürieren. Soße zusammen mit Fleisch und der Restlichen Butter wieder in die Pfanne oder einen Topf und alles nochmal 5 min köcheln lassen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/butterchicken.jpg",
         "calories": "850 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
@@ -1577,7 +1577,7 @@
         "serving": 1,
         "serving_unit": "Bananenbrot",
         "description": "Chiasamen mit Wasser verrühren und ca. 10 Minuten quellen lassen.  Ofen auf 175 °C Ober-/Unterhitze vorheizen. Kastenform einfetten oder mit Backpapier auslegen.  Bananen zerdrücken. 'Chia-Eier', Honig und Öl einrühren.  Mehl, Haferflocken, Backpulver, Zimt, Salz und Mandeln mischen.  Alles mit der Pflanzenmilch zu einem glatten Teig verrühren. In die Form füllen, mit Mandeln bestreuen. 50-60 Minuten backen, Stäbchenprobe machen.  Abkühlen lassen, dann aus der Form nehmen.",
-        "img": "images/recipes/placeholder.png",
+        "img": "images/recipes/bananenbrot.jpg",
         "calories": "3200 kcal pro Kuchen (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
