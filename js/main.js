@@ -147,6 +147,10 @@ function buildRecipesHtml(data) {
             tagElement.innerText = 'Linsen';
             tagElement.classList.add("foodplanner__recipe-tag");
             break;
+          case "sweets":
+            tagElement.innerText = 'Süßes';
+            tagElement.classList.add("foodplanner__recipe-tag");
+            break;
 
           default:
             tagElement.innerText = "";
