@@ -455,7 +455,7 @@
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Spätze nach Packungsanleitung kochen. Zwiebeln schneiden und mit Butter bestäuben. Zusammen mit der Butter anbraten und anschließend auf einem Papiertuch abtropfen lassen. Käse reiben. Sahne in einen Topf füllen und mit Salz, Pfeffer, Muskat würzen. Aufkochen und Spätzle, anschließend den Käse hinzufügen. Am Ende Röstzwiebeln und Schnittlauch darüberstreuen.",
-        "img": "images/recipes/käsesplätzle.jpg",
+        "img": "images/recipes/käsespätzle.jpg",
         "calories": "830 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
