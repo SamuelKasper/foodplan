@@ -1673,5 +1673,38 @@
             "16": "1 EL Zitronensaft"
         },
         "url": "none"
+    },
+    {
+        "name": "Gnocchi Kürbis Auflauf",
+        "serving": 4,
+        "serving_unit": "Portionen",
+        "description": "Kürbis in kleine Würfel schneiden, Lauch in feine Ringe schneiden. Zwiebel und Knoblauch klein schneiden und in Öl anbraten.\n\n Backofen vorheizen. \nTomatenmark zu den Zwiebeln geben. Gemüßebrühe hinzugeben und einrühren. Kürbis und Lauch dazugeben und alles 10 Minute auf mittlerer Hitze köcheln lassen. Frischkäse unterrühren und würzen.\n\nGnocci nach Packungsanleitung kochen. Gnocchi und Gemüße vermischen, in eine Auflaufform füllen und den kleingeschnittenen Mozzarella darüber geben. 30 Minuten bei 200°C backen.",
+        "img": "images/recipes/kuerbisauflauf.jpg",
+        "calories": "505 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "500g Hokkaidokürbis",
+            "1": "1 Zwiebel",
+            "2": "1 Knoblauchzehe",
+            "3": "1 mittelgroßer Lauch",
+            "4": "1 El Olivenöl",
+            "5": "2 EL Tomatenmark",
+            "6": "Je 1 TL: Salz, Pfeffer, Curry",
+            "7": "0,5 TL Pfeffer und Muskat",
+            "8": "300ml Gemüsebrühe",
+            "9": "200g Frischkäse",
+            "10": "500g Gnocci",
+            "11": "80g Mozarella"
+        },
+        "url": "none"
     }
 ]
