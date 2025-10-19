@@ -148,9 +148,9 @@
     },
     {
         "name": "Flammkuchen",
-        "serving": 4,
+        "serving": 2,
         "serving_unit": "Portionen",
-        "description": "Für 2 Portionen",
+        "description": "Mehl, Wasser, Salz (9g), Trockenhefe zusammenrühren und in der Rührmaschine zu einem Teig kneten lassen. (5-7 Min). Zwiebel klein schneiden. Teig ausbreiten, mit Creme Fraiche bestreichen und mit Speckwürfel und Zwiebel bestreuen. Mit Salz und Pfeffer würzen und 13min bei 220°C backen.",
         "img": "images/recipes/flammkuchen.jpg",
         "calories": "975kcal (bei untem stehendem Rezept)",
         "tags": {
@@ -165,11 +165,13 @@
         },
         "ingredients": {
             "0": "400g Mehl",
-            "1": "150g Speckwürfel Light",
-            "2": "2 Zwiebeln",
-            "3": "1 Becher Creme Fraiche Light",
-            "5": "Salz",
-            "6": "Pfeffer"
+            "1": "220ml lauwarmes Wasser",
+            "2": "150g Speckwürfel Light",
+            "3": "0.5 pck. Trockenhefe",
+            "4": "2 Zwiebeln",
+            "5": "1 Becher Creme Fraiche Light",
+            "6": "9g Salz (Teig)",
+            "7": "Salz, Pfeffer"
         },
         "url": "none"
     },
@@ -1704,6 +1706,37 @@
             "9": "200g Frischkäse",
             "10": "500g Gnocci",
             "11": "80g Mozarella"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Couscous-Pfanne mit Erbsen, Schinken",
+        "serving": 2,
+        "serving_unit": "Portionen",
+        "description": "Couscous in eine Schüssel geben, mit der heißen Gemüsebrühe übergießen, kurz umrühren, abdecken und 5 Minuten quellen lassen. Dann mit einer Gabel auflockern.\n\nÖl in einer großen Pfanne erhitzen. Zwiebel fein würfeln und glasig anbraten.\n\nSchinkenwürfel in die Pfanne geben und 2–3 Minuten anbraten, bis sie leicht knusprig sind. Paprika hinzugeben und mitbraten.\n\nErbsen direkt in die Pfanne geben (TK-Erbsen einfach gefroren hineingeben) und 3–4 Minuten mitgaren.\n\nPaprikapulver, Knoblauch, Kreuzkümmel oder Curry, Pfeffer und etwas Salz dazugeben. Dann den gequollenen Couscous in die Pfanne geben und alles gut vermengen. Frischkäse dazu geben und abschmecken.\n\n",
+        "img": "images/recipes/couscous_pfanne.jpg",
+        "calories": "375 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "75g Schinkenwürfel light",
+            "1": "120g Couscous altern. Quinoa",
+            "2": "250ml Gemüßebrühe",
+            "3": "120g Erbsen",
+            "4": "1 kleine Zwiebel",
+            "5": "1 kleine Paprika",
+            "6": "1 EL Öl",
+            "7": "1 TL Paprika, 0.5 TL Knoblauchpulver, 0.5 TL Kreuzkümmel oder Curry",
+            "8": "Salz und Pfeffer",
+            "9": "1 EL Kräuterfrischkäse"
         },
         "url": "none"
     }
