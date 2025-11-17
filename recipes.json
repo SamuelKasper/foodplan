@@ -1739,5 +1739,47 @@
             "9": "1 EL Kräuterfrischkäse"
         },
         "url": "none"
+    },
+    {
+        "name": "Geröstete Tomatensuppe mit gebackenen Knuspererbsen",
+        "serving": 3,
+        "serving_unit": "Portionen",
+        "description": "Das grob zerkleinerte Gemüse (Tomaten, Paprika, Zwiebeln) sowie geschälten Knoblauch in einer Backform mit Olivenöl, Chiliflocken und Oregano mischen und 40 Minuten bei 200 °C Ober-/Unterhitze backen, nach 20 Minuten einmal durchrühren. Danach das Ofengemüse mit Gemüsebrühe, Bohnen samt Aquafaba, Basilikum und Salz in einen Topf geben und pürieren (Pürierstab oder geeigneter Standmixer). Anschließend im Topf kurz aufkochen.\n\nFür die Kichererbsen: Gut trocken tupfen, mit Öl, Gewürzen und Maisstärke mischen, auf einem Blech 25–30 Minuten bei 200 °C backen und nach 15 Minuten wenden. Alternativ in der Heißluftfritteuse zubereiten. Optional: Kichererbsen etwa 10 Minuten vor Ende der Gemüse-Backzeit auf der unteren Ofenschiene mitbacken und später nach oben schieben.",
+        "img": "images/recipes/tomato_soup.jpg",
+        "calories": "480 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": false,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "800 g Tomaten",
+            "1": "1 rote Paprika (180 g, entkernt)",
+            "2": "1 große Zwiebel",
+            "3": "1/2 Knoblauchknolle (ca. 8 Zehen)",
+            "4": "250 g weiße Bohnen (Abtropfgewicht)",
+            "5": "150 ml Aquafaba der Bohnen",
+            "6": "500 ml Gemüsebrühe",
+            "7": "20 g frischer Basilikum",
+            "8": "2 EL Olivenöl",
+            "9": "2 TL getrockneter Oregano",
+            "10": "1 TL Salz",
+            "11": "0.5 TL Chiliflocken",
+            "12": "",
+            "13": "250 g Kichererbsen (Abtropfgewicht)",
+            "14": "1 EL Olivenöl",
+            "15": "1 EL Maisstärke",
+            "16": "1 TL Koriander (gerebelt)",
+            "17": "1 TL Paprikapulver (geräuchert)",
+            "18": "0.5 TL Knoblauchpulver",
+            "19": "0.5 TL Chiliflocken",
+            "20": "0.5 TL Salz"
+        },
+        "url": "none"
     }
 ]
