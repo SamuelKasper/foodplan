@@ -232,9 +232,9 @@
             "7": "1 TL rotes Paprikapulver",
             "8": "1 TL Garam Masala oder anderes Currypulver nach Geschmack",
             "9": "300 g rote Linsen",
-            "10": "800 ml Gemüsebrühe",
-            "11": "200 ml Kokosnussmilch",
-            "12": "300 ml passierte Tomaten oder gehackte Tomaten (optional)",
+            "10": "500 ml Gemüsebrühe",
+            "11": "400 ml Kokosnussmilch",
+            "12": "200 ml passierte Tomaten oder gehackte Tomaten (optional)",
             "13": "Salz und Pfeffer nach Geschmack"
         },
         "url": "https://biancazapatka.com/de/rotes-linsen-dal/"
@@ -1779,6 +1779,37 @@
             "18": "0.5 TL Knoblauchpulver",
             "19": "0.5 TL Chiliflocken",
             "20": "0.5 TL Salz"
+        },
+        "url": "none"
+    },
+    {
+        "name": "Strammer Max",
+        "serving": 2,
+        "serving_unit": "Portionen",
+        "description": "Brot leicht anrösten, anschließend mit soße nach Wahl bestreichen. Zwiebeln zusammen mit Schinkenwürfeln in 1 TL Öl anbraten. Anschließend auf das Brot geben. Die Zuchini ebenfalls in der gleichen Pfanne mit 1 TL Öl anbraten. Auch auf das Brot geben. Tomate und Gurke in dünne scheiben schneiden, Salatblätter waschen und mit beidem das Brot belegen. Spiegelei anbraten, würzen und oben auf das belegte Brot legen.",
+        "img": "images/recipes/strammer_max.jpeg",
+        "calories": "670 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": false,
+            "other": true,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "4 Scheiben Brot",
+            "1": "Zuckerreduzierter Ketchup / Soße",
+            "2": "1 Zwiebel",
+            "3": "1 pck Schinkenwürfel",
+            "4": "1 Zuchini",
+            "5": "1 Gurke",
+            "6": "2 Tomaten",
+            "7": "Salat",
+            "8": "4 Eier",
+            "9": "1 EL Öl zum Braten"
         },
         "url": "none"
     }
