@@ -85,11 +85,11 @@
     },
     {
         "name": "Caesar Salad (+Wrap)",
-        "serving": 4,
+        "serving": 2,
         "serving_unit": "Portionen",
         "description": "Hähnchen in 1 EL Öl anbraten. Kartoffeln klein schneiden, für 5-10 min in Wasser einlegen und anschließend mit 1 EL Öl und Salz, Pfeffer, Paprikapulver anmachen. In der Heißluftfriteuse oder dem Backofen backen bis braun sind. Salat klein schneiden und waschen, Parmesan raspeln. In einer Schüssel, Frischkäse, Mayonnaise, Senf, Zitronensaft, Wasser, Salz, Pfeffer und Knoblauch miteinander verrühren. Alles zusammengeben und gut durchmischen.",
         "img": "images/recipes/ceasar_salad.jpg",
-        "calories": "525 kcal (bei untem stehenden Rezept) + 317 pro Wrap",
+        "calories": "570 kcal (bei untem stehenden Rezept) + 317 pro Wrap",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -110,7 +110,7 @@
             "6": "Salz, Pfeffer",
             "7": "2 Römersalat-Herzen",
             "8": "40g Parmesan",
-            "9": "2 El Olivenöl",
+            "9": "4 Sprüher Avocadoöl",
             "10": "160g Garden Gourmet Hähnchen Stücke",
             "11": "200g Kartoffeln"
         },
@@ -1629,7 +1629,7 @@
         "ingredients": {
             "0": "1 kg Kartoffeln",
             "1": "2 Zwiebeln",
-            "2": "300ml Gemüßebrühe (1 gehäufter EL Gemüßebrühe, 1 gehäufter EL Rinderbrühe)",
+            "2": "300ml Gemüßebrühe (1 gehäufter TL Gemüßebrühe, 1 gehäufter TL Rinderbrühe)",
             "3": "5 EL Apfelessig",
             "4": "1 gehäufter EL mittelscharfer Senf",
             "5": "6 EL neutrales Speiseöl",
