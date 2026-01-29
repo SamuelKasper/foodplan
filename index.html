@@ -43,19 +43,6 @@
                         </select>
                     </div>
 
-                    <div class="foodplan__select-wrapper">
-                        <label for="sort" class="visually-hidden">Sortieren</label>
-                        <select name="sort" id="sort" class="foodplanner__select">
-                            <option value="">Keine Auswahl</option>
-                            <option value="name_asc">Name (A-Z)</option>
-                            <option value="name_desc">Name (Z-A)</option>
-                            <option value="duration_asc">Dauer (kurz zuerst)</option>
-                            <option value="duration_desc">Dauer (lang zuerst)</option>
-                            <option value="calories_asc">Kalorien (wenig zuerst)</option>
-                            <option value="calories_desc">Kalorien (viel zuerst)</option>
-                        </select>
-                    </div>
-
                     <button type="button" class="button button--square button--gray" onclick="getRandom()">
                         <svg fill="#000000" class="foodplanner__random-icon" width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                             <g fill-rule="evenodd">
@@ -70,6 +57,19 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="foodplanner__trash-icon" viewBox="0 0 32 32" width="32px" height="32px"><path d="M 15 4 C 14.476563 4 13.941406 4.183594 13.5625 4.5625 C 13.183594 4.941406 13 5.476563 13 6 L 13 7 L 7 7 L 7 9 L 8 9 L 8 25 C 8 26.644531 9.355469 28 11 28 L 23 28 C 24.644531 28 26 26.644531 26 25 L 26 9 L 27 9 L 27 7 L 21 7 L 21 6 C 21 5.476563 20.816406 4.941406 20.4375 4.5625 C 20.058594 4.183594 19.523438 4 19 4 Z M 15 6 L 19 6 L 19 7 L 15 7 Z M 10 9 L 24 9 L 24 25 C 24 25.554688 23.554688 26 23 26 L 11 26 C 10.445313 26 10 25.554688 10 25 Z M 12 12 L 12 23 L 14 23 L 14 12 Z M 16 12 L 16 23 L 18 23 L 18 12 Z M 20 12 L 20 23 L 22 23 L 22 12 Z"/></svg>
                         <div class="visually-hidden">Filter löschen</div>
                     </button>
+
+                    <div class="foodplan__select-wrapper">
+                        <label for="sort" class="visually-hidden">Sortieren</label>
+                        <select name="sort" id="sort" class="foodplanner__select">
+                            <option value="">Keine Sortierung</option>
+                            <option value="name_asc">Name (A-Z)</option>
+                            <option value="name_desc">Name (Z-A)</option>
+                            <option value="duration_asc">Dauer aufsteigend</option>
+                            <option value="duration_desc">Dauer absteigend</option>
+                            <option value="calories_asc">Kalorien aufsteigend</option>
+                            <option value="calories_desc">Kalorien absteigend</option>
+                        </select>
+                    </div>
                 </fieldset>
             </form>
         </section>
