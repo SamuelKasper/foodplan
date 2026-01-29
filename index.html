@@ -43,6 +43,19 @@
                         </select>
                     </div>
 
+                    <div class="foodplan__select-wrapper">
+                        <label for="sort" class="visually-hidden">Sortieren</label>
+                        <select name="sort" id="sort" class="foodplanner__select">
+                            <option value="">Keine Auswahl</option>
+                            <option value="name_asc">Name (A-Z)</option>
+                            <option value="name_desc">Name (Z-A)</option>
+                            <option value="duration_asc">Dauer (kurz zuerst)</option>
+                            <option value="duration_desc">Dauer (lang zuerst)</option>
+                            <option value="calories_asc">Kalorien (wenig zuerst)</option>
+                            <option value="calories_desc">Kalorien (viel zuerst)</option>
+                        </select>
+                    </div>
+
                     <button type="button" class="button button--square button--gray" onclick="getRandom()">
                         <svg fill="#000000" class="foodplanner__random-icon" width="800px" height="800px" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
                             <g fill-rule="evenodd">

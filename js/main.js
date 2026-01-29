@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   let search = params.get("search");
   let category = params.get("category");
   let random = params.get("random");
+  let sort = params.get("sort");
 
   if (search && search != "") {
     let searchEl = document.getElementById("search");
@@ -14,13 +15,18 @@ document.addEventListener("DOMContentLoaded", (event) => {
     categoryEl.selected = true;
   }
 
-  fetchRecipes(search, category, random).then(({ data, recipesAmount }) => {
+  if (sort) {
+    let sortEl = document.getElementById("sort");
+    sortEl.value = sort;
+  }
+
+  fetchRecipes(search, category, random, sort).then(({ data, recipesAmount }) => {
     buildRecipesHtml(data, recipesAmount);
   });
 });
 
 // Gets the data from json file
-async function fetchRecipes(search = null, filter = null, random = null) {
+async function fetchRecipes(search = null, filter = null, random = null, sort = null) {
   let response = await fetch("./recipes.json");
   let data = await response.json();
   if (search) {
@@ -30,6 +36,35 @@ async function fetchRecipes(search = null, filter = null, random = null) {
   }
   if (filter && filter != "all") {
     data = data.filter((entry) => entry.tags[filter] == true);
+  }
+
+  if (sort) {
+    data.sort((a, b) => {
+      switch (sort) {
+        case "name_asc":
+          return a.name.localeCompare(b.name);
+        case "name_desc":
+          return b.name.localeCompare(a.name);
+        case "duration_asc":
+          if (a.duration_in_min === null) return 1;
+          if (b.duration_in_min === null) return -1;
+          return a.duration_in_min - b.duration_in_min;
+        case "duration_desc":
+          if (a.duration_in_min === null) return 1;
+          if (b.duration_in_min === null) return -1;
+          return b.duration_in_min - a.duration_in_min;
+        case "calories_asc":
+          if (a.calories_in_kcal === null) return 1;
+          if (b.calories_in_kcal === null) return -1;
+          return a.calories_in_kcal - b.calories_in_kcal;
+        case "calories_desc":
+          if (a.calories_in_kcal === null) return 1;
+          if (b.calories_in_kcal === null) return -1;
+          return b.calories_in_kcal - a.calories_in_kcal;
+        default:
+          return 0;
+      }
+    });
   }
 
   const recipesAmount = data.length;
@@ -120,6 +155,7 @@ function buildRecipesHtml(data, recipesAmount) {
         <div class="foodplanner__recipe-content">
           ${entry.serving && entry.serving_unit ? `<p class="foodplanner__recipe-servings">Für ${entry.serving} ${entry.serving_unit}</p>` : ''}
           ${entry.calories ? `<p class="foodplanner__recipe-calories">Pro Portion: ${entry.calories}</p>` : ''}
+          ${entry.duration ? `<p class="foodplanner__recipe-duration">Dauer: ${entry.duration}</p>` : ''}
           ${entry.description ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.description}</p>` : ''}
           ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
           <button class="foodplanner__recipe-button">Kopieren</button>
@@ -151,3 +187,24 @@ function buildRecipesHtml(data, recipesAmount) {
     }
   });
 }
+
+function handleChange() {
+    const search = document.getElementById("search").value;
+    const category = document.getElementById("categories").value;
+    const sort = document.getElementById("sort").value;
+
+    let params = new URLSearchParams();
+    if(search) params.set("search", search);
+    if(category) params.set("category", category);
+    if(sort) params.set("sort", sort);
+
+    const newUrl = `${window.location.pathname}?${params.toString()}`;
+    window.history.pushState({}, '', newUrl);
+
+    fetchRecipes(search, category, null, sort).then(({ data, recipesAmount }) => {
+        buildRecipesHtml(data, recipesAmount);
+    });
+}
+
+document.getElementById("categories").addEventListener("change", handleChange);
+document.getElementById("sort").addEventListener("change", handleChange);

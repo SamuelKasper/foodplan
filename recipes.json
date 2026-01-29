@@ -24,7 +24,10 @@
             "4": "2 Dose Tomaten stückig",
             "5": "Chilliflocken"
         },
-        "url": "https://www.chefkoch.de/rezepte/2913871443644048/Buddypfanne.html?utm_source=whatsapp&utm_campaign=sharing_rds_ck_web&utm_medium=sharinglink"
+        "url": "https://www.chefkoch.de/rezepte/2913871443644048/Buddypfanne.html?utm_source=whatsapp&utm_campaign=sharing_rds_ck_web&utm_medium=sharinglink",
+        "duration": "35-40 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 788
     },
     {
         "name": "Burger",
@@ -54,7 +57,10 @@
             "other": true,
             "sweets": false
         },
-        "url": "none"
+        "url": "none",
+        "duration": "20 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 750
     },
     {
         "name": "Spaghetti Carbonara",
@@ -81,7 +87,10 @@
             "4": "1 El Olivenöl",
             "5": "Salz und Pfeffer"
         },
-        "url": "https://www.chefkoch.de/rezepte/1298241234947062/Carbonara-wie-bei-der-Mamma-in-Rom.html?portionen=4"
+        "url": "https://www.chefkoch.de/rezepte/1298241234947062/Carbonara-wie-bei-der-Mamma-in-Rom.html?portionen=4",
+        "duration": "20-25 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 812
     },
     {
         "name": "Caesar Salad (+Wrap)",
@@ -114,7 +123,10 @@
             "10": "160g Garden Gourmet Hähnchen Stücke",
             "11": "200g Kartoffeln"
         },
-        "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/"
+        "url": "https://www.gaumenfreundin.de/low-carb-caesar-salad-rolle/",
+        "duration": "40-45 min",
+        "duration_in_min": 40,
+        "calories_in_kcal": 570
     },
     {
         "name": "Erdnussbutter Nudeln",
@@ -144,7 +156,10 @@
             "7": "2 EL Reisessig",
             "8": "2 EL Sesam"
         },
-        "url": "https://veggie-einhorn.de/nudeln-mit-erdnussbutter-sauce/#rezeptbox"
+        "url": "https://veggie-einhorn.de/nudeln-mit-erdnussbutter-sauce/#rezeptbox",
+        "duration": "15-20 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 911
     },
     {
         "name": "Flammkuchen",
@@ -173,7 +188,10 @@
             "6": "9g Salz (Teig)",
             "7": "Salz, Pfeffer"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 975
     },
     {
         "name": "Hähnchen Reis Pfanne",
@@ -192,7 +210,7 @@
             "other": false,
             "sweets": false
         },
-       "ingredients": {
+        "ingredients": {
             "0": "175g Reis",
             "2": "1 Zwiebel",
             "3": "1 Pck Garden Gourmet Hähnchenbrustfilet",
@@ -202,7 +220,10 @@
             "7": "250 g TK-Erbsen",
             "8": "250 ml Gemüsebrühe"
         },
-        "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/"
+        "url": "https://www.rewe.de/rezepte/schnelle-haehnchen-reis-pfanne/",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 685
     },
     {
         "name": "Indisches rote Linsen dal",
@@ -237,7 +258,10 @@
             "12": "200 ml passierte Tomaten oder gehackte Tomaten (optional)",
             "13": "Salz und Pfeffer nach Geschmack"
         },
-        "url": "https://biancazapatka.com/de/rotes-linsen-dal/"
+        "url": "https://biancazapatka.com/de/rotes-linsen-dal/",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 430
     },
     {
         "name": "Kartoffelbrei mit Fischstäbchen und Rahmsoße",
@@ -245,7 +269,7 @@
         "serving_unit": "Portionen",
         "description": "Kartoffeln ca. 20 min weichkochen. Anschließend mit dem Pürierstab unter hinzugeben von Sahne pürieren. Mit Salz, Pfeffer und Muskat abschmecken. Fischstäbchen nach Packungsanleitung backen.",
         "img": "images/recipes/kartoffelbrei.jpg",
-        "calories": "",
+        "calories": "870 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": true,
             "noodle": false,
@@ -263,7 +287,10 @@
             "3": "Rahmsoße",
             "4": "200ml Sahne"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "25-30 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 870
     },
     {
         "name": "Kartoffelgratin",
@@ -291,7 +318,10 @@
             "5": "frisch geriebene Muskatnuss",
             "6": "100g geriebener Light Käse"
         },
-        "url": "https://www.lecker.de/kartoffelgratin-das-klassische-rezept-72512.html"
+        "url": "https://www.lecker.de/kartoffelgratin-das-klassische-rezept-72512.html",
+        "duration": "60 min",
+        "duration_in_min": 60,
+        "calories_in_kcal": 625
     },
     {
         "name": "Kartoffelsuppe",
@@ -317,7 +347,10 @@
             "3": "2 EL Gemüsebrühepulver",
             "4": "1 EL Öl"
         },
-        "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html"
+        "url": "https://www.chefkoch.de/rezepte/1033821208509812/Kartoffelsuppe.html",
+        "duration": "35-40 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 275
     },
     {
         "name": "Kartoffelecken mit Quark",
@@ -343,7 +376,10 @@
             "3": "200g Kräuterquark light",
             "4": "Schnittlauch, Knoblauch, Salz, Pfeffer"
         },
-        "url": ""
+        "url": "",
+        "duration": "45 min",
+        "duration_in_min": 45,
+        "calories_in_kcal": 225
     },
     {
         "name": "Kichererbseneintopf",
@@ -374,7 +410,10 @@
             "8": "Je 1 TL: Kurkuma, Koriander, Paprika, Zimt, Kreuzkümmel, Salz",
             "9": "175g Reis"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 840
     },
     {
         "name": "Knoblauch Gnocci",
@@ -401,7 +440,10 @@
             "4": "50g Parmesan",
             "5": "Salz, Pfeffer, Chilipulver"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "35-40 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 975
     },
     {
         "name": "Knödel mit Rahmsoße",
@@ -425,7 +467,10 @@
             "1": "250ml Rahmsoße",
             "2": "250g Rahmgemüße"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "20-25 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 800
     },
     {
         "name": "Kroketten mit Veggie-Schnitzel",
@@ -450,7 +495,10 @@
             "2": "230ml Rahmsoße",
             "3": "250g Rahmgemüße"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "25-30 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 900
     },
     {
         "name": "Käsespätzle",
@@ -480,8 +528,11 @@
             "7": "1 Prise Muskatnuss",
             "8": "Salz",
             "9": "schwarzer Pfeffer aus der Mühle"
-          },
-        "url": "https://emmikochteinfach.de/kaesespaetzle-rezept-mit-roestzwiebeln/"
+        },
+        "url": "https://emmikochteinfach.de/kaesespaetzle-rezept-mit-roestzwiebeln/",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 830
     },
     {
         "name": "Kürbissuppe",
@@ -513,7 +564,10 @@
             "9": "100 ml Schlagsahne",
             "10": "Petersilie und Chiliflocken zum Garnieren"
         },
-        "url": "https://www.lecker.de/klassische-kuerbissuppe-mit-hokkaido-79938.html"
+        "url": "https://www.lecker.de/klassische-kuerbissuppe-mit-hokkaido-79938.html",
+        "duration": "35 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 260
     },
     {
         "name": "Maultaschengratin",
@@ -543,7 +597,10 @@
             "7": "Salz",
             "8": "Pfeffer"
         },
-        "url": "https://www.lidl-kochen.de/rezeptwelt/maultaschen-gratin-252542"
+        "url": "https://www.lidl-kochen.de/rezeptwelt/maultaschen-gratin-252542",
+        "duration": "50 min",
+        "duration_in_min": 50,
+        "calories_in_kcal": 1275
     },
     {
         "name": "Mediterrane Zuchini Reis Pfanne mit Feta",
@@ -582,7 +639,10 @@
             "16": "Schmand nach Bedarf",
             "17": "Thymian nach Geschmack"
         },
-        "url": "https://www.chefkoch.de/rezepte/1147671221053389/Mediterrane-Zucchini-Reis-Pfanne-mit-Feta.html"
+        "url": "https://www.chefkoch.de/rezepte/1147671221053389/Mediterrane-Zucchini-Reis-Pfanne-mit-Feta.html",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 678
     },
     {
         "name": "Mozzarella Hähnchen in Basilikum Sahnesoße mit Reis",
@@ -613,13 +673,16 @@
             "8": "125 g Mozzarella light",
             "9": "150g Reis"
         },
-        "url": "https://www.chefkoch.de/rezepte/1844061298739441/Mozzarella-Haehnchen-in-Basilikum-Sahnesauce.html"
+        "url": "https://www.chefkoch.de/rezepte/1844061298739441/Mozzarella-Haehnchen-in-Basilikum-Sahnesauce.html",
+        "duration": "40-45 min",
+        "duration_in_min": 40,
+        "calories_in_kcal": 1290
     },
     {
         "name": "Nudelauflauf mit Schinken und Erbsen",
         "serving": 4,
         "serving_unit": "Portionen",
-        "description": "Ofen auf 200°C vorheizen. Nudeln kochen, kurz vor Ende die Erbsen dazu geben. Kochschinken und Zwiebel schneiden. Butter erhitzen, Zwiebeln anschwitzen, mit Mehl bestäuben, mit Sahne und Milch ablöschen. Mit Salz, Pfeffer und Muskat und Petersilie würzen. Alles zusammen verrühren und in eine Auflaufform geben und mit Käse bestreuen. 20 min backen.",
+        "description": "Ofen auf 200°C vorheizen. Nudeln kochen, kurz vor Ende die Erbsen dazu geben. Kochschinken und Zwiebel schneiden. Butter erhitzen, Zwiebeln anschwitzen, mit Mehl bestäuben, mit Milch ablöschen. Mit Salz, Pfeffer und Muskat und Petersilie würzen. Alles zusammen verrühren und in eine Auflaufform geben und mit Käse bestreuen. 20 min backen.",
         "img": "images/recipes/nudelauflauf.jpg",
         "calories": "929 kcal",
         "tags": {
@@ -644,7 +707,10 @@
             "8": "200 g geriebener Käse",
             "9": "Salz und Pfeffer"
         },
-        "url": "https://www.lidl-kochen.de/rezeptwelt/klassischer-nudelauflauf-mit-schinken-und-erbsen-150810?ref=search"
+        "url": "https://www.lidl-kochen.de/rezeptwelt/klassischer-nudelauflauf-mit-schinken-und-erbsen-150810?ref=search",
+        "duration": "40 min",
+        "duration_in_min": 40,
+        "calories_in_kcal": 929
     },
     {
         "name": "Nudeln mit Pesto",
@@ -667,7 +733,10 @@
             "0": "250g Spaghetti",
             "1": "1 Glas Pesto"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "15 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 750
     },
     {
         "name": "One Port Orzo mit Spinat und Feta",
@@ -701,7 +770,10 @@
             "11": "Pfeffer",
             "12": "Muskatnuss"
         },
-        "url": "https://eat.de/rezept/one-pot-orzo-mit-spinat-und-feta/"
+        "url": "https://eat.de/rezept/one-pot-orzo-mit-spinat-und-feta/",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 515
     },
     {
         "name": "Pilzrisotto",
@@ -734,7 +806,10 @@
             "10": "Salz",
             "11": "Pfeffer"
         },
-        "url": "https://www.chefkoch.de/rezepte/139801060346833/Champignon-Risotto.html"
+        "url": "https://www.chefkoch.de/rezepte/139801060346833/Champignon-Risotto.html",
+        "duration": "35 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 625
     },
     {
         "name": "Pizza",
@@ -761,7 +836,10 @@
             "4": "250g Kochschinken",
             "5": "150g Gouda light"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "35 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 1050
     },
     {
         "name": "Rigatoni al Forno",
@@ -794,7 +872,10 @@
             "10": "50g Parmesan",
             "11": "200g Erbsen"
         },
-        "url": "https://www.rewe.de/rezepte/rigatoni-al-forno/"
+        "url": "https://www.rewe.de/rezepte/rigatoni-al-forno/",
+        "duration": "65 min",
+        "duration_in_min": 65,
+        "calories_in_kcal": 1115
     },
     {
         "name": "Rote Linsen Curry mit Süßkartoffeln",
@@ -830,7 +911,10 @@
             "13": "Salz",
             "14": "Pfeffer"
         },
-        "url": "https://www.chefkoch.de/rezepte/3023041455110341/Rote-Linsen-Curry-mit-Suesskartoffeln.html"
+        "url": "https://www.chefkoch.de/rezepte/3023041455110341/Rote-Linsen-Curry-mit-Suesskartoffeln.html",
+        "duration": "35 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 687
     },
     {
         "name": "Salatbowl",
@@ -863,7 +947,10 @@
             "10": "2 Zehe Knoblauch",
             "11": "Salz, Pfeffer, Fleischgewürz"
         },
-        "url": "https://www.tiktok.com/@schmaleschulter/video/7432323353823677718?_r=1&_t=8r3VoWIW9SK"
+        "url": "https://www.tiktok.com/@schmaleschulter/video/7432323353823677718?_r=1&_t=8r3VoWIW9SK",
+        "duration": "40-45 min",
+        "duration_in_min": 40,
+        "calories_in_kcal": 750
     },
     {
         "name": "Schnelle Spätzlepfanne mit Pilzen und lauch",
@@ -897,7 +984,10 @@
             "11": "1 TL rosenscharfes Paprikapulver",
             "12": "1 EL Tomatenmark"
         },
-        "url": "https://www.chefkoch.de/rezepte/616991161758535/Schnelle-Spaetzlepfanne-mit-Pilzen-und-Lauch.html"
+        "url": "https://www.chefkoch.de/rezepte/616991161758535/Schnelle-Spaetzlepfanne-mit-Pilzen-und-Lauch.html",
+        "duration": "20-25 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 1010
     },
     {
         "name": "Sommerlicher Nudelsalat",
@@ -933,7 +1023,10 @@
             "13": "1 TL Gemüsebrühe",
             "14": "1 gestrichener TL Senf"
         },
-        "url": "https://www.chefkoch.de/rezepte/1722041281270634/Sommerlicher-Nudelsalat.html"
+        "url": "https://www.chefkoch.de/rezepte/1722041281270634/Sommerlicher-Nudelsalat.html",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 400
     },
     {
         "name": "Spaghetti Bolognese",
@@ -964,7 +1057,10 @@
             "8": "1 El Öl",
             "9": "75ml Sahne / Sahne Alternative"
         },
-        "url": "https://www.einfachkochen.de/rezepte/vegetarische-spaghetti-bolognese-das-beste-klassiker-rezept?portions=2"
+        "url": "https://www.einfachkochen.de/rezepte/vegetarische-spaghetti-bolognese-das-beste-rezept?portions=2",
+        "duration": "30 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 880
     },
     {
         "name": "Spaghetti al Assasina",
@@ -993,7 +1089,10 @@
             "6": "2 Zehen Knoblauch",
             "7": "Petersilie nB."
         },
-        "url": "https://www.kitchenstories.com/de/rezepte/spaghetti-all-assassina-karamellisierte-one-pan-tomaten-pasta"
+        "url": "https://www.kitchenstories.com/de/rezepte/spaghetti-all-assassina-karamellisierte-one-pan-tomaten-pasta",
+        "duration": "25-30 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 550
     },
     {
         "name": "Spinat Tomaten Lasagne",
@@ -1001,7 +1100,7 @@
         "serving_unit": "Portionen",
         "description": "Gemüse kleinschneiden und anbraten. Milch und Rahmspinat hinzufügen. Wenn der Rahmspinat nicht mehr gefroren ist den Frischkäse, Gemüßebrühenpulver, Chilli, Salz und Pfeffer und Knoblauch hinzugeben.\nButter in einem Topf erhitzen. Mehl hinzugeben und glatt rühren. Passierte Tomaten und Sahne hinzugeben. Knoblauch dazu und mit Salz und Pfeffer abschmecken. Auflaufform einfetten, mit einer Schicht Tomatensoße und Spinat anfangen, dann Lasagneplatten etc. Nach der Letzten Schicht Käse darüberstreuen. Lasagne bei 200°C Umfluft für 30min backen.",
         "img": "images/recipes/spinatlasagne.jpg",
-        "calories": "",
+        "calories": "850 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": true,
@@ -1031,7 +1130,10 @@
             "15": "Lasagneplatten",
             "16": "200 g geriebener Käse"
         },
-        "url": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html"
+        "url": "https://www.chefkoch.de/rezepte/2114131340630587/Vegetarische-Spinat-Gemuese-Lasagne-mit-Tomatensosse.html",
+        "duration": "55 min",
+        "duration_in_min": 55,
+        "calories_in_kcal": 850
     },
     {
         "name": "Tagliatelle mit Spinat und Hähnchen",
@@ -1060,7 +1162,10 @@
             "6": "Salz",
             "7": "Pfeffer"
         },
-        "url": "https://www.lidl-kochen.de/rezeptwelt/tagliatelle-mit-spinat-und-haehnchen-144482"
+        "url": "https://www.lidl-kochen.de/rezeptwelt/tagliatelle-mit-spinat-und-haehnchen-144482",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 790
     },
     {
         "name": "Tomaten One Port Orzo",
@@ -1094,7 +1199,10 @@
             "11": "Pfeffer",
             "12": "Zucker"
         },
-        "url": "https://eat.de/rezept/one-pot-orzo-pasta/"
+        "url": "https://eat.de/rezept/one-pot-orzo-pasta/",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 600
     },
     {
         "name": "Tomaten-Reis-Pfanne mit Mozzarella",
@@ -1129,7 +1237,10 @@
             "12": "Salz",
             "13": "Pfeffer"
         },
-        "url": "https://www.rewe.de/rezepte/tomaten-reis-pfanne-mozzarella/"
+        "url": "https://www.rewe.de/rezepte/tomaten-reis-pfanne-mozzarella/",
+        "duration": "35 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 585
     },
     {
         "name": "Tortellini Auflauf",
@@ -1164,11 +1275,14 @@
             "12": "getrocknete Kräuter (z. B. Oregano, Basilikum)",
             "13": "250 g geriebener Käse"
         },
-        "url": "https://www.einfachkochen.de/rezepte/tortellini-auflauf-das-beste-rezept"
+        "url": "https://www.einfachkochen.de/rezepte/tortellini-auflauf-das-beste-rezept",
+        "duration": "45 min",
+        "duration_in_min": 45,
+        "calories_in_kcal": 700
     },
     {
         "name": "Vegetarisches Chicken Korma mit Reis",
-         "img": "images/recipes/chicken_korma.jpg", 
+        "img": "images/recipes/chicken_korma.jpg",
         "serving": 4,
         "serving_unit": "Portionen",
         "description": "Sojaschnetz in Gemüßebrühe einweichen lassen. Mandel anrösten. Gewürze vorbereiten. Zwiebeln und Knoblauch klein schneiden. Öl, Currypaste, Tomatenmark, Knoblauch, Zwiebeln und Ingwer anbraten. Sojaschnetz hinzugeben. Reis kochen. Nach 5 min Kokosmilch hinzugeben und 20min köcheln lassen. Wenn nötig Gemüßebrühe hinzugeben. Mit Koriander, Mandeln und Basilikum dekorieren und mit Reis servieren.",
@@ -1203,7 +1317,10 @@
             "16": "einige Mandelblättchen (geröstet)",
             "17": "Koriander / Basilikum"
         },
-        "url": "https://www.chefkoch.de/rezepte/3274371486501413/Veganes-Soja-Chicken-Korma.html"
+        "url": "https://www.chefkoch.de/rezepte/3274371486501413/Veganes-Soja-Chicken-Korma.html",
+        "duration": "35-40 min",
+        "duration_in_min": 35,
+        "calories_in_kcal": 700
     },
     {
         "name": "Winzerwecken",
@@ -1229,7 +1346,10 @@
             "3": "250g geriebener Käse",
             "4": "Salz, Pfeffer"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "23 min",
+        "duration_in_min": 23,
+        "calories_in_kcal": 1050
     },
     {
         "name": "Wraps",
@@ -1237,7 +1357,7 @@
         "serving_unit": "Portionen",
         "description": "Gemüße schneiden. Wrap kurz aufwärmen. Mit Soße bestreichen und füllen. ",
         "img": "images/recipes/wraps.jpg",
-        "calories": "",
+        "calories": "600 kcal (bei unten stehendem Rezept)",
         "tags": {
             "vegetable": false,
             "noodle": false,
@@ -1258,11 +1378,14 @@
             "6": "opt. kleine Dose Mais",
             "7": "opt. Avocado"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "15 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 600
     },
     {
         "name": "Japanischer Krautsalat",
-        "img": "images/recipes/jp_krautsalat.png", 
+        "img": "images/recipes/jp_krautsalat.png",
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Kohl in Streifen schneiden und in eine Schüssel füllen. Den Kohl ca. 2 Minuten massieren, damit er geschmeidig wird. Den Sesam anrösten. Die restlichen Zutaten zusammenmischen und dann den Sesam dazu geben. Dressing mit dem Kohl mischen - Fertig.",
@@ -1285,7 +1408,10 @@
             "4": "1 TL Sesamöl",
             "5": "1 TL Sesam"
         },
-        "url": "https://1mal1japan.de/rezepte/japanischer-krautsalat/#rezept"
+        "url": "https://1mal1japan.de/rezepte/japanischer-krautsalat/#rezept",
+        "duration": "10 min",
+        "duration_in_min": 10,
+        "calories_in_kcal": 58
     },
     {
         "name": "Katsudon",
@@ -1312,9 +1438,12 @@
             "4": "5 EL Sojasauce",
             "5": "3 EL Mirin",
             "6": "1 TL Öl zum Braten",
-            "7": "200g Reis"   
+            "7": "200g Reis"
         },
-        "url": "https://1mal1japan.de/rezepte/katsudon/#rezept"
+        "url": "https://1mal1japan.de/rezepte/katsudon/#rezept",
+        "duration": "25-30 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 730
     },
     {
         "name": "Katsu Curry",
@@ -1340,9 +1469,12 @@
             "3": "2 große Karotten",
             "4": "1 große Zwiebel",
             "5": "250ml Wasser",
-            "6": "175g Reis" 
+            "6": "175g Reis"
         },
-        "url": "https://rikueats.de/japanisches-curry-mit-katsu/"
+        "url": "https://rikueats.de/japanisches-curry-mit-katsu/",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 850
     },
     {
         "name": "Yakisoba",
@@ -1371,11 +1503,14 @@
             "6": "1 EL Öl",
             "7": "4-5 EL Yakisoba-Sauce"
         },
-        "url": "https://wanderweib-kocht.de/yakisoba/"
+        "url": "https://wanderweib-kocht.de/yakisoba/",
+        "duration": "15-20 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 435
     },
     {
         "name": "Spicy Udon Nudeln",
-        "img": "images/recipes/spicy_udon.jpg", 
+        "img": "images/recipes/spicy_udon.jpg",
         "serving": 2,
         "serving_unit": "Portionen",
         "description": "Nudeln kochen. Butter und Sesamöl erhitzen. Knoblauch goldbraun anbraten. Sojasauce, Dattelsirup Koriander und Chilli hinzufügen. Nudeln hinzugeben und etwas anbraten. Beliebig mit Frühlingszwiebeln und Sesam dekoriern.",
@@ -1401,7 +1536,10 @@
             "7": "opt. 1 Frühlingszwiebel",
             "8": "opt. Sesam"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "15-20 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 475
     },
     {
         "name": "Gyros Nudelpfanne",
@@ -1431,7 +1569,10 @@
             "7": "1 EL Creme Fraiche",
             "8": "125g Feta Light"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 885
     },
     {
         "name": "Hackfleisch Nudelpfanne",
@@ -1460,7 +1601,10 @@
             "6": "2 Zwiebeln",
             "7": "Fleischgewürz und Italienisches Gewürz"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "25 min",
+        "duration_in_min": 25,
+        "calories_in_kcal": 950
     },
     {
         "name": "Butter Chicken",
@@ -1492,7 +1636,10 @@
             "9": "250g passierte Tomaten",
             "10": "100g Alpro Sahne"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 850
     },
     {
         "name": "Veganer Schokokuchen",
@@ -1520,7 +1667,10 @@
             "5": "240ml Wasser",
             "6": "100ml Rapsöl"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "55 min",
+        "duration_in_min": 55,
+        "calories_in_kcal": 2440
     },
     {
         "name": "Couscous Salat mit Paprika und Gurke",
@@ -1547,7 +1697,10 @@
             "4": "2 EL Olivenöl",
             "5": "Paprikapulver, Salz, Pfeffer"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "20 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 360
     },
     {
         "name": "Bruschetta",
@@ -1574,7 +1727,10 @@
             "4": "12 Basilikumblätter",
             "5": "Salz, Pfeffer"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "15 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 850
     },
     {
         "name": "Bananenbrot",
@@ -1605,9 +1761,11 @@
             "8": "60ml Hafer- / Mandelmilch",
             "9": "80g gehackte Mandeln",
             "10": "1 TL Zimt"
-
         },
-        "url": "none"
+        "url": "none",
+        "duration": "75 min",
+        "duration_in_min": 75,
+        "calories_in_kcal": 3200
     },
     {
         "name": "Kartoffelsalat",
@@ -1636,7 +1794,10 @@
             "6": "Salz, Pfeffer, Muskatnuss",
             "7": "Frischer Schnittlauch"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "30-35 min",
+        "duration_in_min": 30,
+        "calories_in_kcal": 440
     },
     {
         "name": "Falafel mit Tahini Soße",
@@ -1674,7 +1835,10 @@
             "15": "Etwas Pfeffer",
             "16": "1 EL Zitronensaft"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "50 min",
+        "duration_in_min": 50,
+        "calories_in_kcal": 600
     },
     {
         "name": "Gnocchi Kürbis Auflauf",
@@ -1707,7 +1871,10 @@
             "10": "500g Gnocci",
             "11": "80g Mozarella"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "55 min",
+        "duration_in_min": 55,
+        "calories_in_kcal": 505
     },
     {
         "name": "Couscous-Pfanne mit Erbsen, Schinken",
@@ -1738,7 +1905,10 @@
             "8": "Salz und Pfeffer",
             "9": "1 EL Kräuterfrischkäse"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "20 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 375
     },
     {
         "name": "Geröstete Tomatensuppe mit gebackenen Knuspererbsen",
@@ -1780,7 +1950,10 @@
             "19": "0.5 TL Chiliflocken",
             "20": "0.5 TL Salz"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "55 min",
+        "duration_in_min": 55,
+        "calories_in_kcal": 480
     },
     {
         "name": "Strammer Max",
@@ -1811,6 +1984,37 @@
             "8": "4 Eier",
             "9": "1 EL Öl zum Braten"
         },
-        "url": "none"
+        "url": "none",
+        "duration": "20 min",
+        "duration_in_min": 20,
+        "calories_in_kcal": 670
+    },
+    {
+        "name": "Gurken Gnocci Salat",
+        "serving": 2,
+        "serving_unit": "Portionen",
+        "description": "Gnocchis in die Heißluftfriteuse bei 200°C für 15 min. Gurken der länge nach halbieren, waschen und klein hobeln. Frischkäse pürieren und mit Dill und Salz würzen. Das Dressing an die Gurken geben und gut vermischen. Gnocchis oben drauf geben. Fertig.",
+        "img": "images/recipes/cucumber_gnocchi_salad.jpeg",
+        "calories": "600 kcal (bei unten stehendem Rezept)",
+        "tags": {
+            "vegetable": true,
+            "noodle": false,
+            "rice": false,
+            "lentils": false,
+            "meat": false,
+            "salad": true,
+            "other": true,
+            "sweets": false
+        },
+        "ingredients": {
+            "0": "1,5 Gurken",
+            "1": "400g Körniger Frischkäse",
+            "2": "600g Gnocchis",
+            "3": "Dill, Salz"
+        },
+        "url": "none",
+        "duration": "15 min",
+        "duration_in_min": 15,
+        "calories_in_kcal": 600
     }
 ]
