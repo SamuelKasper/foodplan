@@ -25,47 +25,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
-// Gets the data from json file
+// Gets the data from API
 async function fetchRecipes(search = null, filter = null, random = null, sort = null) {
-  let response = await fetch("./recipes.json");
-  let data = await response.json();
-  if (search) {
-    data = data.filter((entry) =>
-      entry.name.toLowerCase().includes(search.toLowerCase())
-    );
-  }
-  if (filter && filter != "all") {
-    data = data.filter((entry) => entry.tags[filter] == true);
-  }
+  const params = new URLSearchParams();
+  if (search) params.set('search', search);
+  if (filter && filter !== 'all') params.set('category', filter);
+  if (sort) params.set('sort', sort);
 
-  if (sort) {
-    data.sort((a, b) => {
-      switch (sort) {
-        case "name_asc":
-          return a.name.localeCompare(b.name);
-        case "name_desc":
-          return b.name.localeCompare(a.name);
-        case "duration_asc":
-          if (a.duration_in_min === null) return 1;
-          if (b.duration_in_min === null) return -1;
-          return a.duration_in_min - b.duration_in_min;
-        case "duration_desc":
-          if (a.duration_in_min === null) return 1;
-          if (b.duration_in_min === null) return -1;
-          return b.duration_in_min - a.duration_in_min;
-        case "calories_asc":
-          if (a.calories_in_kcal === null) return 1;
-          if (b.calories_in_kcal === null) return -1;
-          return a.calories_in_kcal - b.calories_in_kcal;
-        case "calories_desc":
-          if (a.calories_in_kcal === null) return 1;
-          if (b.calories_in_kcal === null) return -1;
-          return b.calories_in_kcal - a.calories_in_kcal;
-        default:
-          return 0;
-      }
-    });
-  }
+  const response = await fetch('/api/recipes?' + params.toString());
+  let data = await response.json();
 
   const recipesAmount = data.length;
 
@@ -99,64 +67,46 @@ function buildRecipesHtml(data, recipesAmount) {
     const listItem = document.createElement("li");
     listItem.classList.add("foodplanner__list-item");
 
-    const tags = Object.keys(entry.tags)
-      .filter((tag) => entry.tags[tag])
-      .map((tag) => {
-        let tagName = "";
-        switch (tag) {
-          case "meat":
-            tagName = "Fleisch";
-            break;
-          case "vegetable":
-            tagName = "Gemüse";
-            break;
-          case "rice":
-            tagName = "Reis";
-            break;
-          case "noodle":
-            tagName = "Nudeln";
-            break;
-          case "other":
-            tagName = "Anderes";
-            break;
-          case "salad":
-            tagName = "Salat";
-            break;
-          case "lentils":
-            tagName = "Linsen";
-            break;
-          case "sweets":
-            tagName = "Süßes";
-            break;
-        }
-        return `<div class="foodplanner__recipe-tag">${tagName}</div>`;
-      })
+    const tagNameMap = {
+      meat: "Fleisch",
+      vegetable: "Gemüse",
+      rice: "Reis",
+      noodle: "Nudeln",
+      other: "Anderes",
+      salad: "Salat",
+      lentils: "Linsen",
+      sweets: "Süßes",
+    };
+
+    const tags = (entry.tags || [])
+      .map((tag) => `<div class="foodplanner__recipe-tag">${tagNameMap[tag] || tag}</div>`)
       .join("");
 
-    const ingredients = entry.ingredients
-      ? Object.values(entry.ingredients)
-          .map(
-            (ingredient) =>
-              `<li class="foodplanner__ingredient">${ingredient}</li>`
-          )
+    const ingredientsList = entry.ingredients || [];
+    const ingredients = ingredientsList.length
+      ? ingredientsList
+          .map((ing) => {
+            const parts = [ing.amount, ing.unit, ing.name].filter(Boolean);
+            return `<li class="foodplanner__ingredient">${parts.join(' ')}</li>`;
+          })
           .join("")
       : "";
 
     listItem.innerHTML = `
-      ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.name}">` : ''}
+      ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.title}">` : ''}
       <details class="foodplanner__details-toggle">
         <summary class="foodplanner__details-summary">
-          ${entry.name}
+          ${entry.title}
           <div class="foodplanner__recipe-tags">${tags}</div>
           <div class="foodplanner__summary-icon">
             <svg viewBox="0 0 512 512"><path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/></svg>
           </div>
         </summary>
         <div class="foodplanner__recipe-content">
-          ${entry.serving && entry.serving_unit ? `<p class="foodplanner__recipe-servings">Für ${entry.serving} ${entry.serving_unit}</p>` : ''}
-          ${entry.calories ? `<p class="foodplanner__recipe-calories">Pro Portion: ${entry.calories}</p>` : ''}
-          ${entry.duration ? `<p class="foodplanner__recipe-duration">Dauer: ${entry.duration}</p>` : ''}
-          ${entry.description ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.description}</p>` : ''}
+          ${entry.servings ? `<p class="foodplanner__recipe-servings">Für ${entry.servings}</p>` : ''}
+          ${entry.calories ? `<p class="foodplanner__recipe-calories">Pro Portion: ${entry.calories} kcal</p>` : ''}
+          ${entry.duration ? `<p class="foodplanner__recipe-duration">Dauer: ${entry.duration} min</p>` : ''}
+          ${entry.instruction ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.instruction}</p>` : ''}
           ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
           <button class="foodplanner__recipe-button">Kopieren</button>
         </div>
