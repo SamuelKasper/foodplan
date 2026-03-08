@@ -1,6 +1,10 @@
+// IIFE (Immediately Invoked Function Expression): Wird sofort ausgeführt.
+// Kapselt alle Variablen und Funktionen, damit sie nicht global verfügbar sind
+// und nicht mit anderem Code kollidieren können.
 (function () {
     'use strict';
 
+    // Mapping von internen Tag-Keys auf deutsche Anzeigenamen
     const tagNameMap = {
         meat: 'Fleisch',
         vegetable: 'Gemüse',
@@ -14,14 +18,20 @@
 
     const allTags = Object.keys(tagNameMap);
 
+    // Liest den API-Key aus dem Eingabefeld
     const getApiKey = () => document.getElementById('api-key').value;
 
+    // Baut die HTTP-Header für authentifizierte Requests.
+    // Content-Type: teilt dem Server mit, dass der Body JSON enthält.
+    // X-API-Key: der geheime Schlüssel zur Authentifizierung.
     const authHeaders = () => ({
         'Content-Type': 'application/json',
         'X-API-Key': getApiKey(),
     });
 
-    // Build tag checkboxes
+    // Erzeugt für jeden Tag eine Checkbox mit Label.
+    // Die Checkboxen werden dynamisch aus der tagNameMap generiert,
+    // damit bei neuen Tags nur die Map erweitert werden muss.
     const buildTagCheckboxes = () => {
         const container = document.getElementById('tags-container');
 
@@ -46,7 +56,8 @@
         }
     };
 
-    // Ingredient row
+    // Fügt eine neue Zutaten-Zeile (Menge, Einheit, Name) zum Formular hinzu.
+    // data = optionales Objekt mit Vorbefüllung beim Bearbeiten eines Rezepts.
     const addIngredientRow = (data = {}) => {
         const container = document.getElementById('ingredients-container');
         const row = document.createElement('div');
@@ -66,7 +77,10 @@
         container.appendChild(row);
     };
 
-    // Collect form data
+    // Sammelt alle Formulardaten und gibt sie als Objekt zurück.
+    // Dieses Objekt wird dann als JSON an die API geschickt.
+    // Leere Felder werden zu null, damit die DB keine leeren Strings speichert.
+    // .filter((ing) => ing.name) entfernt leere Zutaten-Zeilen.
     const collectFormData = () => {
         const selectedTags = [];
         for (const tag of allTags) {
@@ -100,7 +114,8 @@
         };
     };
 
-    // Reset form
+    // Setzt das Formular komplett zurück (leert alle Felder, entfernt Zutaten-Zeilen,
+    // setzt Checkboxen zurück und ändert die Überschrift zurück auf "Neues Rezept")
     const resetForm = () => {
         document.getElementById('recipe-id').value = '';
         document.getElementById('recipe-form').reset();
@@ -112,7 +127,9 @@
         }
     };
 
-    // Load recipe into form for editing
+    // Lädt ein bestehendes Rezept von der API und befüllt damit das Formular.
+    // Wird aufgerufen wenn man "Bearbeiten" klickt.
+    // Scrollt danach zum Formular hoch, damit der User sofort bearbeiten kann.
     const loadRecipeIntoForm = async (id) => {
         const response = await fetch('/api/recipes/' + id);
         const recipe = await response.json();
@@ -141,7 +158,9 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
-    // Delete recipe
+    // Löscht ein Rezept nach Bestätigung.
+    // confirm() zeigt einen Browser-Dialog mit OK/Abbrechen.
+    // fetch mit method: 'DELETE' sendet einen HTTP-DELETE-Request an die API.
     const deleteRecipe = async (id, title) => {
         if (!confirm('Rezept "' + title + '" wirklich loeschen?')) return;
 
@@ -159,7 +178,8 @@
         }
     };
 
-    // Load recipe list
+    // Lädt alle Rezepte (alphabetisch sortiert) und baut die Liste
+    // mit "Bearbeiten"- und "Löschen"-Buttons auf.
     const loadRecipeList = async () => {
         const response = await fetch('/api/recipes?sort=name_asc');
         const recipes = await response.json();
@@ -198,7 +218,11 @@
         }
     };
 
-    // Submit form (create or update)
+    // Formular absenden: Erstellt ein neues Rezept (POST) oder aktualisiert ein bestehendes (PUT).
+    // e.preventDefault() verhindert das Standard-Formular-Submit (was die Seite neu laden würde).
+    // Ob es ein neues Rezept oder ein Update ist, wird am hidden-Field "recipe-id" erkannt:
+    // Leer = neues Rezept (POST), gefüllt = Update (PUT).
+    // JSON.stringify() wandelt das JavaScript-Objekt in einen JSON-String für den HTTP-Body um.
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -233,7 +257,9 @@
         }
     };
 
-    // Init
+    // Initialisierung: Wird einmalig beim Laden der Seite ausgeführt.
+    // Baut die Tag-Checkboxen auf, fügt eine leere Zutaten-Zeile ein,
+    // lädt die Rezeptliste vom Server und registriert die Event-Listener.
     buildTagCheckboxes();
     addIngredientRow();
     loadRecipeList();

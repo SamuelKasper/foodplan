@@ -48,12 +48,16 @@ const seed = async () => {
     try {
         await client.query('BEGIN');
 
-        // Clear existing data
+        // Alle Daten löschen (Reihenfolge wichtig wegen Foreign Keys:
+        // erst die Verknüpfungstabellen, dann die Haupttabellen)
         await client.query('DELETE FROM recipe_tags');
         await client.query('DELETE FROM recipe_ingredients');
         await client.query('DELETE FROM recipes');
         await client.query('DELETE FROM ingredients');
         await client.query('DELETE FROM tags');
+
+        // ALTER SEQUENCE ... RESTART WITH 1 = setzt die Auto-Increment-Zähler zurück,
+        // damit IDs wieder bei 1 anfangen (SERIAL-Spalten zählen sonst weiter hoch)
         await client.query('ALTER SEQUENCE recipes_id_seq RESTART WITH 1');
         await client.query('ALTER SEQUENCE ingredients_id_seq RESTART WITH 1');
         await client.query('ALTER SEQUENCE tags_id_seq RESTART WITH 1');
@@ -113,7 +117,9 @@ const seed = async () => {
                 for (const raw of Object.values(recipe.ingredients)) {
                     const parsed = parseIngredient(raw);
 
-                    // Get or create ingredient
+                    // Upsert: Zutat einfügen, oder wenn sie schon existiert (UNIQUE auf name),
+                    // den bestehenden Datensatz "updaten" um die ID via RETURNING zu bekommen.
+                    // ingredientIds ist ein JS-Cache um doppelte DB-Anfragen zu vermeiden.
                     if (!ingredientIds[parsed.name]) {
                         const ingResult = await client.query(
                             'INSERT INTO ingredients (name) VALUES ($1) ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name RETURNING id',
@@ -130,14 +136,17 @@ const seed = async () => {
             }
         }
 
+        // COMMIT = alle Änderungen seit BEGIN werden dauerhaft gespeichert
         await client.query('COMMIT');
         console.log(`Seeded ${recipes.length} recipes successfully.`);
     } catch (err) {
+        // ROLLBACK = alle Änderungen seit BEGIN werden verworfen
         await client.query('ROLLBACK');
         console.error('Seed failed:', err);
         process.exit(1);
     } finally {
         client.release();
+        // pool.end() schließt alle Verbindungen (nötig damit das Script beendet wird)
         await pool.end();
     }
 };
