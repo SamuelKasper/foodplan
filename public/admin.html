@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodplan - Admin</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+<body>
+    <div class="container">
+        <header class="admin__header">
+            <h1 class="admin__title">Rezeptverwaltung</h1>
+            <a href="/" class="button button--gray admin__back-link">Zur Startseite</a>
+        </header>
+
+        <section class="admin__auth">
+            <fieldset class="foodplanner__fieldset">
+                <label for="api-key" class="admin__label">API-Key</label>
+                <input type="password" id="api-key" class="admin__input" placeholder="Geheimen Schluessel eingeben">
+            </fieldset>
+        </section>
+
+        <section class="admin__form-section">
+            <h2 class="admin__form-title" id="form-title">Neues Rezept</h2>
+
+            <form id="recipe-form" class="admin__form">
+                <input type="hidden" id="recipe-id">
+
+                <fieldset class="admin__fieldset">
+                    <legend class="admin__legend">Grunddaten</legend>
+
+                    <div class="admin__field">
+                        <label for="title" class="admin__label">Titel *</label>
+                        <input type="text" id="title" class="admin__input" required>
+                    </div>
+
+                    <div class="admin__field">
+                        <label for="description" class="admin__label">Beschreibung</label>
+                        <textarea id="description" class="admin__textarea" rows="2"></textarea>
+                    </div>
+
+                    <div class="admin__field">
+                        <label for="instruction" class="admin__label">Anleitung</label>
+                        <textarea id="instruction" class="admin__textarea" rows="4"></textarea>
+                    </div>
+
+                    <div class="admin__field">
+                        <label for="img" class="admin__label">Bild-URL</label>
+                        <input type="text" id="img" class="admin__input" placeholder="images/recipes/...">
+                    </div>
+
+                    <div class="admin__row">
+                        <div class="admin__field">
+                            <label for="calories" class="admin__label">Kalorien (kcal)</label>
+                            <input type="number" id="calories" class="admin__input">
+                        </div>
+
+                        <div class="admin__field">
+                            <label for="servings" class="admin__label">Portionen</label>
+                            <input type="text" id="servings" class="admin__input" placeholder="z.B. 4 Portionen">
+                        </div>
+
+                        <div class="admin__field">
+                            <label for="duration" class="admin__label">Dauer (min)</label>
+                            <input type="number" id="duration" class="admin__input">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="admin__fieldset">
+                    <legend class="admin__legend">Tags</legend>
+                    <div class="admin__tags" id="tags-container"></div>
+                </fieldset>
+
+                <fieldset class="admin__fieldset">
+                    <legend class="admin__legend">Zutaten</legend>
+                    <div id="ingredients-container"></div>
+                    <button type="button" class="button button--gray admin__add-btn" id="add-ingredient">+ Zutat</button>
+                </fieldset>
+
+                <div class="admin__actions">
+                    <button type="submit" class="button button--green">Speichern</button>
+                    <button type="button" class="button button--gray" id="reset-form">Abbrechen</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="admin__list-section">
+            <h2>Vorhandene Rezepte</h2>
+            <ul id="recipe-list" class="admin__recipe-list"></ul>
+        </section>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

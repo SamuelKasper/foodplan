@@ -1,0 +1,218 @@
+.admin__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.admin__title {
+    color: var(--color-gray-lighter);
+    margin: 0;
+}
+
+.admin__back-link {
+    font-size: .875rem;
+    padding: .5rem 1rem;
+}
+
+.admin__auth {
+    margin-top: 1.5rem;
+    max-width: 25rem;
+}
+
+.admin__label {
+    font-size: .875rem;
+    color: var(--color-gray);
+    display: block;
+    margin-bottom: .25rem;
+}
+
+.admin__input,
+.admin__textarea {
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    padding: .5rem .75rem;
+    border: 1px solid #3e3e3e;
+    border-radius: .5rem;
+    background-color: var(--color-gray-darker);
+    color: var(--color-gray-lighter);
+    font-family: inherit;
+}
+
+.admin__input:focus,
+.admin__textarea:focus {
+    border-color: var(--color-gold);
+}
+
+.admin__textarea {
+    resize: vertical;
+}
+
+.admin__form-section {
+    margin-top: 2rem;
+}
+
+.admin__form-title {
+    color: var(--color-gray-lighter);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.admin__fieldset {
+    border: 1px solid #3e3e3e;
+    border-radius: .75rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.admin__legend {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-gold);
+    padding: 0 .5rem;
+}
+
+.admin__field {
+    margin-bottom: 1rem;
+}
+
+.admin__field:last-child {
+    margin-bottom: 0;
+}
+
+.admin__row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+    gap: 1rem;
+}
+
+.admin__row .admin__field {
+    margin-bottom: 0;
+}
+
+.admin__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+
+.admin__tag-checkbox {
+    display: flex;
+    align-items: center;
+    gap: .375rem;
+}
+
+.admin__checkbox {
+    accent-color: var(--color-gold);
+    width: 1.125rem;
+    height: 1.125rem;
+    cursor: pointer;
+}
+
+.admin__tag-label {
+    font-size: .9375rem;
+    color: var(--color-gray-lighter);
+    cursor: pointer;
+}
+
+.admin__ingredient-row {
+    display: grid;
+    grid-template-columns: 5rem 5rem 1fr auto;
+    gap: .5rem;
+    margin-bottom: .5rem;
+    align-items: center;
+}
+
+.admin__input--small {
+    width: 100%;
+}
+
+.admin__input--wide {
+    width: 100%;
+}
+
+.admin__remove-btn {
+    font-size: .875rem;
+    padding: .5rem .75rem;
+}
+
+.admin__add-btn {
+    font-size: .875rem;
+    padding: .5rem 1rem;
+    margin-top: .5rem;
+}
+
+.admin__actions {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.admin__list-section {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid #3e3e3e;
+}
+
+.admin__list-section h2 {
+    margin-top: 0;
+}
+
+.admin__recipe-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin__recipe-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: .75rem 1rem;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.admin__recipe-item:first-child {
+    border-top: 1px solid #2a2a2a;
+}
+
+.admin__recipe-name {
+    color: var(--color-gray-lighter);
+    font-size: 1rem;
+}
+
+.admin__recipe-actions {
+    display: flex;
+    gap: .5rem;
+    flex-shrink: 0;
+}
+
+.admin__action-btn {
+    font-size: .8125rem;
+    padding: .375rem .75rem;
+}
+
+.button--delete {
+    background-color: #8b2020;
+    color: #fff;
+    transition: background-color .3s;
+}
+
+.button--delete:hover {
+    background-color: #6e1919;
+}
+
+@media screen and (max-width: 30em) {
+    .admin__ingredient-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .admin__input--wide {
+        grid-column: 1 / -1;
+    }
+}
