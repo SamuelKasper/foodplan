@@ -4,6 +4,9 @@ const express = require('express');
 const path = require('path');
 // pg = node-postgres: die Bibliothek um sich mit PostgreSQL zu verbinden
 const { Pool } = require('pg');
+// Rate Limiting: Begrenzt die Anzahl der Requests pro IP in einem Zeitfenster.
+// Schützt die Auth-Endpunkte vor Brute-Force-Angriffen.
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -25,6 +28,18 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 
 // JSON body parser
 app.use(express.json());
+
+// Rate Limiter für Auth-Endpunkte: Max. 10 Requests pro IP in 15 Minuten.
+// Danach wird die IP temporär gesperrt und bekommt einen 429-Fehler.
+// standardHeaders: sendet RateLimit-* Header mit (zeigt verbleibende Versuche)
+// legacyHeaders: deaktiviert die alten X-RateLimit-* Header
+const authLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 3,
+    standardHeaders: true,
+    legacyHeaders: false,
+    message: { error: 'Zu viele Versuche. Bitte in 15 Minuten erneut probieren.' },
+});
 
 // Auth middleware for write operations
 const requireAuth = (req, res, next) => {
@@ -237,7 +252,7 @@ app.get('/api/tags', async (req, res) => {
 });
 
 // POST /api/recipes - Create recipe (auth required)
-app.post('/api/recipes', requireAuth, async (req, res) => {
+app.post('/api/recipes', authLimiter, requireAuth, async (req, res) => {
     const { title, description, instruction, img, calories, servings, duration, tags, ingredients } = req.body;
 
     if (!title) {
@@ -282,7 +297,7 @@ app.post('/api/recipes', requireAuth, async (req, res) => {
 });
 
 // PUT /api/recipes/:id - Update recipe (auth required)
-app.put('/api/recipes/:id', requireAuth, async (req, res) => {
+app.put('/api/recipes/:id', authLimiter, requireAuth, async (req, res) => {
     const { id } = req.params;
     const { title, description, instruction, img, calories, servings, duration, tags, ingredients } = req.body;
 
@@ -322,7 +337,7 @@ app.put('/api/recipes/:id', requireAuth, async (req, res) => {
 });
 
 // DELETE /api/recipes/:id - Delete recipe (auth required)
-app.delete('/api/recipes/:id', requireAuth, async (req, res) => {
+app.delete('/api/recipes/:id', authLimiter, requireAuth, async (req, res) => {
     const { id } = req.params;
 
     try {
