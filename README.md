@@ -14,12 +14,6 @@ Rezeptverwaltung mit Node.js Backend, PostgreSQL Datenbank und statischem Fronte
 cp .env.example .env
 ```
 
-Passe bei Bedarf die Werte in der `.env` an. Bei Sonderzeichen im Passwort den Wert in Anführungszeichen setzen:
-
-```env
-DB_PASSWORD="mein$icheres!Passwort#123"
-```
-
 ### 2. Container starten
 
 ```bash
