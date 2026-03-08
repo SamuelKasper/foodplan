@@ -330,8 +330,36 @@ button, .button {
 }
 
 .foodplanner__recipe-servings {
-    /* margin-top: 1rem; */
     font-weight: 600;
+}
+
+.foodplanner__servings {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 600;
+    color: var(--color-gray-lighter);
+}
+
+.foodplanner__servings-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75rem;
+    width: 1.75rem;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--color-gray-darker);
+    color: var(--color-gray-lighter);
+}
+
+.foodplanner__servings-count {
+    min-width: 1.5rem;
+    text-align: center;
+    font-size: 1.125rem;
 }
 
 .foodplanner__recipe-description-headline {

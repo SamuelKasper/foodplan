@@ -55,6 +55,58 @@ function resetSearch() {
   window.location.href = window.location.origin + window.location.pathname;
 }
 
+// Parse servings number from string like "4 Portionen" or "2"
+const parseServingsNumber = (servingsStr) => {
+    const match = String(servingsStr).match(/(\d+)/);
+    return match ? parseInt(match[1]) : null;
+};
+
+// Build servings HTML with +/- buttons
+const buildServingsHtml = (servings) => {
+    const baseNumber = parseServingsNumber(servings);
+    if (!baseNumber) {
+        return `<p class="foodplanner__recipe-servings">Für ${servings}</p>`;
+    }
+
+    const label = String(servings).replace(/\d+/, '').trim();
+
+    return `
+        <div class="foodplanner__servings" data-base-servings="${baseNumber}">
+            <span class="foodplanner__servings-label">Für</span>
+            <button type="button" class="foodplanner__servings-btn js-servings-decrease" aria-label="Weniger Portionen">−</button>
+            <span class="foodplanner__servings-count">${baseNumber}</span>
+            <button type="button" class="foodplanner__servings-btn js-servings-increase" aria-label="Mehr Portionen">+</button>
+            <span class="foodplanner__servings-label">${label}</span>
+        </div>
+    `;
+};
+
+// Build ingredient list items with data attributes for scaling
+const buildScalableIngredients = (ingredientsList) => {
+    return ingredientsList.map((ing) => {
+        const baseAmount = ing.amount ? parseFloat(ing.amount) : null;
+        const dataAttr = baseAmount ? ` data-base-amount="${baseAmount}"` : '';
+        const displayAmount = ing.amount || '';
+        const parts = [displayAmount, ing.unit, ing.name].filter(Boolean);
+        return `<li class="foodplanner__ingredient"${dataAttr}>${parts.join(' ')}</li>`;
+    }).join('');
+};
+
+// Scale ingredients based on new servings
+const updateIngredients = (recipeContent, baseServings, newServings) => {
+    const factor = newServings / baseServings;
+    const ingredients = recipeContent.querySelectorAll('.foodplanner__ingredient[data-base-amount]');
+
+    for (const li of [...ingredients]) {
+        const baseAmount = parseFloat(li.dataset.baseAmount);
+        const scaled = Math.round(baseAmount * factor * 100) / 100;
+        const display = scaled % 1 === 0 ? scaled.toString() : scaled.toLocaleString('de-DE');
+        const ing = li.textContent.split(' ');
+        ing[0] = display;
+        li.textContent = ing.join(' ');
+    }
+};
+
 // Builds the html by data
 function buildRecipesHtml(data, recipesAmount) {
   let resultList = document.getElementById("foodplanner__list");
@@ -103,11 +155,11 @@ function buildRecipesHtml(data, recipesAmount) {
           </div>
         </summary>
         <div class="foodplanner__recipe-content">
-          ${entry.servings ? `<p class="foodplanner__recipe-servings">Für ${entry.servings}</p>` : ''}
+          ${entry.servings ? buildServingsHtml(entry.servings) : ''}
           ${entry.calories ? `<p class="foodplanner__recipe-calories">Pro Portion: ${entry.calories} kcal</p>` : ''}
           ${entry.duration ? `<p class="foodplanner__recipe-duration">Dauer: ${entry.duration} min</p>` : ''}
           ${entry.instruction ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.instruction}</p>` : ''}
-          ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
+          ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${buildScalableIngredients(ingredientsList)}</ul>` : ''}
           <button class="foodplanner__recipe-button">Kopieren</button>
         </div>
       </details>
@@ -134,6 +186,23 @@ function buildRecipesHtml(data, recipesAmount) {
         .catch(function (error) {
           console.error("Fehler beim Kopieren:", error);
         });
+    }
+
+    if (e.target.classList.contains('js-servings-increase') || e.target.classList.contains('js-servings-decrease')) {
+      const servingsWrapper = e.target.closest('.foodplanner__servings');
+      const baseServings = parseInt(servingsWrapper.dataset.baseServings);
+      const countEl = servingsWrapper.querySelector('.foodplanner__servings-count');
+      let current = parseInt(countEl.textContent);
+
+      if (e.target.classList.contains('js-servings-increase')) {
+        current++;
+      } else if (current > 1) {
+        current--;
+      }
+
+      countEl.textContent = current;
+      const recipeContent = servingsWrapper.closest('.foodplanner__recipe-content');
+      updateIngredients(recipeContent, baseServings, current);
     }
   });
 }
