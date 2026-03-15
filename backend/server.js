@@ -35,9 +35,13 @@ app.use(express.json());
 // legacyHeaders: deaktiviert die alten X-RateLimit-* Header
 const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    max: 300,
+    max: 5,
     standardHeaders: true,
     legacyHeaders: false,
+    // Nur fehlgeschlagene Requests zählen – erfolgreiche Auth wird nicht limitiert.
+    // So können authentifizierte Nutzer beliebig viele Änderungen vornehmen,
+    // während Brute-Force-Angriffe (falsche Keys) nach 5 Versuchen geblockt werden.
+    skipSuccessfulRequests: true,
     message: { error: 'Zu viele Versuche. Bitte in 15 Minuten erneut probieren.' },
 });
 
