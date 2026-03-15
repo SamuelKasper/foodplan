@@ -370,20 +370,27 @@ button, .button {
 
 .foodplanner__details-toggle {
     cursor: pointer;
-    interpolate-size: allow-keywords;
     border: 2px solid transparent;
     border-radius: 0 0 1rem 1rem;
     transition: border .3s;
+
+    &::details-content {
+        interpolate-size: allow-keywords;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: height .3s ease, opacity .3s ease, content-visibility .3s ease allow-discrete;
+    }
+
+    &:open::details-content {
+        height: auto;
+        opacity: 1;
+    }
 
     &:open {
 
         .foodplanner__summary-icon {
             transform: rotate(180deg) translateY(4px);
-        }
-
-        .foodplanner__recipe-content {
-            height: auto;
-            opacity: 1;
         }
     }
 }
@@ -410,15 +417,7 @@ button, .button {
 }
 
 .foodplanner__recipe-content {
-    height: 0;
-    opacity: 0;
-    padding: 0 1rem;
-    overflow: hidden;
-    transition: height .3s ease, opacity .3s ease, padding .3s ease;
-
-    .foodplanner__details-toggle:open & {
-        padding: 0 1rem 1rem;
-    }
+    padding: 0 1rem 1rem;
 }
 
 .foodplanner__ingredient-headline {
