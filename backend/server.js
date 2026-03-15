@@ -75,42 +75,35 @@ const buildRecipeQuery = (conditions = [], sort = null) => {
             r.servings,
             r.duration,
 
-            -- json_agg() sammelt alle Tag-Namen in ein JSON-Array, z.B. ["meat", "rice"]
-            -- DISTINCT verhindert Duplikate (entstehen durch die JOINs mit ingredients)
-            -- FILTER (WHERE ... IS NOT NULL) ignoriert Rezepte ohne Tags
+            -- Subquery für Tags: Sammelt alle Tag-Namen in ein JSON-Array, z.B. ["meat", "rice"]
             -- COALESCE(..., '[]') gibt ein leeres Array zurück wenn keine Tags vorhanden
             COALESCE(
-                json_agg(DISTINCT t.name) FILTER (WHERE t.name IS NOT NULL),
+                (SELECT json_agg(t.name)
+                 FROM recipe_tags rt
+                 JOIN tags t ON t.id = rt.tag_id
+                 WHERE rt.recipe_id = r.id),
                 '[]'
             ) AS tags,
 
-            -- json_build_object() baut pro Zutat ein JSON-Objekt: {name, amount, unit}
-            -- json_agg() sammelt alle Zutaten-Objekte in ein Array
-            -- ORDER BY i.name sortiert die Zutaten alphabetisch
+            -- Subquery für Zutaten: Baut pro Zutat ein JSON-Objekt {name, amount, unit}
+            -- und sammelt alle in ein Array, alphabetisch sortiert.
+            -- Subqueries statt JOINs vermeiden Duplikate durch Kreuzprodukt (Tags × Zutaten)
             COALESCE(
-                json_agg(
+                (SELECT json_agg(
                     json_build_object('name', i.name, 'amount', ri.amount, 'unit', ri.unit)
-                    ORDER BY i.name
-                ) FILTER (WHERE i.name IS NOT NULL),
+                    ORDER BY i.name)
+                 FROM recipe_ingredients ri
+                 JOIN ingredients i ON i.id = ri.ingredient_id
+                 WHERE ri.recipe_id = r.id),
                 '[]'
             ) AS ingredients
 
-        -- LEFT JOIN = verbindet Tabellen, behält aber auch Rezepte ohne Tags/Zutaten
-        -- (im Gegensatz zu INNER JOIN, der Rezepte ohne Tags/Zutaten ausschließen würde)
         FROM recipes r
-        LEFT JOIN recipe_tags rt ON rt.recipe_id = r.id
-        LEFT JOIN tags t ON t.id = rt.tag_id
-        LEFT JOIN recipe_ingredients ri ON ri.recipe_id = r.id
-        LEFT JOIN ingredients i ON i.id = ri.ingredient_id
     `;
 
     if (conditions.length > 0) {
         query += ' WHERE ' + conditions.join(' AND ');
     }
-
-    // GROUP BY r.id ist nötig wegen json_agg():
-    // Die Aggregation fasst alle Tags/Zutaten pro Rezept zusammen
-    query += ' GROUP BY r.id';
 
     if (sort) {
         // NULLS LAST = Rezepte ohne Wert (z.B. ohne Kalorienangabe) kommen ans Ende
