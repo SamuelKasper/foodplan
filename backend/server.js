@@ -35,7 +35,7 @@ app.use(express.json());
 // legacyHeaders: deaktiviert die alten X-RateLimit-* Header
 const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000,
-    max: 3,
+    max: 300,
     standardHeaders: true,
     legacyHeaders: false,
     message: { error: 'Zu viele Versuche. Bitte in 15 Minuten erneut probieren.' },
