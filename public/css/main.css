@@ -268,6 +268,7 @@ button, .button {
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    max-width: 20rem;
 }
 
 .foodplanner__recipe-tags{
@@ -374,9 +375,20 @@ button, .button {
     border-radius: 0 0 1rem 1rem;
     transition: border .3s;
 
+    &::details-content {
+        interpolate-size: allow-keywords;
+        height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: height .3s ease, opacity .3s ease, content-visibility .3s ease allow-discrete;
+    }
+
+    &:open::details-content {
+        height: auto;
+        opacity: 1;
+    }
+
     &:open {
-        /* border: 2px solid var(--color-gold); */
-        /* border-top: transparent; */
 
         .foodplanner__summary-icon {
             transform: rotate(180deg) translateY(4px);
@@ -389,14 +401,13 @@ button, .button {
     padding: 1rem 2.5rem 1rem 1rem;
     font-size: 1rem;
     list-style: none;
-   
 
-    &::-webkit-details-marker{
+    &::-webkit-details-marker {
         display: none;
     }
 
-    .foodplanner__summary-icon{
-        fill:  var(--color-gray-lighter);
+    .foodplanner__summary-icon {
+        fill: var(--color-gray-lighter);
         transition: transform .3s;
         transform-origin: center;
         width: 1rem;
@@ -406,7 +417,7 @@ button, .button {
     }
 }
 
-.foodplanner__recipe-content{
+.foodplanner__recipe-content {
     padding: 0 1rem 1rem;
 }
 
