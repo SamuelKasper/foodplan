@@ -244,7 +244,8 @@ button, .button {
 .foodplanner__list {
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 
@@ -268,7 +269,10 @@ button, .button {
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
-    max-width: 20rem;
+    width: 100%;
+    /* max-width: 20rem; */
+    /* width: 20rem; */
+    /* margin: 0 auto; */
 }
 
 .foodplanner__recipe-tags{
@@ -525,8 +529,26 @@ button, .button {
     overflow: hidden;
 }
 
+@media screen and (min-width: 40em) {
+    .foodplanner__list {
+        grid-template-columns: 2fr;
+    }
+}
+
+@media screen and (min-width: 55em) {
+    .foodplanner__list {
+        grid-template-columns: 3fr;
+    }
+}
+
 @media screen and (min-width: 64em) {
     .container {
         max-width: 75rem;
+    }
+}
+
+@media screen and (min-width: 80em) {
+    .foodplanner__list {
+        grid-template-columns: 4fr;
     }
 }
