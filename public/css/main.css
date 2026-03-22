@@ -531,13 +531,13 @@ button, .button {
 
 @media screen and (min-width: 40em) {
     .foodplanner__list {
-        grid-template-columns: 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 55em) {
     .foodplanner__list {
-        grid-template-columns: 3fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -549,6 +549,6 @@ button, .button {
 
 @media screen and (min-width: 80em) {
     .foodplanner__list {
-        grid-template-columns: 4fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
