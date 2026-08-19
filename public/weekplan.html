@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Snk Foodplan">
+    <title>Foodplan</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+</head>
+<body>
+    <div class="container">
+        <section class="foodplanner__top">
+            <h2 class="foodplanner__filter-headline">Wochenplaner</h2>
+
+            <form action="" class="foodplanner__form">
+                <fieldset class="foodplanner__fieldset foodplanner__fieldset--select foodplanner__filter-wrapper">
+                    <a href="index.html" type="button" class="button button--gray">Zur Übersicht</a>
+
+                    <button type="button" class="button button--gray" onclick="resetWeekplan()">
+                        <div class="">Plan leeren</div>
+                    </button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="foodplanner__results">
+            <h2 class="foodplanner__results-headline">Hinzugefügt (<span class="foodplanner__results-count">0</span>)</h2>            
+            <ul id="weekplan__list" class="foodplanner__list"></ul>
+        </section>
+    </div>
+
+    <div id="notification" style="display: none;">Text wurde kopiert!</div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>

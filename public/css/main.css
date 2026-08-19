@@ -88,7 +88,7 @@ button, .button {
     gap: 1rem;
     width: 100%;
 
-    button {
+    button, .button {
         height: 2.5rem;
         width: max-content;
     }
@@ -180,7 +180,7 @@ button, .button {
     gap: 1rem;
 }
 
-.button {
+.button, .button {
     display: flex;
     align-items: center;
     justify-content: center;
