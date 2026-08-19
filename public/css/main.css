@@ -334,6 +334,62 @@ button, .button {
     z-index: 2;
 }
 
+.foodplanner__weekplan-add,
+.foodplanner__weekplan-remove {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.125rem;
+    padding: .4rem;
+    border-radius: 0 0 0 .625rem;
+    background-color: var(--color-gray-darker);
+    color: #fff;
+    box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .3);
+
+    svg {
+        width: 1.3rem;
+        height: 1.3rem;
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 1.5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+
+    &:hover:not(:disabled) {
+        background-color: var(--color-gray);
+    }
+
+    &:disabled {
+        cursor: default;
+        filter: none;
+    }
+}
+
+.foodplanner__weekplan-add--added {
+    background-color: var(--color-gold);
+    color: var(--color-gray-darker);
+}
+
+.foodplanner__weekplan-remove {
+    background-color: var(--color-gray-darker);
+
+    svg {
+        fill: currentColor;
+        stroke: none;
+    }
+}
+
+.weekplan__empty {
+    margin: 0;
+    color: var(--color-gray-lighter);
+}
+
 .foodplanner__recipe-servings {
     font-weight: 600;
 }

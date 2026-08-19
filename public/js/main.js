@@ -32,6 +32,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+const WEEKPLAN_STORAGE_KEY = 'foodplan-weekplan-recipe-ids';
+
+function getWeekplanRecipeIds() {
+  try {
+    const ids = JSON.parse(localStorage.getItem(WEEKPLAN_STORAGE_KEY) || '[]');
+    return Array.isArray(ids) ? ids : [];
+  } catch {
+    return [];
+  }
+}
+
+function addToWeekplan(recipeId, button) {
+  const recipeIds = getWeekplanRecipeIds();
+
+  if (!recipeIds.includes(recipeId)) {
+    recipeIds.push(recipeId);
+    localStorage.setItem(WEEKPLAN_STORAGE_KEY, JSON.stringify(recipeIds));
+  }
+
+  button.disabled = true;
+  button.classList.add('foodplanner__weekplan-add--added');
+  button.setAttribute('aria-label', 'Bereits zum Wochenplan hinzugefügt');
+  button.title = 'Bereits hinzugefügt';
+}
+
+function toWeekplan() {
+  window.location.href = 'weekplan.html';
+}
+
 // Holt Rezepte von der API mit optionalen Filtern.
 // fetch() sendet einen HTTP-GET-Request an den Server.
 // Die Parameter werden als Query-String angehängt (z.B. /api/recipes?search=burger&sort=name_asc)
@@ -146,6 +175,7 @@ function buildRecipesHtml(data, recipesAmount) {
   data.forEach((entry) => {
     const listItem = document.createElement("li");
     listItem.classList.add("foodplanner__list-item");
+    const isInWeekplan = getWeekplanRecipeIds().includes(entry.id);
 
     // Mapping von internen Tag-Keys (DB) auf deutsche Anzeigenamen
     const tagNameMap = {
@@ -168,13 +198,30 @@ function buildRecipesHtml(data, recipesAmount) {
       ? ingredientsList
           .map((ing) => {
             const parts = [ing.amount, ing.unit, ing.name].filter(Boolean);
-            return `<li class="foodplanner__ingredient">${parts.join(' ')}</li>`;
+            const baseAmount = ing.amount ? parseFloat(ing.amount) : null;
+            const dataAttr = baseAmount ? ` data-base-amount="${baseAmount}"` : '';
+            return `<li class="foodplanner__ingredient"${dataAttr}>${parts.join(' ')}</li>`;
           })
           .join("")
       : "";
 
     listItem.innerHTML = `
       ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.title}">` : ''}
+      <button
+        type="button"
+        class="foodplanner__weekplan-add${isInWeekplan ? ' foodplanner__weekplan-add--added' : ''}"
+        onclick="addToWeekplan(${entry.id}, this)"
+        aria-label="${isInWeekplan ? 'Bereits zum Wochenplan hinzugefügt' : 'Zum Wochenplan hinzufügen'}"
+        title="${isInWeekplan ? 'Bereits hinzugefügt' : 'Zum Wochenplan hinzufügen'}"
+        ${isInWeekplan ? 'disabled' : ''}
+      >
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M18 16L16 16M16 16L14 16M16 16L16 14M16 16L16 18"/>
+          <path d="M7 4V2.5M17 4V2.5M21.5 9H16.625H10.75M2 9H5.875"/>
+          <path d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985"/>
+        </svg>
+        <span class="visually-hidden">Zum Wochenplan hinzufügen</span>
+      </button>
       <details class="foodplanner__details-toggle">
         <summary class="foodplanner__details-summary">
           ${entry.title}
