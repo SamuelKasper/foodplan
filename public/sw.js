@@ -4,11 +4,12 @@
 
 'use strict';
 
-const CACHE_NAME = 'foodplan-v5';
+const CACHE_NAME = 'foodplan-v6';
 const STATIC_ASSETS = [
     '/',
     '/css/main.css',
     '/js/main.js',
+    '/js/recipe-card.js',
     '/js/weekplan.js',
     '/weekplan.html',
     '/manifest.json',
