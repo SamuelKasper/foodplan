@@ -14,21 +14,25 @@
 <body>
     <div class="container">
         <section class="foodplanner__top">
-            <h2 class="foodplanner__filter-headline">Wochenplaner</h2>
+            <h2 class="foodplanner__filter-headline">Merkliste 
+                <span id="shared-wishlist-status" class="weekplan__shared-status" hidden></span>
+            </h2>
 
             <form action="" class="foodplanner__form">
                 <fieldset class="foodplanner__fieldset foodplanner__fieldset--select foodplanner__filter-wrapper">
                     <a href="index.html" type="button" class="button button--gray">Zur Übersicht</a>
 
+                    <button type="button" class="button button--gray" onclick="shareWishlist()">Teilen</button>
+                    <button type="button" class="button button--gray" onclick="openWishlist()">Öffnen</button>
                     <button type="button" class="button button--gray" onclick="resetWeekplan()">
-                        <div class="">Plan leeren</div>
+                        <div class="">Liste leeren</div>
                     </button>
                 </fieldset>
             </form>
         </section>
 
         <section class="foodplanner__results">
-            <h2 class="foodplanner__results-headline">Hinzugefügt (<span class="foodplanner__results-count">0</span>)</h2>            
+            <h2 class="foodplanner__results-headline">Hinzugefügt (<span class="foodplanner__results-count">0</span>)</h2>
             <ul id="weekplan__list" class="foodplanner__list"></ul>
         </section>
     </div>

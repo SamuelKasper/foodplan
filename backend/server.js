@@ -45,6 +45,17 @@ const authLimiter = rateLimit({
     message: { error: 'Zu viele Versuche. Bitte in 15 Minuten erneut probieren.' },
 });
 
+// Vierstellige Codes haben nur wenig Entropie. Fehlgeschlagene Code-Aufrufe
+// werden deshalb pro IP begrenzt, damit Codes nicht einfach ausprobiert werden.
+const wishlistLimiter = rateLimit({
+    windowMs: 15 * 60 * 1000,
+    max: 30,
+    standardHeaders: true,
+    legacyHeaders: false,
+    skipSuccessfulRequests: true,
+    message: { error: 'Zu viele Code-Versuche. Bitte spaeter erneut probieren.' },
+});
+
 // Auth middleware for write operations
 const requireAuth = (req, res, next) => {
     const key = req.headers['x-api-key'];
@@ -174,6 +185,105 @@ const saveRecipeRelations = async (client, recipeId, tags, ingredients) => {
         }
     }
 };
+
+const isWishlistCode = (code) => typeof code === 'string' && /^[\x21-\x7E]{4}$/.test(code);
+
+const normalizeRecipeIds = (ids) => [...new Set((Array.isArray(ids) ? ids : [])
+    .map((id) => Number(id))
+    .filter((id) => Number.isInteger(id) && id > 0))];
+
+const getWishlist = async (code) => {
+    const result = await pool.query(
+        `SELECT m.code, COALESCE(json_agg(mr.recipe_id ORDER BY mr.created_at, mr.recipe_id)
+                FILTER (WHERE mr.recipe_id IS NOT NULL), '[]') AS recipe_ids
+         FROM merklisten m
+         LEFT JOIN merkliste_rezepte mr ON mr.merkliste_code = m.code
+         WHERE m.code = $1
+         GROUP BY m.code`,
+        [code]
+    );
+    return result.rows[0] || null;
+};
+
+const replaceWishlistRecipes = async (client, code, recipeIds) => {
+    const ids = normalizeRecipeIds(recipeIds);
+    if (ids.length > 0) {
+        const existing = await client.query('SELECT id FROM recipes WHERE id = ANY($1::int[])', [ids]);
+        if (existing.rows.length !== ids.length) {
+            const existingIds = new Set(existing.rows.map((row) => row.id));
+            return { error: 'Eine oder mehrere Rezept-IDs sind ungueltig.', ids: [...existingIds] };
+        }
+    }
+    await client.query('DELETE FROM merkliste_rezepte WHERE merkliste_code = $1', [code]);
+    for (const recipeId of ids) {
+        await client.query(
+            'INSERT INTO merkliste_rezepte (merkliste_code, recipe_id) VALUES ($1, $2)',
+            [code, recipeId]
+        );
+    }
+    return { ids };
+};
+
+// GET /api/merklisten/:code - Eine geteilte Merkliste laden
+app.get('/api/merklisten/:code', wishlistLimiter, async (req, res) => {
+    const { code } = req.params;
+    if (!isWishlistCode(code)) return res.status(400).json({ error: 'Der Code muss genau 4 Zeichen enthalten.' });
+
+    try {
+        const wishlist = await getWishlist(code);
+        if (!wishlist) return res.status(404).json({ error: 'Merkliste nicht gefunden.' });
+        const recipes = await pool.query(`${buildRecipeQuery(['r.id = ANY($1::int[])'])} ORDER BY array_position($1::int[], r.id)`, [wishlist.recipe_ids]);
+        res.json({ code: wishlist.code, recipeIds: wishlist.recipe_ids, recipes: recipes.rows });
+    } catch (err) {
+        console.error('Load wishlist error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+});
+
+// POST /api/merklisten - Merkliste anlegen/aktualisieren (Code ist der Zugriff)
+app.post('/api/merklisten', wishlistLimiter, async (req, res) => {
+    const { code } = req.body;
+    if (!isWishlistCode(code)) return res.status(400).json({ error: 'Der Code muss genau 4 Zeichen enthalten.' });
+
+    const client = await pool.connect();
+    try {
+        await client.query('BEGIN');
+        await client.query('INSERT INTO merklisten (code) VALUES ($1) ON CONFLICT (code) DO NOTHING', [code]);
+        const result = await replaceWishlistRecipes(client, code, req.body.recipeIds);
+        if (result.error) {
+            await client.query('ROLLBACK');
+            return res.status(400).json({ error: result.error });
+        }
+        await client.query('COMMIT');
+        res.status(201).json({ code, recipeIds: result.ids });
+    } catch (err) {
+        await client.query('ROLLBACK');
+        console.error('Create wishlist error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    } finally {
+        client.release();
+    }
+});
+
+// PUT /api/merklisten/:code - Inhalt einer geteilten Liste ersetzen
+app.put('/api/merklisten/:code', wishlistLimiter, async (req, res) => {
+    const { code } = req.params;
+    if (!isWishlistCode(code)) return res.status(400).json({ error: 'Der Code muss genau 4 Zeichen enthalten.' });
+    const client = await pool.connect();
+    try {
+        await client.query('BEGIN');
+        const list = await client.query('SELECT code FROM merklisten WHERE code = $1 FOR UPDATE', [code]);
+        if (!list.rows.length) { await client.query('ROLLBACK'); return res.status(404).json({ error: 'Merkliste nicht gefunden.' }); }
+        const result = await replaceWishlistRecipes(client, code, req.body.recipeIds);
+        if (result.error) { await client.query('ROLLBACK'); return res.status(400).json({ error: result.error }); }
+        await client.query('COMMIT');
+        res.json({ code, recipeIds: result.ids });
+    } catch (err) {
+        await client.query('ROLLBACK');
+        console.error('Update wishlist error:', err);
+        res.status(500).json({ error: 'Internal server error' });
+    } finally { client.release(); }
+});
 
 // GET /api/recipes - List all recipes with optional filter, search, sort
 app.get('/api/recipes', async (req, res) => {

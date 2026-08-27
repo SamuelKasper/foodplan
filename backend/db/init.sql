@@ -35,3 +35,18 @@ CREATE TABLE IF NOT EXISTS recipe_tags (
 
 CREATE INDEX idx_recipe_ingredients_recipe_id ON recipe_ingredients(recipe_id);
 CREATE INDEX idx_recipe_tags_recipe_id ON recipe_tags(recipe_id);
+
+-- Geteilte Merklisten. Der vierstellige Code ist zugleich der Zugriffsschluessel.
+CREATE TABLE IF NOT EXISTS merklisten (
+    code VARCHAR(4) PRIMARY KEY,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
+CREATE TABLE IF NOT EXISTS merkliste_rezepte (
+    merkliste_code VARCHAR(4) NOT NULL REFERENCES merklisten(code) ON DELETE CASCADE,
+    recipe_id INTEGER NOT NULL REFERENCES recipes(id) ON DELETE CASCADE,
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    PRIMARY KEY (merkliste_code, recipe_id)
+);
+
+CREATE INDEX IF NOT EXISTS idx_merkliste_rezepte_code ON merkliste_rezepte(merkliste_code);

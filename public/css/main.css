@@ -390,6 +390,15 @@ button, .button {
     color: var(--color-gray-lighter);
 }
 
+.weekplan__shared-status {
+    margin: -1rem 0 1.5rem;
+    color: var(--color-gray-darkest);
+    background-color: var(--color-gold);
+    font-size: .95rem;
+    padding: .1rem .35rem;
+    border-radius: .25rem;
+}
+
 .foodplanner__recipe-servings {
     font-weight: 600;
 }

@@ -26,6 +26,8 @@ Das startet zwei Container:
 - **db** — PostgreSQL 17 Datenbank
 
 Beim ersten Start wird automatisch das Datenbankschema aus `backend/db/init.sql` erstellt.
+Bei einer bereits vorhandenen Datenbank bitte zusätzlich `backend/db/migrations/001_merklisten.sql` ausführen.
+Alternativ führt `.\migrate.ps1` alle Migrationen aus dem Migrationsordner automatisch aus.
 
 ### 3. Dependencies installieren
 
@@ -141,6 +143,11 @@ recipes (id, title, description, instruction, calories, servings, duration)
 |---------|------|-------------|
 | GET | `/api/recipes` | Alle Rezepte (mit Filter, Suche, Sortierung) |
 | GET | `/api/recipes/:id` | Einzelnes Rezept |
+| GET | `/api/merklisten/:code` | Geteilte Merkliste mit Rezepten laden |
+| POST | `/api/merklisten` | Merkliste per Code anlegen/initialisieren |
+| PUT | `/api/merklisten/:code` | Rezepte einer geteilten Merkliste speichern |
+
+Die bisherige Seite `weekplan.html` dient als Merkliste. Dort kann über „Teilen“ ein genau vier Zeichen langer Code vergeben werden. Andere Nutzer öffnen die Liste über „Code öffnen“ und können sie anschließend bearbeiten. Der Code ist die Bearbeitungsberechtigung und sollte daher geheim bleiben.
 
 ### Query-Parameter fuer `/api/recipes`
 
