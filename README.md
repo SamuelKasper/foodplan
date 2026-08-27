@@ -28,6 +28,7 @@ Das startet zwei Container:
 Beim ersten Start wird automatisch das Datenbankschema aus `backend/db/init.sql` erstellt.
 Bei einer bereits vorhandenen Datenbank bitte zusätzlich `backend/db/migrations/001_merklisten.sql` ausführen.
 Alternativ führt `.\migrate.ps1` alle Migrationen aus dem Migrationsordner automatisch aus.
+Unter Linux/macOS kannst du dafür `./migrate.sh` verwenden.
 
 ### 3. Dependencies installieren
 
