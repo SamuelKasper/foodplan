@@ -221,7 +221,23 @@ const replaceWishlistRecipes = async (client, code, recipeIds) => {
             [code, recipeId]
         );
     }
+    await client.query('UPDATE merklisten SET modified_at = NOW() WHERE code = $1', [code]);
     return { ids };
+};
+
+const deleteOldWishlists = async () => {
+    try {
+        const result = await pool.query(
+            `DELETE FROM merklisten
+             WHERE modified_at < NOW() - INTERVAL '7 days'
+             RETURNING code`
+        );
+        if (result.rowCount > 0) {
+            console.log(`Deleted ${result.rowCount} inactive wishlist(s).`);
+        }
+    } catch (err) {
+        console.error('Cleanup old wishlists error:', err);
+    }
 };
 
 // GET /api/merklisten/:code - Eine geteilte Merkliste laden
@@ -230,6 +246,7 @@ app.get('/api/merklisten/:code', wishlistLimiter, async (req, res) => {
     if (!isWishlistCode(code)) return res.status(400).json({ error: 'Der Code muss genau 4 Zeichen enthalten.' });
 
     try {
+        await deleteOldWishlists();
         const wishlist = await getWishlist(code);
         if (!wishlist) return res.status(404).json({ error: 'Merkliste nicht gefunden.' });
         const recipes = await pool.query(`${buildRecipeQuery(['r.id = ANY($1::int[])'])} ORDER BY array_position($1::int[], r.id)`, [wishlist.recipe_ids]);
@@ -255,6 +272,7 @@ app.post('/api/merklisten', wishlistLimiter, async (req, res) => {
             return res.status(400).json({ error: result.error });
         }
         await client.query('COMMIT');
+        await deleteOldWishlists();
         res.status(201).json({ code, recipeIds: result.ids });
     } catch (err) {
         await client.query('ROLLBACK');

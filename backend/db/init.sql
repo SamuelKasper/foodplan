@@ -39,7 +39,8 @@ CREATE INDEX idx_recipe_tags_recipe_id ON recipe_tags(recipe_id);
 -- Geteilte Merklisten. Der vierstellige Code ist zugleich der Zugriffsschluessel.
 CREATE TABLE IF NOT EXISTS merklisten (
     code VARCHAR(4) PRIMARY KEY,
-    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    modified_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
 CREATE TABLE IF NOT EXISTS merkliste_rezepte (

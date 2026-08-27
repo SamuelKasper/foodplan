@@ -5,6 +5,9 @@ CREATE TABLE IF NOT EXISTS merklisten (
     modified_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
+ALTER TABLE merklisten
+    ADD COLUMN IF NOT EXISTS modified_at TIMESTAMPTZ NOT NULL DEFAULT NOW();
+
 CREATE TABLE IF NOT EXISTS merkliste_rezepte (
     merkliste_code VARCHAR(4) NOT NULL REFERENCES merklisten(code) ON DELETE CASCADE,
     recipe_id INTEGER NOT NULL REFERENCES recipes(id) ON DELETE CASCADE,
