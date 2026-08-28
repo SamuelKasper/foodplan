@@ -81,9 +81,19 @@ function resetWeekplan() {
 }
 
 async function shareWishlist() {
-    const code = prompt('Gib einen genau 4 Zeichen langen Code ein (z. B. A7!?):');
-    if (code === null) return;
-    if (!/^[\x21-\x7E]{4}$/.test(code)) return alert('Der Code muss genau 4 sichtbare Zeichen enthalten.');
+    let popup = document.getElementById('foodplanner__sharelist-popup');
+    let popupCode = document.getElementById('foodplanner__sharelist-popup-code');
+    let popupClose = document.getElementById('foodplanner__sharelist-popup-close');
+    let popupCopy = document.getElementById('foodplanner__sharelist-popup-copy');
+    popupClose.addEventListener('click', () => {
+        popup.close();
+    });
+
+    popupCopy.addEventListener('click', () => {
+        navigator.clipboard.writeText(popupCode.innerText);
+    });
+
+    const code = Math.floor(Math.random() * 10000).toString().padStart(4, '0');
     try {
         const response = await fetch('/api/merklisten', {
             method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -93,14 +103,14 @@ async function shareWishlist() {
         if (!response.ok) throw new Error(data.error || 'Teilen fehlgeschlagen.');
         localStorage.setItem(SHARED_WISHLIST_CODE_KEY, code);
         updateSharedWishlistStatus();
-        alert(`Merkliste geteilt. Teile diesen Code: ${code}`);
+        popupCode.innerText=code;
+        popup.showModal();
     } catch (error) { alert(error.message); }
 }
 
 async function openWishlist() {
-    const code = prompt('Gib den vierstelligen Merklistencode ein:');
+    const code = prompt('Gib den Merklistencode ein:');
     if (code === null) return;
-    if (!/^[\x21-\x7E]{4}$/.test(code)) return alert('Der Code muss genau 4 sichtbare Zeichen enthalten.');
     try {
         const response = await fetch(`/api/merklisten/${encodeURIComponent(code)}`);
         const data = await response.json();
@@ -109,7 +119,6 @@ async function openWishlist() {
         localStorage.setItem(SHARED_WISHLIST_CODE_KEY, code);
         updateSharedWishlistStatus();
         await renderWeekplan();
-        alert(`Merkliste ${code} geoeffnet.`);
     } catch (error) { alert(error.message); }
 }
 

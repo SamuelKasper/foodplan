@@ -399,6 +399,59 @@ button, .button {
     border-radius: .25rem;
 }
 
+.foodplanner__sharelist-popup {
+    position: relative;
+    width: 80vw;
+    height: fit-content;
+    z-index: 99;
+    padding: 1.5rem;
+    background-color: var(--color-gray-darkest);
+    border-radius: .5rem;
+    border: none;
+
+    &::backdrop {
+        background: hsla(0, 0%, 42%, 0.5);
+        backdrop-filter: blur(5px);
+    }
+}
+
+.foodplanner__sharelist-popup-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    aspect-ratio: 1;
+    width: 2rem;
+    background-color: transparent;
+}
+
+.sharelist__popup-close-icon{
+    fill: var(--color-gold);
+}
+
+.foodplanner__sharelist-popup-headline{
+    margin-top: 0;
+    color: var(--color-gray-lightest);
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.foodplanner__sharelist-popup-copy{
+    display: flex;
+    gap: .25rem;
+    border-radius: .5rem;
+    background-color: var(--color-gold);
+    margin: 0 auto;
+}
+
+.sharelist-popup-copy-icon{
+    width: 1.5rem;
+}
+
+.foodplanner__sharelist-popup-code{
+    font-size: 2rem;
+}
+
 .foodplanner__recipe-servings {
     font-weight: 600;
 }
