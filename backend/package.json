@@ -8,7 +8,9 @@
     "dev": "node --watch server.js"
   },
   "dependencies": {
-    "express": "^5.1.0",
+    "ejs": "^6.0.1",
+    "ejs-layouts": "^0.0.1",
+    "express": "^5.2.1",
     "express-rate-limit": "^7.5.0",
     "pg": "^8.16.0"
   }

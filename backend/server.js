@@ -29,6 +29,9 @@ app.use(express.static(path.join(__dirname, '..', 'public')));
 // JSON body parser
 app.use(express.json());
 
+//Use ejs as templating engine
+app.set('view engine', 'ejs');
+
 // Rate Limiter für Auth-Endpunkte: Max. 10 Requests pro IP in 15 Minuten.
 // Danach wird die IP temporär gesperrt und bekommt einen 429-Fehler.
 // standardHeaders: sendet RateLimit-* Header mit (zeigt verbleibende Versuche)
@@ -239,6 +242,13 @@ const deleteOldWishlists = async () => {
         console.error('Cleanup old wishlists error:', err);
     }
 };
+
+app.get('/de', (req, res) => {
+  const meinRezept = { titel: 'Pfannkuchen', zutaten: ['Mehl', 'Milch', 'Eier'] };
+  
+  // Rendert views/rezept.ejs und übergibt die Daten
+  res.render('rezept', { rezept: meinRezept }); 
+});
 
 // GET /api/merklisten/:code - Eine geteilte Merkliste laden
 app.get('/api/merklisten/:code', wishlistLimiter, async (req, res) => {
