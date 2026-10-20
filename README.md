@@ -1,161 +1,113 @@
 # Foodplan
 
-Rezeptverwaltung mit Node.js Backend, PostgreSQL Datenbank und statischem Frontend.
+Recipe management application with Node.js backend, PostgreSQL database, and PWA frontend.
 
-## Voraussetzungen
+## Prerequisites
 
-- [Docker](https://docs.docker.com/get-docker/) und Docker Compose
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (including Docker Compose)
+- Git (e.g. Git Bash on Windows)
 
-## Projekt starten
+---
 
-### 1. Umgebungsvariablen anlegen
+## Setup & Running Locally
 
-```bash
-cp .env.example .env
+### 1. Configure Environment Variables
+Create a `.env` file in the project root with database credentials and API key:
+
+```env
+DB_USER=samuel
+DB_PASSWORD=your_password
+DB_NAME=foodplan
+API_KEY=your_secret_api_key
 ```
 
-### 2. Container starten
-
-```bash
-docker compose up -d
-```
-
-Das startet zwei Container:
-
-- **backend** — Node.js Server auf Port 3000
-- **db** — PostgreSQL 17 Datenbank
-
-Beim ersten Start wird automatisch das Datenbankschema aus `backend/db/init.sql` erstellt.
-Bei einer bereits vorhandenen Datenbank bitte zusätzlich `backend/db/migrations/001_merklisten.sql` ausführen.
-Alternativ führt `.\migrate.ps1` alle Migrationen aus dem Migrationsordner automatisch aus.
-Unter Linux/macOS kannst du dafür `./migrate.sh` verwenden.
-
-### 3. Dependencies installieren
-
-```bash
-docker compose exec backend npm install
-```
-
-### 4. Datenbank mit Rezepten befuellen
-
-```bash
-docker compose exec backend node db/seed.js
-```
-
-Importiert alle Rezepte aus `recipes.json` in die Datenbank. Muss nur einmal ausgefuehrt werden.
-
-### 5. App oeffnen
-
-Die App laeuft unter [http://localhost:3000](http://localhost:3000).
-
-## Deployment auf einem Server
-
-### 1. Projekt auf den Server bringen
-
-```bash
-git clone <repo-url>
-cd foodplan
-```
-
-### 2. `.env` erstellen
-
-```bash
-cp .env.example .env
-```
-
-Unbedingt ein sicheres Passwort setzen — nicht die lokalen Standardwerte verwenden.
-
-### 3. Container starten und seeden
+### 2. Start Containers
+Start the containers in detached mode:
 
 ```bash
 docker compose up -d
-docker compose exec backend node db/seed.js
 ```
 
-Die App laeuft dann unter Port 3000 auf dem Server.
+> [!NOTE]
+> The backend and database are now running in Docker. Do not run the initial seed (`seed.js`), as the live database is already active and contains current recipes. Use the down-sync script instead to populate your local database.
 
-## Weitere Befehle
+### 3. Open the Application
+Once containers are running, access the application at:
 
-### Container stoppen
+- **Home & Recipe Filter**: [http://localhost:3000](http://localhost:3000)
+- **Weekplan / Wishlist**: [http://localhost:3000/weekplan.html](http://localhost:3000/weekplan.html)
+- **Recipe Management (Admin)**: [http://localhost:3000/admin.html](http://localhost:3000/admin.html)
+
+> [!TIP]
+> **Admin Access:** To create, edit, or delete recipes in the admin panel, enter the `API_KEY` defined in your `.env` into the input field at the top of the admin page.
+
+---
+
+## PWA Installation (Mobile / Tablet)
+
+Foodplan is a Progressive Web App (PWA) and can be installed on your home screen:
+- **iOS (Safari):** Tap the Share button -> *Add to Home Screen*
+- **Android (Chrome):** Tap the menu (three dots) -> *Install app* or *Add to Home screen*
+
+---
+
+## Scripts
+
+Shell scripts (`.sh`) can be executed using Git Bash on Windows or terminal on Linux/macOS:
+
+### 1. Sync Live Data Locally (`./down-sync.sh`)
+Pulls the latest database state (recipes and wishlists) from the production server into your local Docker database:
 
 ```bash
-docker compose down
+./down-sync.sh
 ```
 
-### Container stoppen und Datenbank zuruecksetzen
+*(Requires SSH access to the server. Default credentials can be overridden via environment variables, e.g. `SERVER_USER=samu ./down-sync.sh`)*
 
-```bash
-docker compose down -v
-```
-
-Das `-v` Flag loescht das Datenbank-Volume. Beim naechsten `docker compose up -d` wird die DB neu initialisiert und muss erneut geseeded werden.
-
-### Backup erstellen
+### 2. Create Database Backup (`./backup.sh`)
+Creates a timestamped SQL dump of the local database in the `backups/` folder:
 
 ```bash
 ./backup.sh
 ```
 
-Erstellt einen SQL-Dump mit Zeitstempel im `backups/`-Ordner.
-
-### Backup wiederherstellen
-
+*Restore a backup:*
 ```bash
 docker compose exec -T db psql -U "$DB_USER" -d "$DB_NAME" < backups/dump_YYYY-MM-DD_HH-MM-SS.sql
 ```
 
-## Projektstruktur
+### 3. Run Migrations (`./migrate.sh`)
+Applies pending SQL migration files from `backend/db/migrations/` to the running database:
 
-```
-foodplan/
-├── backend/
-│   ├── Dockerfile
-│   ├── package.json
-│   ├── server.js              # Express API Server
-│   └── db/
-│       ├── init.sql            # Datenbankschema
-│       └── seed.js             # Import aus recipes.json
-├── public/
-│   ├── index.html
-│   ├── css/
-│   ├── js/
-│   ├── images/
-│   └── svg/
-├── docker-compose.yaml
-├── backup.sh
-├── recipes.json                # Quelldaten fuer den Seed
-├── .env.example
-└── .env                        # Nicht im Git
+```bash
+./migrate.sh
 ```
 
-## Datenbankschema
+---
 
-```
-recipes (id, title, description, instruction, calories, servings, duration)
-├── recipe_tags (recipe_id, tag_id)
-│   └── tags (id, name)
-└── recipe_ingredients (recipe_id, ingredient_id, amount, unit)
-    └── ingredients (id, name)
+## Stop Containers
+
+```bash
+docker compose down
 ```
 
-## API Endpoints
+> [!WARNING]
+> Run `docker compose down` without the `-v` flag to preserve your local database volume.
 
-| Methode | Pfad | Beschreibung |
-|---------|------|-------------|
-| GET | `/api/recipes` | Alle Rezepte (mit Filter, Suche, Sortierung) |
-| GET | `/api/recipes/:id` | Einzelnes Rezept |
-| GET | `/api/merklisten/:code` | Geteilte Merkliste mit Rezepten laden |
-| POST | `/api/merklisten` | Merkliste per Code anlegen/initialisieren |
-| PUT | `/api/merklisten/:code` | Rezepte einer geteilten Merkliste speichern |
+---
 
-Die bisherige Seite `weekplan.html` dient als Merkliste. Dort kann über „Teilen“ ein genau vier Zeichen langer Code vergeben werden. Andere Nutzer öffnen die Liste über „Code öffnen“ und können sie anschließend bearbeiten. Der Code ist die Bearbeitungsberechtigung und sollte daher geheim bleiben.
+## Troubleshooting
 
-### Query-Parameter fuer `/api/recipes`
+### Recipes not loading on localhost (404 on `/api/recipes`)
+If the web UI opens but recipes do not load and the browser console shows a 404 for `/api/recipes`, another service is likely occupying port 3000 (often the VS Code **Live Server** extension):
+1. Stop Live Server (click *Port: 3000* in the VS Code status bar) or change its port setting to another port (e.g. `5500`).
+2. Restart the backend container:
+   ```bash
+   docker compose restart backend
+   ```
 
-| Parameter | Beispiel | Beschreibung |
-|-----------|----------|-------------|
-| `search` | `?search=burger` | Suche nach Rezeptname |
-| `category` | `?category=vegetable` | Filter nach Tag |
-| `sort` | `?sort=name_asc` | Sortierung |
+---
 
-Verfuegbare Sortierungen: `name_asc`, `name_desc`, `duration_asc`, `duration_desc`, `calories_asc`, `calories_desc`
+## Documentation
+
+- For API endpoints, query parameters, and database schema, see the [API Documentation](docs/api.md).
