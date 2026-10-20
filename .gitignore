@@ -4,3 +4,4 @@ backups/
 dump/
 docker-compose.override.yaml
 .vscode
+todo.md

@@ -523,6 +523,7 @@ button, .button {
     padding: 1rem 2.5rem 1rem 1rem;
     font-size: 1rem;
     list-style: none;
+    min-height: 4rem;
 
     &::-webkit-details-marker {
         display: none;

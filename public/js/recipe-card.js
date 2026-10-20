@@ -26,9 +26,16 @@ window.RecipeCard = (() => {
         const listItem = document.createElement('li');
         listItem.classList.add('foodplanner__list-item');
 
-        const tags = (entry.tags || []).map((tag) =>
-            `<div class="foodplanner__recipe-tag">${tagNameMap[tag] || tag}</div>`
+        const tagItems = [
+            ...(entry.tags || []).map((tag) => tagNameMap[tag] || tag),
+            entry.duration ? `${entry.duration} min` : null,
+            entry.calories ? `${entry.calories} kcal` : null,
+        ].filter(Boolean);
+
+        const tags = tagItems.map((text) =>
+            `<div class="foodplanner__recipe-tag">${text}</div>`
         ).join('');
+
         const ingredients = (entry.ingredients || []).map((ing) => {
             const parts = [ing.amount, ing.unit, ing.name].filter(Boolean);
             const baseAmount = ing.amount ? parseFloat(ing.amount) : null;
@@ -45,15 +52,13 @@ window.RecipeCard = (() => {
           <details class="foodplanner__details-toggle">
             <summary class="foodplanner__details-summary">
               ${entry.title}
-              <div class="foodplanner__recipe-tags">${tags}</div>
+              ${tags ? `<div class="foodplanner__recipe-tags">${tags}</div>` : ''}
               <div class="foodplanner__summary-icon">
                 <svg viewBox="0 0 512 512"><path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/></svg>
               </div>
             </summary>
             <div class="foodplanner__recipe-content">
               ${entry.servings ? buildServingsHtml(entry.servings) : ''}
-              ${entry.calories ? `<p class="foodplanner__recipe-calories">Pro Portion: ${entry.calories} kcal</p>` : ''}
-              ${entry.duration ? `<p class="foodplanner__recipe-duration">Dauer: ${entry.duration} min</p>` : ''}
               ${entry.instruction ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.instruction}</p>` : ''}
               ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
               <button class="foodplanner__recipe-button">Kopieren</button>
