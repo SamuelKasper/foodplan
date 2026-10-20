@@ -32,7 +32,7 @@ merklisten (code, created_at, modified_at)
 |---|---|---|
 | `search` | `?search=burger` | Search recipe title (case-insensitive) |
 | `category` | `?category=vegetable` | Filter by tag/category |
-| `sort` | `?sort=name_asc` | Sort results |
+| `sort` | `?sort=duration_asc` | Sort results (defaults to `name_asc`) |
 
 Available sorting options:
 - `name_asc` / `name_desc` (Alphabetical by title)

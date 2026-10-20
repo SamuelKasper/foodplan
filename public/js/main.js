@@ -44,11 +44,10 @@ function toWeekplan() {
     window.location.href = 'weekplan.html';
 }
 
-async function fetchRecipes(search = null, filter = null, random = null, sort = null) {
+async function fetchRecipes(search = null, filter = null, random = null) {
     const params = new URLSearchParams();
     if (search) params.set('search', search);
     if (filter && filter !== 'all') params.set('category', filter);
-    if (sort) params.set('sort', sort);
 
     const response = await fetch(`/api/recipes?${params}`);
     let data = await response.json();
@@ -61,10 +60,6 @@ async function getRandom() {
     const { recipesAmount } = await fetchRecipes();
     const random = Math.floor(Math.random() * recipesAmount);
     window.location.href = `${window.location.origin}${window.location.pathname}?random=${random}`;
-}
-
-function resetSearch() {
-    window.location.href = `${window.location.origin}${window.location.pathname}`;
 }
 
 function buildRecipesHtml(data, recipesAmount) {
@@ -91,13 +86,11 @@ function buildRecipesHtml(data, recipesAmount) {
 function handleChange() {
     const search = document.getElementById('search').value;
     const category = document.getElementById('categories').value;
-    const sort = document.getElementById('sort').value;
     const params = new URLSearchParams();
     if (search) params.set('search', search);
     if (category) params.set('category', category);
-    if (sort) params.set('sort', sort);
     window.history.pushState({}, '', `${window.location.pathname}?${params}`);
-    fetchRecipes(search, category, null, sort).then(({ data, recipesAmount }) => buildRecipesHtml(data, recipesAmount));
+    fetchRecipes(search, category).then(({ data, recipesAmount }) => buildRecipesHtml(data, recipesAmount));
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -105,13 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const search = params.get('search');
     const category = params.get('category');
     const random = params.get('random');
-    const sort = params.get('sort');
 
     if (search) document.getElementById('search').value = search;
-    if (category) document.getElementById(`category_${category}`).selected = true;
-    if (sort) document.getElementById('sort').value = sort;
+    const categoryOption = category ? document.getElementById(`category_${category}`) : null;
+    if (categoryOption) categoryOption.selected = true;
 
-    fetchRecipes(search, category, random, sort).then(({ data, recipesAmount }) => buildRecipesHtml(data, recipesAmount));
+    fetchRecipes(search, category, random).then(({ data, recipesAmount }) => buildRecipesHtml(data, recipesAmount));
     document.getElementById('categories').addEventListener('change', handleChange);
-    document.getElementById('sort').addEventListener('change', handleChange);
 });

@@ -305,7 +305,7 @@ app.put('/api/merklisten/:code', wishlistLimiter, async (req, res) => {
 
 // GET /api/recipes - List all recipes with optional filter, search, sort
 app.get('/api/recipes', async (req, res) => {
-    const { search, category, sort } = req.query;
+    const { search, category, sort = 'name_asc' } = req.query;
 
     const conditions = [];
     const params = [];
