@@ -9,7 +9,7 @@
 }
 
 .admin__title {
-    color: var(--color-gray-lighter);
+    color: var(--color-font);
     margin: 0;
 }
 
@@ -25,7 +25,7 @@
 
 .admin__label {
     font-size: .875rem;
-    color: var(--color-gray);
+    color: var(--color-primary-hover);
     display: block;
     margin-bottom: .25rem;
 }
@@ -38,14 +38,14 @@
     padding: .5rem .75rem;
     border: 1px solid #3e3e3e;
     border-radius: .5rem;
-    background-color: var(--color-gray-darker);
-    color: var(--color-gray-lighter);
+    background-color: var(--color-primary);
+    color: var(--color-font);
     font-family: inherit;
 }
 
 .admin__input:focus,
 .admin__textarea:focus {
-    border-color: var(--color-gold);
+    border-color: var(--color-accent);
 }
 
 .admin__textarea {
@@ -57,7 +57,7 @@
 }
 
 .admin__form-title {
-    color: var(--color-gray-lighter);
+    color: var(--color-font);
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
@@ -72,7 +72,7 @@
 .admin__legend {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-gold);
+    color: var(--color-accent);
     padding: 0 .5rem;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .admin__checkbox {
-    accent-color: var(--color-gold);
+    accent-color: var(--color-accent);
     width: 1.125rem;
     height: 1.125rem;
     cursor: pointer;
@@ -115,7 +115,7 @@
 
 .admin__tag-label {
     font-size: .9375rem;
-    color: var(--color-gray-lighter);
+    color: var(--color-font);
     cursor: pointer;
 }
 
@@ -182,7 +182,7 @@
 }
 
 .admin__recipe-name {
-    color: var(--color-gray-lighter);
+    color: var(--color-font);
     font-size: 1rem;
 }
 
