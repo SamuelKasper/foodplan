@@ -61,6 +61,7 @@ async function renderWeekplan() {
         className: 'foodplanner__weekplan-remove',
         label: 'Aus dem Wochenplan entfernen',
         icon: REMOVE_ICON,
+        detailUrl: `recipe.html?id=${recipe.id}`,
         onClick: () => removeFromWeekplan(recipe.id),
     })));
 
