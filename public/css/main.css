@@ -15,7 +15,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: Calibri, Arial;
+    font-family: "DM Sans",Calibri, Arial;
 
     &:focus-visible {
         outline: var(--color-gold) dotted 2px;
