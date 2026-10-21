@@ -36,35 +36,51 @@ window.RecipeCard = (() => {
             `<div class="foodplanner__recipe-tag">${text}</div>`
         ).join('');
 
-        const ingredients = (entry.ingredients || []).map((ing) => {
-            const parts = [ing.amount, ing.unit, ing.name].filter(Boolean);
-            const baseAmount = ing.amount ? parseFloat(ing.amount) : null;
-            const dataAttr = baseAmount ? ` data-base-amount="${baseAmount}"` : '';
-            return `<li class="foodplanner__ingredient"${dataAttr}>${parts.join(' ')}</li>`;
-        }).join('');
-
-        listItem.innerHTML = `
-          ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.title}">` : ''}
+        const weekplanBtn = `
           <button type="button" class="${action.className}" aria-label="${action.label}" title="${action.label}" ${action.disabled ? 'disabled' : ''}>
             ${action.icon}
             <span class="visually-hidden">${action.label}</span>
-          </button>
-          <details class="foodplanner__details-toggle">
-            <summary class="foodplanner__details-summary">
-              ${entry.title}
-              ${tags ? `<div class="foodplanner__recipe-tags">${tags}</div>` : ''}
-              <div class="foodplanner__summary-icon">
-                <svg viewBox="0 0 512 512"><path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/></svg>
-              </div>
-            </summary>
-            <div class="foodplanner__recipe-content">
-              ${entry.servings ? buildServingsHtml(entry.servings) : ''}
-              ${entry.instruction ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.instruction}</p>` : ''}
-              ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
-              <button class="foodplanner__recipe-button">Kopieren</button>
-            </div>
-          </details>
-        `;
+          </button>`;
+
+        if (action.detailUrl) {
+            // Link-tile mode: whole card is a link, no toggle
+            listItem.innerHTML = `
+              ${weekplanBtn}
+              <a href="${action.detailUrl}" class="foodplanner__card-link">
+                ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.title}">` : ''}
+                <div class="foodplanner__card-body">
+                  <span class="foodplanner__recipe-name">${entry.title}</span>
+                  ${tags ? `<div class="foodplanner__recipe-tags">${tags}</div>` : ''}
+                </div>
+              </a>`;
+        } else {
+            // Toggle mode: used on weekplan page
+            const ingredients = (entry.ingredients || []).map((ing) => {
+                const parts = [ing.amount, ing.unit, ing.name].filter(Boolean);
+                const baseAmount = ing.amount ? parseFloat(ing.amount) : null;
+                const dataAttr = baseAmount ? ` data-base-amount="${baseAmount}"` : '';
+                return `<li class="foodplanner__ingredient"${dataAttr}>${parts.join(' ')}</li>`;
+            }).join('');
+
+            listItem.innerHTML = `
+              ${entry.img ? `<img class="foodplanner__recipe-img" src="${entry.img}" alt="${entry.title}">` : ''}
+              ${weekplanBtn}
+              <details class="foodplanner__details-toggle">
+                <summary class="foodplanner__details-summary">
+                  ${entry.title}
+                  ${tags ? `<div class="foodplanner__recipe-tags">${tags}</div>` : ''}
+                  <div class="foodplanner__summary-icon">
+                    <svg viewBox="0 0 512 512"><path d="M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z"/></svg>
+                  </div>
+                </summary>
+                <div class="foodplanner__recipe-content">
+                  ${entry.servings ? buildServingsHtml(entry.servings) : ''}
+                  ${entry.instruction ? `<p class="foodplanner__recipe-description-headline">Anleitung</p><p class="foodplanner__recipe-description">${entry.instruction}</p>` : ''}
+                  ${ingredients ? `<p class="foodplanner__ingredient-headline">Zutaten</p><ul class="foodplanner__ingredient-list">${ingredients}</ul>` : ''}
+                  <button class="foodplanner__recipe-button">Kopieren</button>
+                </div>
+              </details>`;
+        }
 
         listItem.querySelector(`.${action.className.split(' ')[0]}`).addEventListener('click', () => action.onClick(listItem));
         return listItem;

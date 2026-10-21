@@ -59,7 +59,7 @@ async function fetchRecipes(search = null, filter = null, random = null) {
 async function getRandom() {
     const { recipesAmount } = await fetchRecipes();
     const random = Math.floor(Math.random() * recipesAmount);
-    window.location.href = `${window.location.origin}${window.location.pathname}?random=${random}`;
+    window.location.href = `${window.location.origin}/recipe.html?id=${random}`;
 }
 
 function buildRecipesHtml(data, recipesAmount) {
@@ -74,6 +74,7 @@ function buildRecipesHtml(data, recipesAmount) {
             label: isInWeekplan ? 'Bereits zum Wochenplan hinzugefügt' : 'Zum Wochenplan hinzufügen',
             icon: WEEKPLAN_ICON,
             disabled: isInWeekplan,
+            detailUrl: `recipe.html?id=${entry.id}`,
             onClick: (card) => addToWeekplan(entry.id, card.querySelector('.foodplanner__weekplan-add')),
         });
         fragment.appendChild(button);

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=description content="Snk Foodplan - Rezept">
+    <title>Rezept | Foodplan</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+</head>
+<body>
+    <div class="container">
+        <a href="/" class="recipe-detail__back button button--gray">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Alle Rezepte
+        </a>
+        <div id="recipe-detail" class="recipe-detail">
+            <p class="recipe-detail__loading">Rezept wird geladen...</p>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/recipe-card.js?v=0.0.1"></script>
+    <script type="text/javascript" src="js/recipe-detail.js?v=0.0.1"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
+</body>
+</html>
