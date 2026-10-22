@@ -6,8 +6,8 @@
 
     // Mapping von internen Tag-Keys auf deutsche Anzeigenamen
     const tagNameMap = {
-        meat: 'Fleisch',
-        vegetable: 'Gemüse',
+        //meat: 'Fleisch',
+        //vegetable: 'Gemüse',
         rice: 'Reis',
         noodle: 'Nudeln',
         other: 'Anderes',

@@ -29,7 +29,9 @@ function addToWeekplan(recipeId, button) {
 }
 
 const TAG_NAME_MAP = {
-    meat: 'Fleisch', vegetable: 'Gemüse', rice: 'Reis', noodle: 'Nudeln',
+    //meat: 'Fleisch', 
+    //vegetable: 'Gemüse', 
+    rice: 'Reis', noodle: 'Nudeln',
     other: 'Anderes', salad: 'Salat', lentils: 'Linsen', sweets: 'Süßes',
 };
 

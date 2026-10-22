@@ -7,8 +7,14 @@ window.RecipeCard = (() => {
 
 
     const tagNameMap = {
-        meat: 'Fleisch', vegetable: 'Gemüse', rice: 'Reis', noodle: 'Nudeln',
-        other: 'Anderes', salad: 'Salat', lentils: 'Linsen', sweets: 'Süßes',
+        //meat: 'Fleisch', 
+        //vegetable: 'Gemüse', 
+        rice: 'Reis', 
+        noodle: 'Nudeln',
+        other: 'Anderes', 
+        salad: 'Salat', 
+        lentils: 'Linsen', 
+        sweets: 'Süßes',
     };
 
     function buildServingsHtml(servings) {
