@@ -5,6 +5,7 @@
     --color-primary-hover: #736f76;
     --color-accent: #EFBF04;
     --color-font: #f3f3f3;
+    --arrow-icon: url("data:image/svg+xml;utf8,<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='%23fafafa' d='M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z'/></svg>");
 }
 
 /* Light Mode Override */
@@ -14,6 +15,8 @@
     --color-primary-hover: #c9bdaa;
     --color-accent: #98703b;
     --color-font: #1c202e;
+    --arrow-icon: url("data:image/svg+xml;utf8,<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='%231c202e' d='M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z'/></svg>");
+
 }
 
 * {
@@ -143,7 +146,7 @@ button, .button {
         display: inline-block;
         width: .7rem;
         height: .7rem;
-        background: url("data:image/svg+xml;utf8,<svg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'><path fill='%23fafafa' d='M505.183,123.179c-9.087-9.087-23.824-9.089-32.912,0.002l-216.266,216.27L39.729,123.179c-9.087-9.087-23.824-9.089-32.912,0.002c-9.089,9.089-9.089,23.824,0,32.912L239.55,388.82c4.364,4.364,10.283,6.816,16.455,6.816c6.172,0,12.092-2.453,16.455-6.817l232.721-232.727C514.272,147.004,514.272,132.268,505.183,123.179z'/></svg>") no-repeat center;
+        background: var(--arrow-icon) no-repeat center;
         background-size: contain; 
         position: absolute;
         right: .75rem;
@@ -336,7 +339,7 @@ button, .button {
     padding: .4rem;
     border-radius: 0 0 0 .625rem;
     background-color: var(--color-primary);
-    color: #fff;
+    color: var(--color-font);
     box-shadow: 0 .125rem .5rem rgba(0, 0, 0, .3);
 
     svg {
@@ -467,7 +470,7 @@ button, .button {
     width: 1.75rem;
     padding: 0;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color: var(--color-bg);
     color: var(--color-font);
 }
 
@@ -567,8 +570,7 @@ button, .button {
 
 .recipe-detail {
     position: relative;
-    background-color: #333333;
-    background-image: linear-gradient(#333, #252525);
+    background-color: var(--color-primary);
     border-radius: 1rem;
     overflow: hidden;
     color: var(--color-font);
