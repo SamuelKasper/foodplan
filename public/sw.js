@@ -4,7 +4,7 @@
 
 'use strict';
 
-const CACHE_NAME = 'foodplan-v8';
+const CACHE_NAME = '1.0.9';
 const STATIC_ASSETS = [
     '/',
     '/css/main.css',
